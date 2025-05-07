@@ -1,0 +1,35 @@
+D:\TFS_Projects_15_06_2021\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.dll
+D:\TFS_Projects_15_06_2021\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.pdb
+D:\TFS_Projects_15_06_2021\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.dll
+D:\TFS_Projects_15_06_2021\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.pdb
+D:\TFS_Projects_15_06_2021\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.csprojResolveAssemblyReference.cache
+F:\Zainullah Shah\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.dll
+F:\Zainullah Shah\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.pdb
+F:\Zainullah Shah\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.csprojResolveAssemblyReference.cache
+F:\Zainullah Shah\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.dll
+F:\Zainullah Shah\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.pdb
+D:\DHAPeshawarAzure\DHAP.PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.dll
+D:\DHAPeshawarAzure\DHAP.PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.pdb
+D:\DHAPeshawarAzure\DHAP.PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.csprojResolveAssemblyReference.cache
+D:\DHAPeshawarAzure\DHAP.PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.dll
+D:\DHAPeshawarAzure\DHAP.PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.pdb
+F:\Zainullah Shah\Azure Dev Ops\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.dll
+F:\Zainullah Shah\Azure Dev Ops\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.pdb
+F:\Zainullah Shah\Azure Dev Ops\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.dll
+F:\Zainullah Shah\Azure Dev Ops\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.pdb
+F:\Zainullah Shah\Azure Dev Ops\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.csprojResolveAssemblyReference.cache
+F:\Zainullah Shah\Github dha-peshawar\DHAP.PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.dll
+F:\Zainullah Shah\Github dha-peshawar\DHAP.PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.pdb
+F:\Zainullah Shah\Github dha-peshawar\DHAP.PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.csprojResolveAssemblyReference.cache
+F:\Zainullah Shah\Github dha-peshawar\DHAP.PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.dll
+F:\Zainullah Shah\Github dha-peshawar\DHAP.PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.pdb
+D:\GitHubCode\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.dll
+D:\GitHubCode\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.pdb
+D:\GitHubCode\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.csprojResolveAssemblyReference.cache
+D:\GitHubCode\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.dll
+D:\GitHubCode\PMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.pdb
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.dll
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.pdb
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.csprojResolveAssemblyReference.cache
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.dll
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.pdb

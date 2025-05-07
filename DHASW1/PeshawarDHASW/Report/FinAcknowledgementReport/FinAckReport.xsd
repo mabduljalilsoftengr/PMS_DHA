@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FinAckReport" targetNamespace="http://tempuri.org/FinAckReport.xsd" xmlns:mstns="http://tempuri.org/FinAckReport.xsd" xmlns="http://tempuri.org/FinAckReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FinAckReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="FinAckReport" msprop:Generator_UserDSName="FinAckReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="AckFinDDReceive" msprop:Generator_TableClassName="AckFinDDReceiveDataTable" msprop:Generator_TableVarName="tableAckFinDDReceive" msprop:Generator_TablePropName="AckFinDDReceive" msprop:Generator_RowDeletingName="AckFinDDReceiveRowDeleting" msprop:Generator_RowChangingName="AckFinDDReceiveRowChanging" msprop:Generator_RowEvHandlerName="AckFinDDReceiveRowChangeEventHandler" msprop:Generator_RowDeletedName="AckFinDDReceiveRowDeleted" msprop:Generator_UserTableName="AckFinDDReceive" msprop:Generator_RowChangedName="AckFinDDReceiveRowChanged" msprop:Generator_RowEvArgName="AckFinDDReceiveRowChangeEvent" msprop:Generator_RowClassName="AckFinDDReceiveRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FileKey" msprop:Generator_ColumnVarNameInTable="columnFileKey" msprop:Generator_ColumnPropNameInRow="FileKey" msprop:Generator_ColumnPropNameInTable="FileKeyColumn" msprop:Generator_UserColumnName="FileKey" type="xs:string" minOccurs="0" />
+              <xs:element name="FileNo" msprop:Generator_ColumnVarNameInTable="columnFileNo" msprop:Generator_ColumnPropNameInRow="FileNo" msprop:Generator_ColumnPropNameInTable="FileNoColumn" msprop:Generator_UserColumnName="FileNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="Mobile" msprop:Generator_ColumnVarNameInTable="columnMobile" msprop:Generator_ColumnPropNameInRow="Mobile" msprop:Generator_ColumnPropNameInTable="MobileColumn" msprop:Generator_UserColumnName="Mobile" type="xs:string" minOccurs="0" />
+              <xs:element name="PresentAddress" msprop:Generator_ColumnVarNameInTable="columnPresentAddress" msprop:Generator_ColumnPropNameInRow="PresentAddress" msprop:Generator_ColumnPropNameInTable="PresentAddressColumn" msprop:Generator_UserColumnName="PresentAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="DDNo" msprop:Generator_ColumnVarNameInTable="columnDDNo" msprop:Generator_ColumnPropNameInRow="DDNo" msprop:Generator_ColumnPropNameInTable="DDNoColumn" msprop:Generator_UserColumnName="DDNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceDate" msprop:Generator_ColumnVarNameInTable="columnReceDate" msprop:Generator_ColumnPropNameInRow="ReceDate" msprop:Generator_ColumnPropNameInTable="ReceDateColumn" msprop:Generator_UserColumnName="ReceDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="AmountinWord" msprop:Generator_ColumnVarNameInTable="columnAmountinWord" msprop:Generator_ColumnPropNameInRow="AmountinWord" msprop:Generator_ColumnPropNameInTable="AmountinWordColumn" msprop:Generator_UserColumnName="AmountinWord" type="xs:string" minOccurs="0" />
+              <xs:element name="BankName" msprop:Generator_ColumnVarNameInTable="columnBankName" msprop:Generator_ColumnPropNameInRow="BankName" msprop:Generator_ColumnPropNameInTable="BankNameColumn" msprop:Generator_UserColumnName="BankName" type="xs:string" minOccurs="0" />
+              <xs:element name="Branch" msprop:Generator_ColumnVarNameInTable="columnBranch" msprop:Generator_ColumnPropNameInRow="Branch" msprop:Generator_ColumnPropNameInTable="BranchColumn" msprop:Generator_UserColumnName="Branch" type="xs:string" minOccurs="0" />
+              <xs:element name="PrintedDate" msprop:Generator_ColumnVarNameInTable="columnPrintedDate" msprop:Generator_ColumnPropNameInRow="PrintedDate" msprop:Generator_ColumnPropNameInTable="PrintedDateColumn" msprop:Generator_UserColumnName="PrintedDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AckFinInstInfo" msprop:Generator_TableClassName="AckFinInstInfoDataTable" msprop:Generator_TableVarName="tableAckFinInstInfo" msprop:Generator_TablePropName="AckFinInstInfo" msprop:Generator_RowDeletingName="AckFinInstInfoRowDeleting" msprop:Generator_RowChangingName="AckFinInstInfoRowChanging" msprop:Generator_RowEvHandlerName="AckFinInstInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="AckFinInstInfoRowDeleted" msprop:Generator_UserTableName="AckFinInstInfo" msprop:Generator_RowChangedName="AckFinInstInfoRowChanged" msprop:Generator_RowEvArgName="AckFinInstInfoRowChangeEvent" msprop:Generator_RowClassName="AckFinInstInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PlanID" msprop:Generator_ColumnVarNameInTable="columnPlanID" msprop:Generator_ColumnPropNameInRow="PlanID" msprop:Generator_ColumnPropNameInTable="PlanIDColumn" msprop:Generator_UserColumnName="PlanID" type="xs:string" minOccurs="0" />
+              <xs:element name="Descp" msprop:Generator_ColumnVarNameInTable="columnDescp" msprop:Generator_ColumnPropNameInRow="Descp" msprop:Generator_ColumnPropNameInTable="DescpColumn" msprop:Generator_UserColumnName="Descp" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="DueDate" msprop:Generator_ColumnVarNameInTable="columnDueDate" msprop:Generator_ColumnPropNameInRow="DueDate" msprop:Generator_ColumnPropNameInTable="DueDateColumn" msprop:Generator_UserColumnName="DueDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
