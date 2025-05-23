@@ -1129,17 +1129,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DS_planEdit.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Application Layer\Installment\InstPlan\frmInstalPlanEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Application Layer\Installment\InstPlan\frmInstalPlanEdit.Designer.cs">
-      <DependentUpon>frmInstalPlanEdit.cs</DependentUpon>
-    </Compile>
     <Compile Include="Application Layer\Installment\InstPlan\frmInstPlanAddNewRow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Application Layer\Installment\InstPlan\frmInstPlanAddNewRow.Designer.cs">
       <DependentUpon>frmInstPlanAddNewRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application Layer\Installment\InstPlan\frmInstalPlanEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application Layer\Installment\InstPlan\frmInstalPlanEdit.Designer.cs">
+      <DependentUpon>frmInstalPlanEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="Application Layer\Installment\InstReceive\frmAccountStatementSearch.cs">
       <SubType>Form</SubType>
@@ -2978,6 +2978,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DHAPeshawarDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="forms\test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -3681,12 +3687,6 @@
     <Compile Include="Report\SurchargeWavierApplicationReport\SurWaiveApp.Designer.cs">
       <DependentUpon>SurWaiveApp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Test.Designer.cs">
-      <DependentUpon>Test.cs</DependentUpon>
-    </Compile>
     <Compile Include="TreeViewMianForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -4191,11 +4191,11 @@
     <EmbeddedResource Include="Application Layer\Installment\InstallmentSummary\Recalculation_Files_For_Statement.resx">
       <DependentUpon>Recalculation_Files_For_Statement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Application Layer\Installment\InstPlan\frmInstalPlanEdit.resx">
-      <DependentUpon>frmInstalPlanEdit.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Application Layer\Installment\InstPlan\frmInstPlanAddNewRow.resx">
       <DependentUpon>frmInstPlanAddNewRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application Layer\Installment\InstPlan\frmInstalPlanEdit.resx">
+      <DependentUpon>frmInstalPlanEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Application Layer\Installment\InstReceive\frmAccountStatementSearch.resx">
       <DependentUpon>frmAccountStatementSearch.cs</DependentUpon>
@@ -5075,6 +5075,9 @@
     <EmbeddedResource Include="Application Layer\User\UpdateSignature.resx">
       <DependentUpon>UpdateSignature.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -5413,9 +5416,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report\SurchargeWavierApplicationReport\SurcWvrAppReportViewer.resx">
       <DependentUpon>SurcWvrAppReportViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Test.resx">
-      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TreeViewMianForm.resx">
       <DependentUpon>TreeViewMianForm.cs</DependentUpon>

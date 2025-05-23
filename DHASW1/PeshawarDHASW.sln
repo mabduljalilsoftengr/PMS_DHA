@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeshawarDHASW", "PeshawarDHASW\PeshawarDHASW.csproj", "{68DA85A5-DF82-4D97-AA2B-D13B0BD5D9F6}"
 EndProject
@@ -37,20 +37,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFE709AC-E803-4A45-B8FB-2F9D34CAB223}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://dhaproject.visualstudio.com/
-		SccProjectUniqueName0 = ..\\PMSSetting\\PMSSetting\\PMS_Setting\\PMS_Setting.csproj
-		SccProjectName0 = ../PMSSetting/PMSSetting/PMS_Setting
-		SccAuxPath0 = https://dhaproject.visualstudio.com
-		SccLocalPath0 = ..\\PMSSetting\\PMSSetting\\PMS_Setting
-		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccProjectUniqueName1 = PeshawarDHASW\\PeshawarDHASW.csproj
-		SccProjectName1 = PeshawarDHASW
-		SccAuxPath1 = https://dhaproject.visualstudio.com
-		SccLocalPath1 = PeshawarDHASW
-		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 	EndGlobalSection
 EndGlobal

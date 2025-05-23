@@ -240,9 +240,9 @@ namespace PeshawarDHASW.Application_Layer.FileMap
             try
             {
                 SqlParameter[] par =
-                           {
-             new SqlParameter("@Task","OnlyDropDownwhichOpen"),
-            };
+                {
+                    new SqlParameter("@Task","OnlyDropDownwhichOpen"),
+                };
                 DataSet ds = new DataSet();
                 ds = cls_dl_FileMap.Fillddl_InstallmentTemplate(par);
 
