@@ -93,28 +93,30 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.planEditGridView);
             this.groupBox1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.groupBox1.Location = new System.Drawing.Point(-4, 62);
+            this.groupBox1.Location = new System.Drawing.Point(3, 62);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1161, 674);
+            this.groupBox1.Size = new System.Drawing.Size(1102, 674);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "InstallmentPlan";
             // 
             // planEditGridView
             // 
-            this.planEditGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.planEditGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.planEditGridView.BackColor = System.Drawing.Color.White;
             this.planEditGridView.Cursor = System.Windows.Forms.Cursors.Default;
             this.planEditGridView.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.planEditGridView.ForeColor = System.Drawing.SystemColors.ControlText;
             this.planEditGridView.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.planEditGridView.Location = new System.Drawing.Point(3, 18);
+            this.planEditGridView.Location = new System.Drawing.Point(6, 18);
             // 
             // 
             // 
@@ -124,15 +126,16 @@
             gridViewTextBoxColumn1.EnableExpressionEditor = false;
             gridViewTextBoxColumn1.FieldName = "PlanID";
             gridViewTextBoxColumn1.HeaderText = "PlanID";
+            gridViewTextBoxColumn1.IsVisible = false;
             gridViewTextBoxColumn1.Name = "PlanID";
-            gridViewTextBoxColumn1.Width = 95;
+            gridViewTextBoxColumn1.VisibleInColumnChooser = false;
+            gridViewTextBoxColumn1.Width = 87;
             gridViewTextBoxColumn2.EnableExpressionEditor = false;
             gridViewTextBoxColumn2.FieldName = "Name";
             gridViewTextBoxColumn2.HeaderText = "Template Name";
-            gridViewTextBoxColumn2.IsVisible = false;
             gridViewTextBoxColumn2.Name = "Name";
             gridViewTextBoxColumn2.VisibleInColumnChooser = false;
-            gridViewTextBoxColumn2.Width = 162;
+            gridViewTextBoxColumn2.Width = 202;
             gridViewTextBoxColumn3.EnableExpressionEditor = false;
             gridViewTextBoxColumn3.FieldName = "InstNo";
             gridViewTextBoxColumn3.HeaderText = "Installment No";
@@ -143,7 +146,7 @@
             gridViewTextBoxColumn4.FieldName = "Descp";
             gridViewTextBoxColumn4.HeaderText = "Description";
             gridViewTextBoxColumn4.Name = "Descp";
-            gridViewTextBoxColumn4.Width = 193;
+            gridViewTextBoxColumn4.Width = 233;
             gridViewDateTimeColumn1.CustomFormat = "dd-MM-yyyy";
             gridViewDateTimeColumn1.EditorType = Telerik.WinControls.UI.GridViewDateTimeEditorType.DateTimePickerSpinMode;
             gridViewDateTimeColumn1.EnableExpressionEditor = false;
@@ -153,28 +156,29 @@
             gridViewDateTimeColumn1.FormatString = "{0:dd/MMM/yyyy}";
             gridViewDateTimeColumn1.HeaderText = "Due Date";
             gridViewDateTimeColumn1.Name = "DueDate";
-            gridViewDateTimeColumn1.Width = 198;
+            gridViewDateTimeColumn1.Width = 115;
             gridViewTextBoxColumn5.EnableExpressionEditor = false;
             gridViewTextBoxColumn5.FieldName = "Amount";
             gridViewTextBoxColumn5.HeaderText = "Amount";
             gridViewTextBoxColumn5.Name = "Amount";
-            gridViewTextBoxColumn5.Width = 107;
+            gridViewTextBoxColumn5.Width = 113;
             gridViewTextBoxColumn6.FieldName = "InstallmentMode";
             gridViewTextBoxColumn6.HeaderText = "InstallmentMode";
             gridViewTextBoxColumn6.Name = "InstallmentMode";
-            gridViewTextBoxColumn6.Width = 171;
+            gridViewTextBoxColumn6.Width = 115;
             gridViewTextBoxColumn7.FieldName = "CODE";
             gridViewTextBoxColumn7.HeaderText = "Code";
             gridViewTextBoxColumn7.Name = "CODE";
-            gridViewTextBoxColumn7.Width = 83;
+            gridViewTextBoxColumn7.Width = 113;
             gridViewTextBoxColumn8.FieldName = "AcctStSeries";
             gridViewTextBoxColumn8.HeaderText = "Acct St Series";
             gridViewTextBoxColumn8.Name = "AcctStSeries";
-            gridViewTextBoxColumn8.Width = 41;
+            gridViewTextBoxColumn8.Width = 157;
             gridViewTextBoxColumn9.FieldName = "instalTempID";
             gridViewTextBoxColumn9.HeaderText = "InstalTempID";
+            gridViewTextBoxColumn9.IsVisible = false;
             gridViewTextBoxColumn9.Name = "instalTempID";
-            gridViewTextBoxColumn9.Width = 232;
+            gridViewTextBoxColumn9.Width = 221;
             this.planEditGridView.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,
@@ -198,7 +202,7 @@
             this.planEditGridView.ReadOnly = true;
             this.planEditGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.planEditGridView.ShowHeaderCellButtons = true;
-            this.planEditGridView.Size = new System.Drawing.Size(1155, 653);
+            this.planEditGridView.Size = new System.Drawing.Size(1090, 653);
             this.planEditGridView.TabIndex = 1;
             this.planEditGridView.Text = "radGridView1";
             this.planEditGridView.ThemeName = "TelerikMetro";
@@ -231,14 +235,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 749);
+            this.ClientSize = new System.Drawing.Size(1134, 749);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxFileNo);
             this.Controls.Add(this.btn_viewPlan);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnUpdateInstallment);
             this.Name = "frmInstalPlanEdit";
-            this.Text = "InstallmentPlanAdjustment";
+            this.Text = "Installment Plan Edit";
             this.Load += new System.EventHandler(this.frmInstalPlanEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dS_planEdit1)).EndInit();
             this.groupBox1.ResumeLayout(false);

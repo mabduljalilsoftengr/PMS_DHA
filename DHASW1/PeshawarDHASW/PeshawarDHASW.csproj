@@ -1141,6 +1141,18 @@
     <Compile Include="Application Layer\Installment\InstPlan\frmInstalPlanEdit.Designer.cs">
       <DependentUpon>frmInstalPlanEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Application Layer\Installment\InstPlan\frmNewTemplateForCreateClone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application Layer\Installment\InstPlan\frmNewTemplateForCreateClone.Designer.cs">
+      <DependentUpon>frmNewTemplateForCreateClone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application Layer\Installment\InstPlan\frmReviewPlanAgainstFileNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application Layer\Installment\InstPlan\frmReviewPlan.Designer.cs">
+      <DependentUpon>frmReviewPlanAgainstFileNo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Application Layer\Installment\InstReceive\frmAccountStatementSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -4196,6 +4208,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Application Layer\Installment\InstPlan\frmInstalPlanEdit.resx">
       <DependentUpon>frmInstalPlanEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application Layer\Installment\InstPlan\frmNewTemplateForCreateClone.resx">
+      <DependentUpon>frmNewTemplateForCreateClone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application Layer\Installment\InstPlan\frmReviewPlanAgainstFileNo.resx">
+      <DependentUpon>frmReviewPlanAgainstFileNo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Application Layer\Installment\InstReceive\frmAccountStatementSearch.resx">
       <DependentUpon>frmAccountStatementSearch.cs</DependentUpon>

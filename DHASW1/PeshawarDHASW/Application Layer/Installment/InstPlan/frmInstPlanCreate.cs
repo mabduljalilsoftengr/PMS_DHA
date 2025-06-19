@@ -26,6 +26,8 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
         public frmInstPlanCreate()
         {
             InitializeComponent();
+            //this.radTextBoxFileNo.Leave += new System.EventHandler(this.radTextBoxFileNo_Leave);
+
         }
 
 
@@ -38,7 +40,8 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
 
                 SqlParameter[] param =
                 {
-                    new SqlParameter("@Task", "NoPlanExist")
+                    //new SqlParameter("@Task", "NoPlanExist")
+                    new SqlParameter("@Task", "SelectTempIdWhichIsNotExistInFileMap")
                 };
                 DataSet _dsPhase = clsInstallmentTemplate.InstalTemplate_Reader(param);
                 if (_dsPhase.Tables.Count > 0)
@@ -89,6 +92,8 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
         {
             try
             {
+                //SelectTempIdWhichIsNotExistInFileMap
+
                 //if (cmbNewInstallTemp.SelectedIndex > 0)
                 //{
                 //    string str = cmbNewInstallTemp.SelectedValue.ToString();
@@ -98,36 +103,36 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 //        new SqlParameter("@Task", "select")
                 //    };
 
-                    
-                //    DataSet ds = clsInstallmentTemplate.InstalTemplate_Reader(parameters);
+
+                //   DataSet ds = clsInstallmentTemplate.InstalTemplate_Reader(parameters);
                 //    cmbExistInstTemp.DataSource = ds.Tables[0];
                 //    cmbExistInstTemp.ValueMember = "InstalTempID";
                 //    cmbExistInstTemp.DisplayMember = "TemplateName";
 
-                    //cmbExistInstTemp.DataSource=ds.Tables[0];
-                    //foreach (DataRow dataRow in ds.Tables[0].Rows)
-                    //{
-                        //dtpStartDate.Value = DateTime.Parse(dataRow["StartDate"].ToString());
-                        //dtpStartDate.ReadOnly = true;
-                        //radenddate.Text = DateTime.Parse(dataRow["EndDate"].ToString()).ToString("dd-MM-yyyy");
-                        //raddescrip.Text = dataRow["Descp"].ToString();
-                        //radplotsize.Text = dataRow["PlotSize"].ToString();
-                        //radphase.Text = dataRow["Phase"].ToString();
-                        
-                   // }
-                    //DataSet dataSetInstallment = cls_dl_instPlan.InstalTemplate_Reader(parameters, "App.USP_InstallmentPlan");
-                    //if (dataSetInstallment.Tables[0].Rows.Count > 0)
-                    //{
-                    //    radgvplan.ReadOnly = true;
-                    //    MessageBox.Show("Selected Plan have already Exist Go to Modify Option for Changes");
-                    //}
-                    //else
-                    //{
-                    //    radgvplan.ReadOnly = false;
-                    //}
-                    
+                //cmbExistInstTemp.DataSource=ds.Tables[0];
+                //foreach (DataRow dataRow in ds.Tables[0].Rows)
+                //{
+                //dtpStartDate.Value = DateTime.Parse(dataRow["StartDate"].ToString());
+                //dtpStartDate.ReadOnly = true;
+                //radenddate.Text = DateTime.Parse(dataRow["EndDate"].ToString()).ToString("dd-MM-yyyy");
+                //raddescrip.Text = dataRow["Descp"].ToString();
+                //radplotsize.Text = dataRow["PlotSize"].ToString();
+                //radphase.Text = dataRow["Phase"].ToString();
 
-               // }
+                // }
+                //DataSet dataSetInstallment = cls_dl_instPlan.InstalTemplate_Reader(parameters, "App.USP_InstallmentPlan");
+                //if (dataSetInstallment.Tables[0].Rows.Count > 0)
+                //{
+                //    radgvplan.ReadOnly = true;
+                //    MessageBox.Show("Selected Plan have already Exist Go to Modify Option for Changes");
+                //}
+                //else
+                //{
+                //    radgvplan.ReadOnly = false;
+                //}
+
+
+                // }
                 //else
                 //{
                 //    radstartdate.Text = "";
@@ -364,12 +369,12 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                     return;
                 }
 
-                else if (string.IsNullOrEmpty(txtMonthInt.Text.Trim()))
-                {
-                    MessageBox.Show("Please Enter Month Interval for Installment Plan.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtMonthInt.Focus();
-                    return;
-                }
+                //else if (string.IsNullOrEmpty(txtMonthInt.Text.Trim()))
+                //{
+                //    MessageBox.Show("Please Enter Month Interval for Installment Plan.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //    txtMonthInt.Focus();
+                //    return;
+                //}
                 //new file no
                 else if (string.IsNullOrEmpty(txtFileNo.Text.Trim()))
                 {
@@ -472,7 +477,60 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
         {
 
         }
+
+        private void btnForNewTemplate(object sender, EventArgs e)
+        {
+            frmNewTemplateForCreateClone frm = new frmNewTemplateForCreateClone(); //frmNewTemplateForCreateClone
+            frm.Show();
+
+        }
+
+
+
+        private bool IsFileNoExists(string fileNo)
+        {
+            SqlParameter[] param =
+             {
+                new SqlParameter("@Task", "IsFileNoAlreadyExist"),
+                new SqlParameter("@FileNoForReview", fileNo)
+            };
+            DataSet ds = clsInstallmentTemplate.CreateInsallmentTemplate(param);
+
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                int count = Convert.ToInt32(ds.Tables[0].Rows[0]["FileNoCount"]);
+                return count > 0;
+            }
+
+            return false;
+        }
+
+        private void txtFileNo_Leave(object sender, EventArgs e)
+        {
+            //string fileNo = txtFileNo.Text.Trim();
+            string fileNo = txtFileNo.Text;
+
+            if (string.IsNullOrEmpty(fileNo))
+                return;
+
+            // Check if the file number exists in the database
+            if (IsFileNoExists(fileNo))
+            {
+                DialogResult result = RadMessageBox.Show(
+                    "This File No is already exist. Do you want to review it?",
+                    "Duplicate File No",
+                    MessageBoxButtons.YesNo,
+                    RadMessageIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    
+                    frmReviewPlanAgainstFileNo reviewForm = new frmReviewPlanAgainstFileNo(fileNo);
+                    reviewForm.Show();
+                }
+            }
+        }
     }
-    
+
 }
 #endregion

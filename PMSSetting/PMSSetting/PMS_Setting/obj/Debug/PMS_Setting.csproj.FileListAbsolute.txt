@@ -39,3 +39,8 @@ D:\New DHA ClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Set
 D:\New DHA ClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.csproj.CoreCompileInputs.cache
 D:\New DHA ClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.dll
 D:\New DHA ClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.pdb
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\bin\Debug\PMS_Setting.dll
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\bin\Debug\PMS_Setting.pdb
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.csprojResolveAssemblyReference.cache
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.dll
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.pdb

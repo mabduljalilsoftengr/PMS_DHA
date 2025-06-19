@@ -52,5 +52,10 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 btnget_Click(sender, e);
             }
         }
+
+        private void frmInstPlanAddNewRow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
