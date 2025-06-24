@@ -604,6 +604,7 @@ D:\NewDHAClonedApp\PMS_DHA\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Appl
 D:\NewDHAClonedApp\PMS_DHA\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.NDC.Baskets.frm_NDC_ImageUpload.resources
 D:\NewDHAClonedApp\PMS_DHA\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.NDC.Baskets.frm_Secret_Code.resources
 D:\NewDHAClonedApp\PMS_DHA\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.NDC.Baskets.frm_Secret_Code_Decryption.resources
+D:\NewDHAClonedApp\PMS_DHA\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.NDC.FBR.frmFBR_CreateNewNTNFiler.resources
 D:\NewDHAClonedApp\PMS_DHA\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.NDC.FBR.frmFBR_FilerNonFilerReport.resources
 D:\NewDHAClonedApp\PMS_DHA\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.NDC.FBR.frmImportFBRDatafrom_ExcelToDatabase.resources
 D:\NewDHAClonedApp\PMS_DHA\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.NDC.FBR.frm_FBR_Bulk_Report.resources

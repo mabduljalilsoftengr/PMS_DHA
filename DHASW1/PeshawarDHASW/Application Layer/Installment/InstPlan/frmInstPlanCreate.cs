@@ -448,7 +448,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
             frm.Show();
         }
 
-        //Clone from DropDown
+        //Clone from Installment Template DropDown
         private void cmbExistInstTemp_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
         {
             if (cmbExistInstTemp.SelectedIndex > 0)

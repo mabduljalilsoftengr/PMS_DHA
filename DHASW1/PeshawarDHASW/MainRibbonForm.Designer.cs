@@ -829,7 +829,7 @@
             this.radDock1.ShowDocumentCloseButton = true;
             this.radDock1.ShowDocumentPinButton = true;
             this.radDock1.ShowToolCloseButton = true;
-            this.radDock1.Size = new System.Drawing.Size(1643, 444);
+            this.radDock1.Size = new System.Drawing.Size(1609, 444);
             this.radDock1.TabIndex = 2;
             this.radDock1.TabStop = false;
             this.radDock1.Text = "0";
@@ -896,7 +896,7 @@
             // tabApplication
             // 
             this.tabApplication.AccessibleDescription = "tabApplication";
-            this.tabApplication.IsSelected = true;
+            this.tabApplication.IsSelected = false;
             this.tabApplication.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.gpApplicationReg,
             this.gpFin_Information,
@@ -2518,7 +2518,7 @@
             // 
             this.tabNDC.AccessibleDescription = "tabNDC";
             this.tabNDC.AccessibleName = "tabNDC";
-            this.tabNDC.IsSelected = false;
+            this.tabNDC.IsSelected = true;
             this.tabNDC.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.gbNDCInformation,
             this.gbNDCCheck_List,

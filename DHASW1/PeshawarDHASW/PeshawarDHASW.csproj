@@ -1963,6 +1963,12 @@
     <Compile Include="Application Layer\NDC\Baskets\frm_Secret_Code_Decryption.Designer.cs">
       <DependentUpon>frm_Secret_Code_Decryption.cs</DependentUpon>
     </Compile>
+    <Compile Include="Application Layer\NDC\FBR\frmFBR_CreateNewNTNFiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application Layer\NDC\FBR\frmFBR_CreateNewNTNFiler.Designer.cs">
+      <DependentUpon>frmFBR_CreateNewNTNFiler.cs</DependentUpon>
+    </Compile>
     <Compile Include="Application Layer\NDC\FBR\frmFBR_FilerNonFilerReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -4619,6 +4625,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Application Layer\NDC\Baskets\frm_Secret_Code_Decryption.resx">
       <DependentUpon>frm_Secret_Code_Decryption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application Layer\NDC\FBR\frmFBR_CreateNewNTNFiler.resx">
+      <DependentUpon>frmFBR_CreateNewNTNFiler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Application Layer\NDC\FBR\frmFBR_FilerNonFilerReport.resx">
       <DependentUpon>frmFBR_FilerNonFilerReport.cs</DependentUpon>

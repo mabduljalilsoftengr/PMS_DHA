@@ -42,5 +42,11 @@ namespace PeshawarDHASW.Application_Layer.NDC.FBR
         {
 
         }
+
+        private void btnCustFiler_Click(object sender, EventArgs e)
+        {
+            frmFBR_CreateNewNTNFiler frm = new frmFBR_CreateNewNTNFiler();
+            frm.ShowDialog();
+        }
     }
 }

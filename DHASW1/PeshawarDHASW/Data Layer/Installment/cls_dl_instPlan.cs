@@ -97,7 +97,7 @@ namespace PeshawarDHASW.Data_Layer.Installment
 
         //New created BulkInsertInstallments
         public static int BulkInsertInstallments(DataTable installmentData, string fileNo, string planStatus,
-                                        string templateStatus, string templateName)
+                                        string templateStatus, string templateName, int userId)
         {
             using (SqlConnection connection = new SqlConnection(clsMostUseVars.Connectionstring))
             {
@@ -116,6 +116,7 @@ namespace PeshawarDHASW.Data_Layer.Installment
                     command.Parameters.Add("@PlanStatus", SqlDbType.VarChar).Value = planStatus;
                     command.Parameters.Add("@TemplateStatus", SqlDbType.VarChar).Value = templateStatus;
                     command.Parameters.Add("@TemplateName", SqlDbType.VarChar).Value = templateName;
+                    command.Parameters.Add("@UserId", SqlDbType.Int).Value = Models.clsUser.ID;
 
                     return command.ExecuteNonQuery();
                 }

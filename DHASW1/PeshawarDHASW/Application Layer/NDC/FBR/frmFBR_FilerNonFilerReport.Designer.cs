@@ -39,17 +39,20 @@
             this.btnExporttoExcel = new Telerik.WinControls.UI.RadButton();
             this.btnRefresh = new Telerik.WinControls.UI.RadButton();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
+            this.btnCustFiler = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).BeginInit();
             this.radGridView1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExporttoExcel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustFiler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // radGridView1
             // 
             this.radGridView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
+            this.radGridView1.Controls.Add(this.btnCustFiler);
             this.radGridView1.Controls.Add(this.btnExporttoExcel);
             this.radGridView1.Controls.Add(this.btnRefresh);
             this.radGridView1.Cursor = System.Windows.Forms.Cursors.Default;
@@ -139,6 +142,17 @@
             this.btnRefresh.ThemeName = "TelerikMetro";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // btnCustFiler
+            // 
+            this.btnCustFiler.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCustFiler.Location = new System.Drawing.Point(535, 3);
+            this.btnCustFiler.Name = "btnCustFiler";
+            this.btnCustFiler.Size = new System.Drawing.Size(128, 19);
+            this.btnCustFiler.TabIndex = 2;
+            this.btnCustFiler.Text = "Customer Filer";
+            this.btnCustFiler.ThemeName = "TelerikMetro";
+            this.btnCustFiler.Click += new System.EventHandler(this.btnCustFiler_Click);
+            // 
             // frmFBR_FilerNonFilerReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +173,7 @@
             this.radGridView1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExporttoExcel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustFiler)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -170,5 +185,6 @@
         private Telerik.WinControls.UI.RadButton btnRefresh;
         private Telerik.WinControls.Themes.TelerikMetroTheme telerikMetroTheme1;
         private Telerik.WinControls.UI.RadButton btnExporttoExcel;
+        private Telerik.WinControls.UI.RadButton btnCustFiler;
     }
 }

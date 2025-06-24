@@ -99,7 +99,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
             //int accntSeriesCounter = 1*/; // <-- Start from 1 or any desired number
            // string finalTemplateName = txtTemplateName.Text.Trim();
             string fileNo = txtFileNo.Text.Trim();
-            // New Changes 
+            int userId = Models.clsUser.ID;
 
             string finalTemplateName = txtTemplateName.Text.Trim() + clonsrt;
             //string fileNo = txtFileNo.Text.Trim();
@@ -117,10 +117,6 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
             installmentTable.Columns.Add("CODE", typeof(string));
             installmentTable.Columns.Add("userID", typeof(int)); // Assuming Models.clsUser.ID is int
             installmentTable.Columns.Add("AcctStSeries", typeof(string));
-            //installmentTable.Columns.Add("TemplateName", typeof(string));
-            //installmentTable.Columns.Add("FileNo", typeof(string));
-            //installmentTable.Columns.Add("PlanStatus", typeof(string));
-            //installmentTable.Columns.Add("TemplateStatus", typeof(string));
 
 
             if (cbSpecificFilNo.Checked)
@@ -163,10 +159,6 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                             code,
                             Models.clsUser.ID,
                             accntSeries
-                            //finalTemplateName,
-                            //fileNo,
-                            //plnsts,
-                            //temltsts
                         );
 
                         }
@@ -182,7 +174,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 try
                 {
                     // Call the method to bulk insert  store procedure name is "usp_InsertInstallmentPlan"
-                    int result = cls_dl_instPlan.BulkInsertInstallments(installmentTable, fileNo, plnsts, temltsts, finalTemplateName);
+                    int result = cls_dl_instPlan.BulkInsertInstallments(installmentTable, fileNo, plnsts, temltsts, finalTemplateName, userId);
 
                     if (result <= 0)
                     {
@@ -203,10 +195,6 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
             }
             else // this is for Clone 
             {
-                    //if (cbCreateClone.Checked && !finalTemplateName.EndsWith(" For Clone"))
-                    //{
-                    //    finalTemplateName += "- For Clone";
-                    //}
 
                 foreach (GridViewRowInfo row in grdplandata.Rows)
                 {
@@ -245,10 +233,6 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                                 code,
                                 Models.clsUser.ID,
                                 accntSeries
-                            //finalTemplateName,
-                            //fileNo,
-                            //plnsts,
-                            //temltsts
                             );
 
                         }
@@ -264,7 +248,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 try
                 {
                     // Call the method to bulk insert  store procedure name is "usp_InsertInstallmentPlan"
-                    int result = cls_dl_instPlan.BulkInsertInstallments(installmentTable, fileNo, plnsts, temltsts, finalTemplateName);
+                    int result = cls_dl_instPlan.BulkInsertInstallments(installmentTable, fileNo, plnsts, temltsts, finalTemplateName, userId);
 
                     if (result <= 0)
                     {
@@ -282,30 +266,6 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
             }
 
         }
-
-        //method for Retrieve TemplateInstKey
-        public static int GetTemplateInstKey(string templateName)
-        {
-            int key = 0;
-            string query = "SELECT TOP 1 InstalTempID FROM tbl_InstallmentTemplate WHERE Name = @TemplateName ORDER BY InstalTempID DESC";
-
-            using (SqlConnection conn = new SqlConnection(clsMostUseVars.Connectionstring))
-            using (SqlCommand cmd = new SqlCommand(query, conn))
-            {
-                cmd.Parameters.AddWithValue("@TemplateName", templateName);
-                //cmd.Parameters.AddWithValue("@userID", userID);
-
-                conn.Open();
-                var result = cmd.ExecuteScalar();
-                if (result != null)
-                {
-                    int.TryParse(result.ToString(), out key);
-                }
-            }
-
-            return key;
-        }
-
 
         string clonsrt = "";
         private void cbCreateClone_CheckedChanged(object sender, EventArgs e)
@@ -417,11 +377,6 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 cmbTempGroup.DisplayMember = "Name";
             }
         }
-
-
-        //private void txtFileNo_Leave(object sender, EventArgs e)
-        //{
-
-        //}
+        
     }
 }
