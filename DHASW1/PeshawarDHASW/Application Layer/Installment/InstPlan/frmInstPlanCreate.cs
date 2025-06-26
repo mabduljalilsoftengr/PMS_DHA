@@ -526,7 +526,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 {
                     
                     frmReviewPlanAgainstFileNo reviewForm = new frmReviewPlanAgainstFileNo(fileNo);
-                    reviewForm.Show();
+                    reviewForm.ShowDialog(); //.Show();
                 }
             }
         }

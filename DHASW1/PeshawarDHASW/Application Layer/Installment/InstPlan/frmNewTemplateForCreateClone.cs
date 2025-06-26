@@ -324,7 +324,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 {
 
                     frmReviewPlanAgainstFileNo reviewForm = new frmReviewPlanAgainstFileNo(fileNo);
-                    reviewForm.Show();
+                    reviewForm.ShowDialog(); //.Show();
                 }
             }
         }
@@ -377,6 +377,5 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 cmbTempGroup.DisplayMember = "Name";
             }
         }
-        
     }
 }
