@@ -52,6 +52,7 @@
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
+            this.txtseries = new Telerik.WinControls.UI.RadTextBox();
             this.btnCreateInstallment = new Telerik.WinControls.UI.RadButton();
             this.ddlcode = new Telerik.WinControls.UI.RadDropDownList();
             this.ddlinstallmentmode = new Telerik.WinControls.UI.RadDropDownList();
@@ -63,9 +64,9 @@
             this.grdplandata = new Telerik.WinControls.UI.RadGridView();
             this.txtFileNo = new Telerik.WinControls.UI.RadTextBox();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
-            this.txtseries = new Telerik.WinControls.UI.RadTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtseries)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCreateInstallment)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlcode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlinstallmentmode)).BeginInit();
@@ -78,7 +79,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdplandata.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFileNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtseries)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,6 +103,14 @@
             this.radGroupBox1.Size = new System.Drawing.Size(1011, 534);
             this.radGroupBox1.TabIndex = 0;
             this.radGroupBox1.Text = "Existing Data";
+            // 
+            // txtseries
+            // 
+            this.txtseries.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtseries.Location = new System.Drawing.Point(918, 457);
+            this.txtseries.Name = "txtseries";
+            this.txtseries.Size = new System.Drawing.Size(81, 23);
+            this.txtseries.TabIndex = 6;
             // 
             // btnCreateInstallment
             // 
@@ -163,7 +171,7 @@
             this.dtpduedate.Size = new System.Drawing.Size(140, 23);
             this.dtpduedate.TabIndex = 7;
             this.dtpduedate.TabStop = false;
-            this.dtpduedate.Text = "Friday, October 23, 2020";
+            this.dtpduedate.Text = "Friday, 23 October 2020";
             this.dtpduedate.Value = new System.DateTime(2020, 10, 23, 14, 31, 6, 215);
             // 
             // txtamount
@@ -201,43 +209,57 @@
             // 
             // grdplandata
             // 
+            this.grdplandata.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
+            this.grdplandata.Cursor = System.Windows.Forms.Cursors.Default;
+            this.grdplandata.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.grdplandata.ForeColor = System.Drawing.Color.Black;
+            this.grdplandata.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.grdplandata.Location = new System.Drawing.Point(8, 71);
             // 
             // 
             // 
             this.grdplandata.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
             gridViewTextBoxColumn1.FieldName = "PlanID";
             gridViewTextBoxColumn1.HeaderText = "Plan ID";
             gridViewTextBoxColumn1.IsVisible = false;
             gridViewTextBoxColumn1.Name = "PlanID";
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
             gridViewTextBoxColumn2.FieldName = "instalTempID";
             gridViewTextBoxColumn2.HeaderText = "instalTempID";
             gridViewTextBoxColumn2.IsVisible = false;
             gridViewTextBoxColumn2.Name = "instalTempID";
+            gridViewTextBoxColumn3.EnableExpressionEditor = false;
             gridViewTextBoxColumn3.FieldName = "InstNo";
             gridViewTextBoxColumn3.HeaderText = "Inst No";
             gridViewTextBoxColumn3.Name = "InstNo";
             gridViewTextBoxColumn3.Width = 155;
+            gridViewTextBoxColumn4.EnableExpressionEditor = false;
             gridViewTextBoxColumn4.FieldName = "Descp";
             gridViewTextBoxColumn4.HeaderText = "Descp";
             gridViewTextBoxColumn4.Name = "Descp";
             gridViewTextBoxColumn4.Width = 155;
+            gridViewTextBoxColumn5.EnableExpressionEditor = false;
             gridViewTextBoxColumn5.FieldName = "DueDate";
             gridViewTextBoxColumn5.HeaderText = "DueDate";
             gridViewTextBoxColumn5.Name = "DueDate";
             gridViewTextBoxColumn5.Width = 155;
+            gridViewTextBoxColumn6.EnableExpressionEditor = false;
             gridViewTextBoxColumn6.FieldName = "Amount";
             gridViewTextBoxColumn6.HeaderText = "Amount";
             gridViewTextBoxColumn6.Name = "Amount";
             gridViewTextBoxColumn6.Width = 155;
+            gridViewTextBoxColumn7.EnableExpressionEditor = false;
             gridViewTextBoxColumn7.FieldName = "InstallmentMode";
             gridViewTextBoxColumn7.HeaderText = "Installment Mode";
             gridViewTextBoxColumn7.Name = "InstallmentMode";
             gridViewTextBoxColumn7.Width = 155;
+            gridViewTextBoxColumn8.EnableExpressionEditor = false;
             gridViewTextBoxColumn8.FieldName = "CODE";
             gridViewTextBoxColumn8.HeaderText = "CODE";
             gridViewTextBoxColumn8.Name = "CODE";
             gridViewTextBoxColumn8.Width = 118;
+            gridViewTextBoxColumn9.EnableExpressionEditor = false;
             gridViewTextBoxColumn9.FieldName = "AcctStSeries";
             gridViewTextBoxColumn9.HeaderText = "Series";
             gridViewTextBoxColumn9.Name = "AcctStSeries";
@@ -254,6 +276,7 @@
             gridViewTextBoxColumn9});
             this.grdplandata.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.grdplandata.Name = "grdplandata";
+            this.grdplandata.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdplandata.Size = new System.Drawing.Size(994, 376);
             this.grdplandata.TabIndex = 2;
             this.grdplandata.Text = "radGridView1";
@@ -275,14 +298,6 @@
             this.radLabel1.TabIndex = 0;
             this.radLabel1.Text = "File No.";
             // 
-            // txtseries
-            // 
-            this.txtseries.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtseries.Location = new System.Drawing.Point(918, 457);
-            this.txtseries.Name = "txtseries";
-            this.txtseries.Size = new System.Drawing.Size(81, 23);
-            this.txtseries.TabIndex = 6;
-            // 
             // frmInstPlanAddNewRow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,9 +310,11 @@
             // 
             this.RootElement.ApplyShapeToControl = true;
             this.Text = "frmInstPlanAddNewRow";
+            this.Load += new System.EventHandler(this.frmInstPlanAddNewRow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtseries)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCreateInstallment)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlcode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlinstallmentmode)).EndInit();
@@ -310,7 +327,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdplandata)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFileNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtseries)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 

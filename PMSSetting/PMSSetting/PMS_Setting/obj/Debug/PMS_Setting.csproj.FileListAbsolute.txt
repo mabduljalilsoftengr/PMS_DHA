@@ -33,8 +33,22 @@ D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSS
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.csprojResolveAssemblyReference.cache
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.dll
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.pdb
+<<<<<<< HEAD
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Debug\PMS_Setting.dll
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Debug\PMS_Setting.pdb
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.csprojResolveAssemblyReference.cache
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.dll
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.pdb
+=======
+D:\New DHA ClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\bin\Debug\PMS_Setting.dll
+D:\New DHA ClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\bin\Debug\PMS_Setting.pdb
+D:\New DHA ClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.csproj.AssemblyReference.cache
+D:\New DHA ClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.csproj.CoreCompileInputs.cache
+D:\New DHA ClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.dll
+D:\New DHA ClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.pdb
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\bin\Debug\PMS_Setting.dll
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\bin\Debug\PMS_Setting.pdb
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.csprojResolveAssemblyReference.cache
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.dll
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.pdb
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c

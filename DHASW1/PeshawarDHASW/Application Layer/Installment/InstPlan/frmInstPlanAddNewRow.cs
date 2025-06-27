@@ -43,7 +43,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 new SqlParameter("@CODE", ddlcode.Text),
                 new SqlParameter("@userID",Models.clsUser.ID),
                 new SqlParameter("@FileNo", txtFileNo.Text), 
-                new SqlParameter("@AccntSeries", txtseries.Text)
+                new SqlParameter("@AcctStSeries", txtseries.Text) //AcctStSeries AccntSeries
             };
             int rslt = cls_dl_instPlan.InstalPlanNonQuery(param);
             if(rslt > 0)
@@ -51,6 +51,11 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 MessageBox.Show("Successfull.");
                 btnget_Click(sender, e);
             }
+        }
+
+        private void frmInstPlanAddNewRow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

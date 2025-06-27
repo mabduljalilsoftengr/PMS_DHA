@@ -72,6 +72,57 @@ namespace PeshawarDHASW.Data_Layer.Installment
             return rslt;
         }
 
+        //New created
+        public static int InstalPlan_NonQuery(SqlParameter[] parameter)
+        {
+            int rslt = 0;
+            try
+            {
+                 rslt = SQLHelper.ExecuteNonQuery(
+                                                        clsMostUseVars.Connectionstring,
+                                                        CommandType.StoredProcedure,
+                                                        "App.USP_CreateInstallTemplateAndPlan",
+                                                        parameter
+                                                    );
+                //MessageBox.Show("Result: " + rslt);  // Even if it's -1, SP might have worked
+
+            }
+            catch (Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message + ex.InnerException);
+            }
+
+            return rslt;
+        }
+
+        //New created BulkInsertInstallments
+        public static int BulkInsertInstallments(DataTable installmentData, string fileNo, string planStatus,
+                                        string templateStatus, string templateName, int userId)
+        {
+            using (SqlConnection connection = new SqlConnection(clsMostUseVars.Connectionstring))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand("usp_InsertInstallmentPlan", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    // Add table-valued parameter
+                    SqlParameter tvpParam = command.Parameters.AddWithValue("@Installments", installmentData);
+                    tvpParam.SqlDbType = SqlDbType.Structured;
+                    tvpParam.TypeName = "dbo.InstallmentTableType";
+
+                    // Add other parameters
+                    command.Parameters.Add("@FileNo", SqlDbType.VarChar).Value = fileNo;
+                    command.Parameters.Add("@PlanStatus", SqlDbType.VarChar).Value = planStatus;
+                    command.Parameters.Add("@TemplateStatus", SqlDbType.VarChar).Value = templateStatus;
+                    command.Parameters.Add("@TemplateName", SqlDbType.VarChar).Value = templateName;
+                    command.Parameters.Add("@UserId", SqlDbType.Int).Value = Models.clsUser.ID;
+
+                    return command.ExecuteNonQuery();
+                }
+            }
+        }
+
         public static int InstalPlan_NonQuery(SqlParameter[] parameter, string procedure)
         {
             int result = SQLHelper.ExecuteNonQuery(

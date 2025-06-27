@@ -301,8 +301,8 @@ namespace PeshawarDHASW.Application_Layer.FileMap.SvcBenefitFiles
            
             DataSet ds = InstallmentPlanGroupGroupKeyValue();
 
-            string PlotNo = string.IsNullOrWhiteSpace(txtplotno.Text)?"": txtplotno.Text.Substring(5, 1);
-            string Sector = ddlSector.SelectedItem.Text;
+           // string PlotNo = string.IsNullOrWhiteSpace(txtplotno.Text)?"": txtplotno.Text.Substring(5, 1);
+           // string Sector = ddlSector.SelectedItem.Text;
 
             //if (Sector.Contains(PlotNo) == false)
             //{
@@ -333,7 +333,7 @@ namespace PeshawarDHASW.Application_Layer.FileMap.SvcBenefitFiles
                             if (rdbnormal.IsChecked) { isoversundsz = rdbnormal.Text; }
                             else if (rdboversize.IsChecked) { isoversundsz = rdboversize.Text; }
                             else if (rdbundersize.IsChecked) { isoversundsz = rdbundersize.Text; }
-                            clsPluginHelper.RadDropDownSelectByText(ownerCategory, "Svc Benefit");  //  ownerCategory.SelectedValue.ToString()); // 
+                            clsPluginHelper.RadDropDownSelectByText(ownerCategory, ownerCategory.Text);  //  ownerCategory.SelectedValue.ToString()); // 
 
                             if (dpPlotSize.Text == "10 Marla") { SqYard = "250"; Kanal = "0"; Marla = dpPlotSize.Text; }
                             else if (dpPlotSize.Text == "8 Marla") { SqYard = "200"; Kanal = "0"; Marla = dpPlotSize.Text; }
@@ -390,6 +390,11 @@ namespace PeshawarDHASW.Application_Layer.FileMap.SvcBenefitFiles
                             string Conditionform = ds_allot.Tables[0].Rows[0]["ConditionalDetail"].ToString();
                             string AttachRemarks = ds_allot.Tables[0].Rows[0]["AttachRemarks"].ToString();
 
+                            // Show success message when record is added successfully
+                            //if (!allotmsg.Contains(" is already alotted to File No.") && !allotmsg.Contains("Invalid Allotment."))
+                            //{
+                            //    MessageBox.Show("Record added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            //}
 
                         foreach (DataRow row in ds_allot.Tables[0].Rows)
                         {

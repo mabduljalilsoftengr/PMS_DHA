@@ -3,6 +3,8 @@ using System.Windows.Forms;
 using PeshawarDHASW.Application_Layer.Transfer.Transfer_Information.Total_Transfer_Detail;
 using PeshawarDHASW.Application_Layer.Membership.Modify;
 using PeshawarDHASW.Application_Layer.Installment.Sumary;
+using PeshawarDHASW.Application_Layer.Installment.InstPlan;
+using PeshawarDHASW.Application_Layer.NDC.FBR;
 
 namespace PeshawarDHASW
 {
@@ -19,7 +21,7 @@ namespace PeshawarDHASW
             //Helper.clsPluginHelper.SMSSEnding("03459320831","Dear Customer your FileNo: B/RES/4662 and Membership No : DPR-09271  Please use this information for your Online Challan");
              Application.Run(new FrmLogin());
             //Application.Run(new Test());
-            //Application.Run(new frmReceiteSummaryReport());
+           // Application.Run(new frmFBR_CreateNewNTNFiler()); //frmInstPlanAddNewRow frmNewTemplateForCreateClone
 
             //Application.Run(new Application_Layer.Installment.InstReceive.frm_NatureOfDDAmount());
             //Application.Run(new Application_Layer.User.frmNewUser());

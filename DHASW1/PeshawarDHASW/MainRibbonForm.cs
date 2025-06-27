@@ -51,9 +51,9 @@ namespace PeshawarDHASW
             radDock1.MainDocumentContainer.SplitPanelElement.Fill.GradientStyle = GradientStyles.Solid;
             //    DockWindow activeDocument = this.radDock1.DocumentManager.ActiveDocument; //documentWindow2
             //     DockWindow activeWindow = this.radDock1.ActiveWindow;
-           
-               
-          
+
+            //btn_instPlanEdit.Click += btn_instPlanEdit_Click;
+
         }
 
 
@@ -191,7 +191,6 @@ namespace PeshawarDHASW
             {
                 ApplyTheme(clsUser.ThemeName);
             }
-
         }
         protected override void OnSizeChanged(EventArgs e)
         {
@@ -488,6 +487,31 @@ namespace PeshawarDHASW
         private void ObjfrmInstlPlanSearch_FormClosed(object sender, FormClosedEventArgs e)
         {
             objfrmInstlPlanSearch = null;
+        }
+        #endregion
+
+        #region Installment Plan Edit
+        private Application_Layer.Installment.InstPlan.frmInstalPlanEdit objfrmInstalPlanEdit;
+        private void btn_instPlanEdit_Click(object sender, EventArgs e)
+        {
+            if (objfrmInstalPlanEdit == null)
+            {
+                objfrmInstalPlanEdit = new Application_Layer.Installment.InstPlan.frmInstalPlanEdit();
+                objfrmInstalPlanEdit.MdiParent = this;
+                objfrmInstalPlanEdit.WindowState = FormWindowState.Maximized;
+                objfrmInstalPlanEdit.FormClosed += ObjfrmInstalPlanEdit_FormClosed;
+                radDock1.ActivateMdiChild(objfrmInstalPlanEdit);
+                objfrmInstalPlanEdit.Show();
+            }
+            else
+            {
+                objfrmInstalPlanEdit.Activate();
+            }
+        }
+
+        private void ObjfrmInstalPlanEdit_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            objfrmInstalPlanEdit = null;
         }
         #endregion
 
@@ -5584,23 +5608,30 @@ namespace PeshawarDHASW
         {
             frmotcr = null;
         }
-        private Application_Layer.Installment.InstPlan.frmInstalPlanEdit objfrmInstalPlanEdit;
-        private void btn_instPlanEdit_Click(object sender, EventArgs e)
-        {
-            if (objfrmInstalPlanEdit == null)
-            {
-                objfrmInstalPlanEdit = new Application_Layer.Installment.InstPlan.frmInstalPlanEdit();
-                objfrmInstalPlanEdit.MdiParent = this;
-                objfrmInstalPlanEdit.WindowState = FormWindowState.Maximized;
-                objfrmInstalPlanEdit.FormClosed += ObjfrmInstPlanModify_FormClosed;
-                radDock1.ActivateMdiChild(objfrmInstalPlanEdit);
-                objfrmInstalPlanEdit.Show();
-            }
-            else
-            {
-                objfrmInstalPlanEdit.Activate();
-            }
-        }
+
+
+        //private Application_Layer.Installment.InstPlan.frmInstalPlanEdit objfrmInstalPlanEdit;
+        //private void btn_instPlanEdit_Click(object sender, EventArgs e)
+        //{
+        //    if (objfrmInstalPlanEdit == null)
+        //    {
+        //        objfrmInstalPlanEdit = new Application_Layer.Installment.InstPlan.frmInstalPlanEdit();
+        //        objfrmInstalPlanEdit.MdiParent = this;
+        //        objfrmInstalPlanEdit.WindowState = FormWindowState.Maximized;
+        //        objfrmInstalPlanEdit.FormClosed += ObjfrmInstalPlanEdit_FormClosed;
+        //        radDock1.ActivateMdiChild(objfrmInstalPlanEdit);
+        //        objfrmInstalPlanEdit.Show();
+        //    }
+        //    else
+        //    {
+        //        objfrmInstalPlanEdit.Activate();
+        //    }
+        //}
+
+        //private void ObjfrmInstalPlanEdit_FormClosed(object sender, FormClosedEventArgs e)
+        //{
+        //    objfrmInstalPlanEdit = null;
+        //}
 
         Application_Layer.Installment.Sumary.frmReceiteSummaryReport rtsmrrpt;
         private void btnreceitsummary_Click(object sender, EventArgs e)

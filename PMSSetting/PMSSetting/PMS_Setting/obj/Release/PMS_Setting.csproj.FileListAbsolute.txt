@@ -33,3 +33,8 @@ D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSS
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.csprojResolveAssemblyReference.cache
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.dll
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.pdb
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.dll
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.pdb
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.csprojResolveAssemblyReference.cache
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.dll
+D:\NewDHAClonedApp\PMS_DHA\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.pdb

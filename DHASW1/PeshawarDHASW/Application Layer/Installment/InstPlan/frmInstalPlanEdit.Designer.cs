@@ -99,9 +99,15 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.planEditGridView);
             this.groupBox1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+<<<<<<< HEAD
             this.groupBox1.Location = new System.Drawing.Point(5, 62);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1141, 674);
+=======
+            this.groupBox1.Location = new System.Drawing.Point(3, 62);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1102, 674);
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "InstallmentPlan";
@@ -116,7 +122,11 @@
             this.planEditGridView.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.planEditGridView.ForeColor = System.Drawing.SystemColors.ControlText;
             this.planEditGridView.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+<<<<<<< HEAD
             this.planEditGridView.Location = new System.Drawing.Point(3, 18);
+=======
+            this.planEditGridView.Location = new System.Drawing.Point(6, 18);
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             // 
             // 
             // 
@@ -128,13 +138,22 @@
             gridViewTextBoxColumn1.HeaderText = "PlanID";
             gridViewTextBoxColumn1.IsVisible = false;
             gridViewTextBoxColumn1.Name = "PlanID";
+<<<<<<< HEAD
             gridViewTextBoxColumn1.Width = 95;
+=======
+            gridViewTextBoxColumn1.VisibleInColumnChooser = false;
+            gridViewTextBoxColumn1.Width = 87;
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             gridViewTextBoxColumn2.EnableExpressionEditor = false;
             gridViewTextBoxColumn2.FieldName = "Name";
             gridViewTextBoxColumn2.HeaderText = "Template Name";
             gridViewTextBoxColumn2.Name = "Name";
+<<<<<<< HEAD
             gridViewTextBoxColumn2.VisibleInColumnChooser = false;
             gridViewTextBoxColumn2.Width = 174;
+=======
+            gridViewTextBoxColumn2.Width = 203;
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             gridViewTextBoxColumn3.EnableExpressionEditor = false;
             gridViewTextBoxColumn3.FieldName = "InstNo";
             gridViewTextBoxColumn3.HeaderText = "Installment No";
@@ -145,7 +164,11 @@
             gridViewTextBoxColumn4.FieldName = "Descp";
             gridViewTextBoxColumn4.HeaderText = "Description";
             gridViewTextBoxColumn4.Name = "Descp";
+<<<<<<< HEAD
             gridViewTextBoxColumn4.Width = 225;
+=======
+            gridViewTextBoxColumn4.Width = 234;
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             gridViewDateTimeColumn1.CustomFormat = "dd-MM-yyyy";
             gridViewDateTimeColumn1.EditorType = Telerik.WinControls.UI.GridViewDateTimeEditorType.DateTimePickerSpinMode;
             gridViewDateTimeColumn1.EnableExpressionEditor = false;
@@ -155,11 +178,16 @@
             gridViewDateTimeColumn1.FormatString = "{0:dd/MMM/yyyy}";
             gridViewDateTimeColumn1.HeaderText = "Due Date";
             gridViewDateTimeColumn1.Name = "DueDate";
+<<<<<<< HEAD
             gridViewDateTimeColumn1.Width = 231;
+=======
+            gridViewDateTimeColumn1.Width = 116;
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             gridViewTextBoxColumn5.EnableExpressionEditor = false;
             gridViewTextBoxColumn5.FieldName = "Amount";
             gridViewTextBoxColumn5.HeaderText = "Amount";
             gridViewTextBoxColumn5.Name = "Amount";
+<<<<<<< HEAD
             gridViewTextBoxColumn5.Width = 125;
             gridViewTextBoxColumn6.FieldName = "InstallmentMode";
             gridViewTextBoxColumn6.HeaderText = "InstallmentMode";
@@ -173,6 +201,21 @@
             gridViewTextBoxColumn8.HeaderText = "Acct St Series";
             gridViewTextBoxColumn8.Name = "AcctStSeries";
             gridViewTextBoxColumn8.Width = 47;
+=======
+            gridViewTextBoxColumn5.Width = 114;
+            gridViewTextBoxColumn6.FieldName = "InstallmentMode";
+            gridViewTextBoxColumn6.HeaderText = "InstallmentMode";
+            gridViewTextBoxColumn6.Name = "InstallmentMode";
+            gridViewTextBoxColumn6.Width = 116;
+            gridViewTextBoxColumn7.FieldName = "CODE";
+            gridViewTextBoxColumn7.HeaderText = "Code";
+            gridViewTextBoxColumn7.Name = "CODE";
+            gridViewTextBoxColumn7.Width = 114;
+            gridViewTextBoxColumn8.FieldName = "AcctStSeries";
+            gridViewTextBoxColumn8.HeaderText = "Acct St Series";
+            gridViewTextBoxColumn8.Name = "AcctStSeries";
+            gridViewTextBoxColumn8.Width = 157;
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             gridViewTextBoxColumn9.FieldName = "instalTempID";
             gridViewTextBoxColumn9.HeaderText = "InstalTempID";
             gridViewTextBoxColumn9.IsVisible = false;
@@ -201,7 +244,11 @@
             this.planEditGridView.ReadOnly = true;
             this.planEditGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.planEditGridView.ShowHeaderCellButtons = true;
+<<<<<<< HEAD
             this.planEditGridView.Size = new System.Drawing.Size(1135, 653);
+=======
+            this.planEditGridView.Size = new System.Drawing.Size(1090, 653);
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             this.planEditGridView.TabIndex = 1;
             this.planEditGridView.Text = "radGridView1";
             this.planEditGridView.ThemeName = "TelerikMetro";
@@ -234,14 +281,22 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1152, 749);
+=======
+            this.ClientSize = new System.Drawing.Size(1134, 749);
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxFileNo);
             this.Controls.Add(this.btn_viewPlan);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnUpdateInstallment);
             this.Name = "frmInstalPlanEdit";
+<<<<<<< HEAD
             this.Text = "InstallmentPlanAdjustment";
+=======
+            this.Text = "Installment Plan Edit";
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             this.Load += new System.EventHandler(this.frmInstalPlanEdit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dS_planEdit1)).EndInit();
             this.groupBox1.ResumeLayout(false);

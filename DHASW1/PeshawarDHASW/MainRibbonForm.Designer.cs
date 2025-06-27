@@ -787,7 +787,7 @@
             this.username});
             this.radStatusStrip1.Location = new System.Drawing.Point(0, 618);
             this.radStatusStrip1.Name = "radStatusStrip1";
-            this.radStatusStrip1.Size = new System.Drawing.Size(1643, 32);
+            this.radStatusStrip1.Size = new System.Drawing.Size(1612, 32);
             this.radStatusStrip1.TabIndex = 4;
             this.radStatusStrip1.Text = "radStatusStrip1";
             this.radStatusStrip1.ThemeName = "TelerikMetro";
@@ -829,7 +829,7 @@
             this.radDock1.ShowDocumentCloseButton = true;
             this.radDock1.ShowDocumentPinButton = true;
             this.radDock1.ShowToolCloseButton = true;
-            this.radDock1.Size = new System.Drawing.Size(1643, 444);
+            this.radDock1.Size = new System.Drawing.Size(1609, 444);
             this.radDock1.TabIndex = 2;
             this.radDock1.TabStop = false;
             this.radDock1.Text = "0";
@@ -877,14 +877,14 @@
             // 
             this.radmainRibbon.ExitButton.Text = "Exit";
             this.radmainRibbon.ExitButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radmainRibbon.Location = new System.Drawing.Point(0, 0);
+            this.radmainRibbon.Location = new System.Drawing.Point(0, 1);
             this.radmainRibbon.Name = "radmainRibbon";
             // 
             // 
             // 
             this.radmainRibbon.OptionsButton.Text = "Options";
             this.radmainRibbon.OptionsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.radmainRibbon.Size = new System.Drawing.Size(1643, 168);
+            this.radmainRibbon.Size = new System.Drawing.Size(1614, 168);
             this.radmainRibbon.StartButtonImage = ((System.Drawing.Image)(resources.GetObject("radmainRibbon.StartButtonImage")));
             this.radmainRibbon.TabIndex = 0;
             this.radmainRibbon.Text = "DHA Peshawar MIS Version 3.1.25";
@@ -4267,7 +4267,7 @@
             this.AllowAero = false;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1643, 650);
+            this.ClientSize = new System.Drawing.Size(1612, 650);
             this.Controls.Add(this.radStatusStrip1);
             this.Controls.Add(this.radDock1);
             this.Controls.Add(this.radmainRibbon);

@@ -38,6 +38,10 @@
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
             this.radLabel1 = new Telerik.WinControls.UI.RadLabel();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
+<<<<<<< HEAD
+=======
+            this.btnCreateNewTempForClone = new Telerik.WinControls.UI.RadButton();
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             this.txtFileNo = new Telerik.WinControls.UI.RadTextBox();
             this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             this.radbbtnsave = new Telerik.WinControls.UI.RadButton();
@@ -55,6 +59,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
+<<<<<<< HEAD
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.btnCreateNewTempForClone)).BeginInit();
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             ((System.ComponentModel.ISupportInitialize)(this.txtFileNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radbbtnsave)).BeginInit();
@@ -88,6 +96,10 @@
             this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this.radGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+<<<<<<< HEAD
+=======
+            this.radGroupBox1.Controls.Add(this.btnCreateNewTempForClone);
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             this.radGroupBox1.Controls.Add(this.txtFileNo);
             this.radGroupBox1.Controls.Add(this.radLabel4);
             this.radGroupBox1.Controls.Add(this.radbbtnsave);
@@ -110,14 +122,35 @@
             this.radGroupBox1.Text = "Template of Installment";
             this.radGroupBox1.ThemeName = "TelerikMetro";
             // 
+<<<<<<< HEAD
+=======
+            // btnCreateNewTempForClone
+            // 
+            this.btnCreateNewTempForClone.Location = new System.Drawing.Point(752, 31);
+            this.btnCreateNewTempForClone.Name = "btnCreateNewTempForClone";
+            this.btnCreateNewTempForClone.Size = new System.Drawing.Size(188, 30);
+            this.btnCreateNewTempForClone.TabIndex = 15;
+            this.btnCreateNewTempForClone.Text = "Create New Template For Clone";
+            this.btnCreateNewTempForClone.ThemeName = "TelerikMetro";
+            this.btnCreateNewTempForClone.Click += new System.EventHandler(this.btnForNewTemplate);
+            // 
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             // txtFileNo
             // 
             this.txtFileNo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFileNo.Location = new System.Drawing.Point(430, 122);
+<<<<<<< HEAD
             this.txtFileNo.MaxLength = 2;
             this.txtFileNo.Name = "txtFileNo";
             this.txtFileNo.Size = new System.Drawing.Size(281, 27);
             this.txtFileNo.TabIndex = 14;
+=======
+            this.txtFileNo.MaxLength = 100;
+            this.txtFileNo.Name = "txtFileNo";
+            this.txtFileNo.Size = new System.Drawing.Size(281, 27);
+            this.txtFileNo.TabIndex = 14;
+            this.txtFileNo.Leave += new System.EventHandler(this.txtFileNo_Leave);
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             // 
             // radLabel4
             // 
@@ -131,9 +164,15 @@
             // radbbtnsave
             // 
             this.radbbtnsave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+<<<<<<< HEAD
             this.radbbtnsave.Location = new System.Drawing.Point(760, 122);
             this.radbbtnsave.Name = "radbbtnsave";
             this.radbbtnsave.Size = new System.Drawing.Size(180, 29);
+=======
+            this.radbbtnsave.Location = new System.Drawing.Point(752, 122);
+            this.radbbtnsave.Name = "radbbtnsave";
+            this.radbbtnsave.Size = new System.Drawing.Size(188, 29);
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             this.radbbtnsave.TabIndex = 6;
             this.radbbtnsave.Text = "Save Plan";
             this.radbbtnsave.ThemeName = "TelerikMetro";
@@ -151,7 +190,11 @@
             // 
             // btnCornerPlotCharges
             // 
+<<<<<<< HEAD
             this.btnCornerPlotCharges.Location = new System.Drawing.Point(946, 9);
+=======
+            this.btnCornerPlotCharges.Location = new System.Drawing.Point(946, 31);
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             this.btnCornerPlotCharges.Name = "btnCornerPlotCharges";
             this.btnCornerPlotCharges.Size = new System.Drawing.Size(160, 30);
             this.btnCornerPlotCharges.TabIndex = 12;
@@ -250,7 +293,11 @@
             this.radGroupBox2.HeaderText = "Plan Details";
             this.radGroupBox2.Location = new System.Drawing.Point(13, 175);
             this.radGroupBox2.Name = "radGroupBox2";
+<<<<<<< HEAD
             this.radGroupBox2.Size = new System.Drawing.Size(1111, 437);
+=======
+            this.radGroupBox2.Size = new System.Drawing.Size(1111, 393);
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             this.radGroupBox2.TabIndex = 2;
             this.radGroupBox2.Text = "Plan Details";
             this.radGroupBox2.ThemeName = "TelerikMetro";
@@ -319,7 +366,11 @@
             this.radgvplan.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.radgvplan.ShowGroupPanel = false;
             this.radgvplan.ShowGroupPanelScrollbars = false;
+<<<<<<< HEAD
             this.radgvplan.Size = new System.Drawing.Size(1107, 417);
+=======
+            this.radgvplan.Size = new System.Drawing.Size(1107, 373);
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             this.radgvplan.TabIndex = 0;
             this.radgvplan.Text = "radGridView1";
             this.radgvplan.ThemeName = "TelerikMetro";
@@ -344,6 +395,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
+<<<<<<< HEAD
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.btnCreateNewTempForClone)).EndInit();
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
             ((System.ComponentModel.ISupportInitialize)(this.txtFileNo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radbbtnsave)).EndInit();
@@ -384,5 +439,9 @@
         private Telerik.WinControls.UI.RadButton btnCornerPlotCharges;
         private Telerik.WinControls.UI.RadTextBox txtFileNo;
         private Telerik.WinControls.UI.RadLabel radLabel4;
+<<<<<<< HEAD
+=======
+        private Telerik.WinControls.UI.RadButton btnCreateNewTempForClone;
+>>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
     }
 }
