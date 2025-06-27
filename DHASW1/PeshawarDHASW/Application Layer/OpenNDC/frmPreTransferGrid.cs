@@ -127,7 +127,7 @@ namespace PeshawarDHASW.Application_Layer.OpenNDC
                     }
                     else
                     {
-                        MessageBox.Show("NDC is Already inprogress.");
+                        MessageBox.Show("NDC is already inprogress.");
                     }
                 }
                 if (e.Column.Name == "btnPrint")

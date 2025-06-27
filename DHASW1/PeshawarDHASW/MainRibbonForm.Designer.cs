@@ -896,7 +896,7 @@
             // tabApplication
             // 
             this.tabApplication.AccessibleDescription = "tabApplication";
-            this.tabApplication.IsSelected = false;
+            this.tabApplication.IsSelected = true;
             this.tabApplication.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.gpApplicationReg,
             this.gpFin_Information,
@@ -2518,7 +2518,7 @@
             // 
             this.tabNDC.AccessibleDescription = "tabNDC";
             this.tabNDC.AccessibleName = "tabNDC";
-            this.tabNDC.IsSelected = true;
+            this.tabNDC.IsSelected = false;
             this.tabNDC.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.gbNDCInformation,
             this.gbNDCCheck_List,

@@ -772,10 +772,6 @@ D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\DHASW1\Peshawar
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.application
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.exe
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.pdb
-D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\PeshawarDHASW.exe.config
-D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.csproj.ResolveComReference.cache
-D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.exe
-D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.pdb
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\Images\duplicate.png
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\Report\My_Reports\NDC_Report.rpt
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\Report\My_Reports\NDC_Report.cs
@@ -903,6 +899,7 @@ D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\Peshaw
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\Report\SurchargeWavierApplicationReport\SectorABCNotApproved.cs
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\Report\SurchargeWavierApplicationReport\SectorCExtReport.cs
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\Report\SurchargeWavierApplicationReport\SurcWavierApproved.cs
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\PeshawarDHASW.exe.config
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\PeshawarDHASW.exe.manifest
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\PeshawarDHASW.application
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\PeshawarDHASW.exe
@@ -1071,6 +1068,7 @@ D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\Peshaw
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\TelerikData.xml
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\TelerikExport.xml
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.csprojResolveAssemblyReference.cache
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.csproj.ResolveComReference.cache
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.Acknowledgement.frmAcknowledgementReportViewer.resources
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.Acknowledgement.frmAckQSR.resources
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.Acknowledgement.frm_AcknowledgementCount.resources
@@ -1546,3 +1544,5 @@ D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\Peshaw
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.exe.licenses
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.exe.manifest
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.application
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.exe
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.pdb

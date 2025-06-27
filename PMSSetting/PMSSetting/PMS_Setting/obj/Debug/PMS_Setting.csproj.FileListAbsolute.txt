@@ -33,3 +33,8 @@ D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSS
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.csprojResolveAssemblyReference.cache
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.dll
 D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Azure-TFS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.pdb
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Debug\PMS_Setting.dll
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Debug\PMS_Setting.pdb
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.csprojResolveAssemblyReference.cache
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.dll
+D:\Abdul_Jalil\Projects\DHA-Peshawar\PMS-Github-Repo\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.pdb

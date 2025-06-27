@@ -46,22 +46,33 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                     cmbNewInstallTemp.DataSource = _dsPhase.Tables[0];
                     cmbNewInstallTemp.ValueMember = "InstalTempID";
                     cmbNewInstallTemp.DisplayMember = "Name";
+                    cmbNewInstallTemp.SelectedIndex = -1;
                 }
 
-
-                SqlParameter[] param1 =
+                SqlParameter[] parameters =
                 {
-                    new SqlParameter("@Task", "PlanExist")
+                   new SqlParameter("@Task", "select")
                 };
-                DataSet _dsPhase1 = clsInstallmentTemplate.InstalTemplate_Reader(param1);
-                if (_dsPhase.Tables.Count > 0)
-                {
-                    cmbExistInstTemp.DataSource = _dsPhase1.Tables[0];
-                    cmbExistInstTemp.ValueMember = "InstalTempID";
-                    cmbExistInstTemp.DisplayMember = "Name";
-                }
+
+                #region Template 
+                DataSet ds = clsInstallmentTemplate.InstalTemplate_Reader(parameters);
+                cmbExistInstTemp.DataSource = ds.Tables[0];
+                cmbExistInstTemp.ValueMember = "InstalTempID";
+                cmbExistInstTemp.DisplayMember = "TemplateName";
+
+                //SqlParameter[] param1 =
+                //{
+                //    new SqlParameter("@Task", "PlanExist")
+                //};
+                //DataSet _dsPhase1 = clsInstallmentTemplate.InstalTemplate_Reader(param1);
+                //if (_dsPhase.Tables.Count > 0)
+                //{
+                //    cmbExistInstTemp.DataSource = _dsPhase1.Tables[0];
+                //    cmbExistInstTemp.ValueMember = "InstalTempID";
+                //    cmbExistInstTemp.DisplayMember = "Name";
+                //}
                 dtpStartDate.Value = DateTime.Now;
-                cmbNewInstallTemp.SelectedIndex = -1;
+                //cmbNewInstallTemp.SelectedIndex = -1;
                 cmbExistInstTemp.SelectedIndex = -1;
             }
             catch (Exception ex)
@@ -78,27 +89,32 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
         {
             try
             {
-                if (cmbNewInstallTemp.SelectedIndex > -1)
-                {
-                    string str = cmbNewInstallTemp.SelectedValue.ToString();
-                    idtemplete = int.Parse(str);
-                    SqlParameter[] parameters =
-                    {
-                        new SqlParameter("@Task", "select"),
-                        new SqlParameter("@InstalTempID", str)
-                    };
+                //if (cmbNewInstallTemp.SelectedIndex > 0)
+                //{
+                //    string str = cmbNewInstallTemp.SelectedValue.ToString();
+                //    idtemplete = int.Parse(str);
+                //    SqlParameter[] parameters =
+                //    {
+                //        new SqlParameter("@Task", "select")
+                //    };
 
-                    #region Template 
-                    DataSet ds = clsInstallmentTemplate.InstalTemplate_Reader(parameters);
-                    foreach (DataRow dataRow in ds.Tables[0].Rows)
-                    {
-                        dtpStartDate.Value = DateTime.Parse(dataRow["StartDate"].ToString());
-                        dtpStartDate.ReadOnly = true;
+                    
+                //    DataSet ds = clsInstallmentTemplate.InstalTemplate_Reader(parameters);
+                //    cmbExistInstTemp.DataSource = ds.Tables[0];
+                //    cmbExistInstTemp.ValueMember = "InstalTempID";
+                //    cmbExistInstTemp.DisplayMember = "TemplateName";
+
+                    //cmbExistInstTemp.DataSource=ds.Tables[0];
+                    //foreach (DataRow dataRow in ds.Tables[0].Rows)
+                    //{
+                        //dtpStartDate.Value = DateTime.Parse(dataRow["StartDate"].ToString());
+                        //dtpStartDate.ReadOnly = true;
                         //radenddate.Text = DateTime.Parse(dataRow["EndDate"].ToString()).ToString("dd-MM-yyyy");
                         //raddescrip.Text = dataRow["Descp"].ToString();
                         //radplotsize.Text = dataRow["PlotSize"].ToString();
                         //radphase.Text = dataRow["Phase"].ToString();
-                    }
+                        
+                   // }
                     //DataSet dataSetInstallment = cls_dl_instPlan.InstalTemplate_Reader(parameters, "App.USP_InstallmentPlan");
                     //if (dataSetInstallment.Tables[0].Rows.Count > 0)
                     //{
@@ -109,9 +125,9 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                     //{
                     //    radgvplan.ReadOnly = false;
                     //}
-                    #endregion
+                    
 
-                }
+               // }
                 //else
                 //{
                 //    radstartdate.Text = "";
@@ -133,6 +149,11 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+          
+
             if (cmbNewInstallTemp.SelectedIndex == -1)
             {
                 MessageBox.Show("Please Select Template for Installment Plan.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -167,11 +188,56 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 new SqlParameter("@ToPlanID", cmbNewInstallTemp.SelectedValue),
                 new SqlParameter("@GapInterval", txtMonthInt.Text),
                 new SqlParameter("@StarDate", dtpStartDate.Value.Date),
-
             };
+
             DataSet _dsPhase = clsInstallmentTemplate.CreateInsallmentTemplate(param);
-            radgvplan.DataSource = _dsPhase.Tables.Count > 0 ? _dsPhase.Tables[0].DefaultView : null;
+
+            if (_dsPhase.Tables.Count > 0 && _dsPhase.Tables[0].Rows.Count > 0)
+            {
+                DataTable dt = _dsPhase.Tables[0];
+
+                // Add SrNo column if it doesn't already exist
+                if (!dt.Columns.Contains("SrNo"))
+                {
+                    dt.Columns.Add("SrNo", typeof(int));
+                }
+
+                // Assign auto-incremented values
+                int sr = 1;
+                foreach (DataRow row in dt.Rows)
+                {
+                    row["SrNo"] = sr++;
+                }
+
+                // Optional: Place the SrNo column as the first column in the grid
+                if (!radgvplan.Columns.Contains("SrNo"))
+                {
+                    GridViewTextBoxColumn srNoColumn = new GridViewTextBoxColumn("SrNo");
+                    srNoColumn.HeaderText = "Sr No";
+                    srNoColumn.ReadOnly = true;
+                    srNoColumn.Width = 60;
+                    radgvplan.Columns.Insert(0, srNoColumn);
+                }
+
+                radgvplan.DataSource = dt;
+            }
+            else
+            {
+                radgvplan.DataSource = null;
+            }
+
+
+            }
+            catch (Exception ex)
+            {
+
+               MessageBox.Show(ex.Message);
+            }
+
         }
+
+
+
 
 
         private DateTime DateChecker(RadLabel rd)
@@ -304,6 +370,13 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                     txtMonthInt.Focus();
                     return;
                 }
+                //new file no
+                else if (string.IsNullOrEmpty(txtFileNo.Text.Trim()))
+                {
+                    MessageBox.Show("Please Enter File No for Installment Plan.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtFileNo.Focus();
+                    return;
+                }
 
                 else if (dtpStartDate.Value.Date.Year == 1)
                 {
@@ -317,7 +390,8 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                         new SqlParameter("@Task", "InsertTemplate"),
                         new SqlParameter("@FromPlanID", cmbExistInstTemp.SelectedValue),
                         new SqlParameter("@ToPlanID", cmbNewInstallTemp.SelectedValue),
-                        new SqlParameter("@GapInterval", txtMonthInt.Text),
+                        //new SqlParameter("@GapInterval", txtMonthInt.Text),
+                        new SqlParameter("@FileNo", txtFileNo.Text),
                         new SqlParameter("@StarDate", dtpStartDate.Value.Date),
                     };
                     DataSet _dsPhase = clsInstallmentTemplate.CreateInsallmentTemplate(param);
@@ -368,5 +442,37 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
             frmInstPlanAddNewRow frm = new frmInstPlanAddNewRow();
             frm.Show();
         }
+
+        //Clone from DropDown
+        private void cmbExistInstTemp_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
+        {
+            if (cmbExistInstTemp.SelectedIndex > 0)
+            {
+                string cmbExistInstTempDD = cmbExistInstTemp.SelectedValue.ToString();
+                SqlParameter[] param =
+                {
+                    new SqlParameter("@Task", "selectTemplateClone"),
+                    new SqlParameter("@FromPlanID", cmbExistInstTempDD)
+
+                };
+                DataSet _dsPhase = clsInstallmentTemplate.CreateInsallmentTemplate(param);
+                radgvplan.DataSource = _dsPhase.Tables[0].DefaultView;
+
+
+            }
+        }
+
+        private void cmbExistInstTemp_VisualListItemFormatting(object sender, VisualItemFormattingEventArgs args)
+        {
+            //args.VisualItem.Font = new System.Drawing.Font("Segoe UI", 8, System.Drawing.FontStyle.Regular);
+
+        }
+
+        private void txtMonthInt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
+    
 }
+#endregion

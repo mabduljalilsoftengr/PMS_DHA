@@ -21,8 +21,7 @@ namespace PMS_Setting
 
 
 
-        ////////////   Main 1    
-        ////////////   Main 1 
+        //////////////   Main 1 
 
         public static string ConnectionString_MainServer { get; set; } = "Server=172.16.0.1,1433;Database=DHAPeshawarDB;User Id=sa;Password=!#bU+Ue9;TrustServerCertificate=True;";
 
@@ -61,11 +60,11 @@ namespace PMS_Setting
         //public static string ConnectionString_ComplaintMgt { get; set; } = "Server=172.16.0.6; Database=ComplaintMgtDB; user Id=sa; Password=abcd@1234;";// Integrated Security=true;";
 
         ////////////    Local Own Pc
-        //public static string ConnectionString_MainServer { get; set; } = "Data Source=DESKTOP-8G7UDJT/SQL19;Initial Catalog=DHAPeshawarDB;Integrated Security=True";
-        //public static string ConnectionString_MainServer_DHADB { get; set; } = "Server=DESKTOP-8G7UDJT/SQL19; Database=DHADB; Integrated Security=True";
-        //public static string ConnectionString_VerifiedImageDB { get; set; } = "Server=DESKTOP-8G7UDJT/SQL19; Database=VerifiedDbMembershipImages; Integrated Security=True";
-        //public static string ConnectionString_ImageArchive { get; set; } = "Server=DESKTOP-8G7UDJT/SQL19; Database=ImageArchiveDB; Integrated Security=true;";
+        //public static string ConnectionString_MainServer { get; set; } = "Data Source=ABDUL-JALIL;Initial Catalog=DHAPeshawarDB;Integrated Security=True";
+        //public static string ConnectionString_MainServer_DHADB { get; set; } = "Server=ABDUL-JALIL; Database=DHADB; Integrated Security=True";
+        //public static string ConnectionString_VerifiedImageDB { get; set; } = "Server=ABDUL-JALIL; Database=VerifiedDbMembershipImages; Integrated Security=True";
+        //public static string ConnectionString_ImageArchive { get; set; } = "Server=ABDUL-JALIL; Database=ImageArchiveDB; Integrated Security=true;";
         //public static string ConnectionString_WebDatabase { get; set; } = "Server=sql7004.site4now.net; Database=DB_A430E8_LvWEBdB; Integrated Security=True";
-        //public static string ConnectionString_ComplaintMgt { get; set; } = "Server=DESKTOP-8G7UDJT/SQL19; Database=ComplaintMgtDB; Integrated Security=True";// Integrated Security=true;";
+        //public static string ConnectionString_ComplaintMgt { get; set; } = "Server=ABDUL-JALIL; Database=ComplaintMgtDB; Integrated Security=True";// Integrated Security=true;";
     }
 }
