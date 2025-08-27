@@ -30,14 +30,15 @@
         {
             Telerik.WinControls.UI.GridViewCommandColumn gridViewCommandColumn1 = new Telerik.WinControls.UI.GridViewCommandColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn1 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn1 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.telerikMetroTheme1 = new Telerik.WinControls.Themes.TelerikMetroTheme();
             this.btnRefresh = new Telerik.WinControls.UI.RadButton();
@@ -156,54 +157,59 @@
             gridViewCommandColumn1.HeaderText = "NDC Info";
             gridViewCommandColumn1.Name = "NDCinfo";
             gridViewCommandColumn1.UseDefaultText = true;
-            gridViewCommandColumn1.Width = 66;
+            gridViewCommandColumn1.Width = 63;
             gridViewTextBoxColumn1.FieldName = "NDCNo";
             gridViewTextBoxColumn1.HeaderText = "NDCNo";
             gridViewTextBoxColumn1.Name = "NDCNo";
-            gridViewTextBoxColumn1.Width = 164;
+            gridViewTextBoxColumn1.Width = 52;
+            gridViewTextBoxColumn2.FieldName = "TransferDate";
+            gridViewTextBoxColumn2.HeaderText = "TransferDate";
+            gridViewTextBoxColumn2.Name = "TransferDate";
+            gridViewTextBoxColumn2.Width = 78;
             gridViewDateTimeColumn1.FieldName = "DateIssue";
             gridViewDateTimeColumn1.HeaderText = "DateIssue";
             gridViewDateTimeColumn1.Name = "DateIssue";
-            gridViewDateTimeColumn1.Width = 79;
-            gridViewTextBoxColumn2.FieldName = "Name";
-            gridViewTextBoxColumn2.HeaderText = "Name";
-            gridViewTextBoxColumn2.Name = "Name";
-            gridViewTextBoxColumn2.Width = 158;
-            gridViewTextBoxColumn3.FieldName = "Type";
-            gridViewTextBoxColumn3.HeaderText = "Type";
-            gridViewTextBoxColumn3.Name = "Type";
-            gridViewTextBoxColumn3.Width = 69;
-            gridViewTextBoxColumn4.FieldName = "FilePlotNo";
-            gridViewTextBoxColumn4.HeaderText = "FilePlotNo";
-            gridViewTextBoxColumn4.Name = "FilePlotNo";
-            gridViewTextBoxColumn4.Width = 118;
-            gridViewTextBoxColumn5.FieldName = "Remarks";
-            gridViewTextBoxColumn5.HeaderText = "Remarks";
-            gridViewTextBoxColumn5.Name = "Remarks";
-            gridViewTextBoxColumn5.Width = 116;
-            gridViewTextBoxColumn6.FieldName = "StatusofNDC";
-            gridViewTextBoxColumn6.HeaderText = "StatusofNDC";
-            gridViewTextBoxColumn6.Name = "StatusofNDC";
-            gridViewTextBoxColumn6.Width = 81;
-            gridViewTextBoxColumn7.FieldName = "DaysDiff";
-            gridViewTextBoxColumn7.HeaderText = "Days";
-            gridViewTextBoxColumn7.Name = "DaysDiff";
-            gridViewTextBoxColumn7.Width = 49;
-            gridViewTextBoxColumn8.FieldName = "NDCExpireDate";
-            gridViewTextBoxColumn8.HeaderText = "NDCExpireDate";
-            gridViewTextBoxColumn8.Name = "NDCExpireDate";
-            gridViewTextBoxColumn8.Width = 114;
+            gridViewDateTimeColumn1.Width = 75;
+            gridViewTextBoxColumn3.FieldName = "Name";
+            gridViewTextBoxColumn3.HeaderText = "Name";
+            gridViewTextBoxColumn3.Name = "Name";
+            gridViewTextBoxColumn3.Width = 175;
+            gridViewTextBoxColumn4.FieldName = "Type";
+            gridViewTextBoxColumn4.HeaderText = "Type";
+            gridViewTextBoxColumn4.Name = "Type";
+            gridViewTextBoxColumn4.Width = 66;
+            gridViewTextBoxColumn5.FieldName = "FilePlotNo";
+            gridViewTextBoxColumn5.HeaderText = "FilePlotNo";
+            gridViewTextBoxColumn5.Name = "FilePlotNo";
+            gridViewTextBoxColumn5.Width = 113;
+            gridViewTextBoxColumn6.FieldName = "Remarks";
+            gridViewTextBoxColumn6.HeaderText = "Remarks";
+            gridViewTextBoxColumn6.Name = "Remarks";
+            gridViewTextBoxColumn6.Width = 111;
+            gridViewTextBoxColumn7.FieldName = "StatusofNDC";
+            gridViewTextBoxColumn7.HeaderText = "StatusofNDC";
+            gridViewTextBoxColumn7.Name = "StatusofNDC";
+            gridViewTextBoxColumn7.Width = 77;
+            gridViewTextBoxColumn8.FieldName = "DaysDiff";
+            gridViewTextBoxColumn8.HeaderText = "Days";
+            gridViewTextBoxColumn8.Name = "DaysDiff";
+            gridViewTextBoxColumn8.Width = 47;
+            gridViewTextBoxColumn9.FieldName = "NDCExpireDate";
+            gridViewTextBoxColumn9.HeaderText = "NDCExpireDate";
+            gridViewTextBoxColumn9.Name = "NDCExpireDate";
+            gridViewTextBoxColumn9.Width = 158;
             this.grdModify.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewCommandColumn1,
             gridViewTextBoxColumn1,
-            gridViewDateTimeColumn1,
             gridViewTextBoxColumn2,
+            gridViewDateTimeColumn1,
             gridViewTextBoxColumn3,
             gridViewTextBoxColumn4,
             gridViewTextBoxColumn5,
             gridViewTextBoxColumn6,
             gridViewTextBoxColumn7,
-            gridViewTextBoxColumn8});
+            gridViewTextBoxColumn8,
+            gridViewTextBoxColumn9});
             this.grdModify.MasterTemplate.EnableFiltering = true;
             this.grdModify.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.grdModify.Name = "grdModify";

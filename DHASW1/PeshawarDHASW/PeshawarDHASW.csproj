@@ -2299,6 +2299,12 @@
     <Compile Include="Application Layer\Refund\PaymentModeSetting.Designer.cs">
       <DependentUpon>PaymentModeSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Application Layer\Role_Form\frmUserAccessClone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application Layer\Role_Form\frmUserAccessClone.Designer.cs">
+      <DependentUpon>frmUserAccessClone.cs</DependentUpon>
+    </Compile>
     <Compile Include="Application Layer\Role_Form\frm_ControlSetting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -4793,6 +4799,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Application Layer\Refund\PaymentModeSetting.resx">
       <DependentUpon>PaymentModeSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application Layer\Role_Form\frmUserAccessClone.resx">
+      <DependentUpon>frmUserAccessClone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Application Layer\Role_Form\frm_ControlSetting.resx">
       <DependentUpon>frm_ControlSetting.cs</DependentUpon>

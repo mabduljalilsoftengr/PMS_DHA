@@ -24,6 +24,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
             planEditGridView.MouseDown += PlanEditGridView_MouseDown;
             planEditGridView.DragEnter += PlanEditGridView_DragEnter;
             planEditGridView.DragDrop += PlanEditGridView_DragDrop;
+            
         }
 
         private void btn_viewPlan_Click(object sender, EventArgs e)
@@ -46,6 +47,13 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 if (ds.Tables.Count > 0)
                 {
                     planEditGridView.DataSource = ds.Tables[0];
+
+                    // Format DueDate column
+                    if (planEditGridView.Columns.Contains("Amount"))
+                    {
+                        planEditGridView.Columns["Amount"].FormatString = "{0:N2}";
+                       
+                    }
                 }
             }
             catch (Exception ex)

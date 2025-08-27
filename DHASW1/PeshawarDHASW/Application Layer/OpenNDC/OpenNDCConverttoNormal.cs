@@ -36,6 +36,10 @@ namespace PeshawarDHASW.Application_Layer.OpenNDC
                 };
                 DataSet ds = SQLHelper.ExecuteDataset(SQLHelper.createConnection(), CommandType.StoredProcedure, "App.PreTransferOpenNDCSearch", prm);
                 grdModify.DataSource = ds.Tables[0].DefaultView;
+
+                grdModify.Columns["TransferDate"].FormatString = "{0:dd-MM-yyyy}";
+                grdModify.Columns["DateIssue"].FormatString = "{0:dd-MM-yyyy}";
+              
             }
             catch (Exception ex)
             {
@@ -81,6 +85,8 @@ namespace PeshawarDHASW.Application_Layer.OpenNDC
                         string DealerName1 = ds.Tables[0].Rows[0]["DealerName1"].ToString();
                         string ContactNumber1 = ds.Tables[0].Rows[0]["ContactNumber1"].ToString();
                         string CNICNo1 = ds.Tables[0].Rows[0]["CNICNo1"].ToString();
+                        //string TrnsferDate = ds.Tables[0].Rows[0]["TransferDate"].ToString(); //new 
+
                         decimal Amount = 0;
                         bool  amountparse = decimal.TryParse(ds.Tables[0].Rows[0]["Amount"].ToString(),out Amount);
                         if (Amount>0)

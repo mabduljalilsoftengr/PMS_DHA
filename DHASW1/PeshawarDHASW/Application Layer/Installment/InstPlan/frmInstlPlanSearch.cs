@@ -32,7 +32,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                     var idtemplete = int.Parse(str);
                     SqlParameter[] parameters =
                     {
-                        new SqlParameter("@Task", "select"),
+                        new SqlParameter("@Task", "SelectForSearchForm"), //"SelectForSearchForm"), //change from select to SelectForSearchForm
                         new SqlParameter("@InstalTempID", str)
                     };
                     DataSet ds = clsInstallmentTemplate.InstalTemplate_Reader(parameters);
@@ -129,7 +129,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 this.rad_dropDown_Template.Items.Add(Select);
                 SqlParameter[] param =
                   {
-                    new SqlParameter("@Task", "select")
+                    new SqlParameter("@Task", "SelectForSearchForm")
                 };
 
                 foreach (DataRow row in clsInstallmentTemplate.InstalTemplate_Reader(param).Tables[0].Rows)

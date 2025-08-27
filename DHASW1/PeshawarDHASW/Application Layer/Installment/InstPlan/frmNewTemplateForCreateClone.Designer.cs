@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn2 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn3 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn4 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.Data.SortDescriptor sortDescriptor2 = new Telerik.WinControls.Data.SortDescriptor();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn1 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn1 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn2 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.Data.SortDescriptor sortDescriptor1 = new Telerik.WinControls.Data.SortDescriptor();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel2 = new Telerik.WinControls.UI.RadLabel();
@@ -184,66 +184,66 @@
             // 
             // 
             this.grdplandata.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn6.EnableExpressionEditor = false;
-            gridViewTextBoxColumn6.FieldName = "PlanID";
-            gridViewTextBoxColumn6.HeaderText = "Plan ID";
-            gridViewTextBoxColumn6.IsVisible = false;
-            gridViewTextBoxColumn6.Name = "PlanID";
-            gridViewTextBoxColumn7.EnableExpressionEditor = false;
-            gridViewTextBoxColumn7.FieldName = "instalTempID";
-            gridViewTextBoxColumn7.HeaderText = "instalTempID";
-            gridViewTextBoxColumn7.IsVisible = false;
-            gridViewTextBoxColumn7.Name = "instalTempID";
-            gridViewTextBoxColumn8.EnableExpressionEditor = false;
-            gridViewTextBoxColumn8.FieldName = "InstNo";
-            gridViewTextBoxColumn8.HeaderText = "Inst No";
-            gridViewTextBoxColumn8.Name = "InstNo";
-            gridViewTextBoxColumn8.Width = 192;
-            gridViewTextBoxColumn9.EnableExpressionEditor = false;
-            gridViewTextBoxColumn9.FieldName = "Descp";
-            gridViewTextBoxColumn9.HeaderText = "Descp";
-            gridViewTextBoxColumn9.Name = "Descp";
-            gridViewTextBoxColumn9.Width = 192;
-            gridViewDateTimeColumn2.EnableExpressionEditor = false;
-            gridViewDateTimeColumn2.FieldName = "gvdt_DueDate";
-            gridViewDateTimeColumn2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            gridViewDateTimeColumn2.HeaderText = "DueDate";
-            gridViewDateTimeColumn2.Name = "gvdt_DueDate";
-            gridViewDateTimeColumn2.Width = 176;
-            gridViewDecimalColumn2.FieldName = "Amount";
-            gridViewDecimalColumn2.HeaderText = "Amount";
-            gridViewDecimalColumn2.Name = "Amount";
-            gridViewDecimalColumn2.Width = 57;
-            gridViewComboBoxColumn3.EnableExpressionEditor = false;
-            gridViewComboBoxColumn3.FieldName = "gvcb_Installmentmode";
-            gridViewComboBoxColumn3.HeaderText = "Install Mode";
-            gridViewComboBoxColumn3.Name = "gvcb_Installmentmode";
-            gridViewComboBoxColumn3.Width = 176;
-            gridViewComboBoxColumn4.EnableExpressionEditor = false;
-            gridViewComboBoxColumn4.FieldName = "gvcb_Code";
-            gridViewComboBoxColumn4.HeaderText = "Code";
-            gridViewComboBoxColumn4.Name = "gvcb_Code";
-            gridViewComboBoxColumn4.Width = 75;
-            gridViewTextBoxColumn10.EnableExpressionEditor = false;
-            gridViewTextBoxColumn10.FieldName = "AcctStSeries";
-            gridViewTextBoxColumn10.HeaderText = "Series ";
-            gridViewTextBoxColumn10.Name = "AcctStSeries";
-            gridViewTextBoxColumn10.SortOrder = Telerik.WinControls.UI.RadSortOrder.Ascending;
-            gridViewTextBoxColumn10.Width = 96;
+            gridViewTextBoxColumn1.EnableExpressionEditor = false;
+            gridViewTextBoxColumn1.FieldName = "PlanID";
+            gridViewTextBoxColumn1.HeaderText = "Plan ID";
+            gridViewTextBoxColumn1.IsVisible = false;
+            gridViewTextBoxColumn1.Name = "PlanID";
+            gridViewTextBoxColumn2.EnableExpressionEditor = false;
+            gridViewTextBoxColumn2.FieldName = "instalTempID";
+            gridViewTextBoxColumn2.HeaderText = "instalTempID";
+            gridViewTextBoxColumn2.IsVisible = false;
+            gridViewTextBoxColumn2.Name = "instalTempID";
+            gridViewTextBoxColumn3.EnableExpressionEditor = false;
+            gridViewTextBoxColumn3.FieldName = "InstNo";
+            gridViewTextBoxColumn3.HeaderText = "Inst No";
+            gridViewTextBoxColumn3.Name = "InstNo";
+            gridViewTextBoxColumn3.Width = 192;
+            gridViewTextBoxColumn4.EnableExpressionEditor = false;
+            gridViewTextBoxColumn4.FieldName = "Descp";
+            gridViewTextBoxColumn4.HeaderText = "Descp";
+            gridViewTextBoxColumn4.Name = "Descp";
+            gridViewTextBoxColumn4.Width = 192;
+            gridViewDateTimeColumn1.EnableExpressionEditor = false;
+            gridViewDateTimeColumn1.FieldName = "gvdt_DueDate";
+            gridViewDateTimeColumn1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            gridViewDateTimeColumn1.HeaderText = "DueDate";
+            gridViewDateTimeColumn1.Name = "gvdt_DueDate";
+            gridViewDateTimeColumn1.Width = 176;
+            gridViewDecimalColumn1.FieldName = "Amount";
+            gridViewDecimalColumn1.HeaderText = "Amount";
+            gridViewDecimalColumn1.Name = "Amount";
+            gridViewDecimalColumn1.Width = 57;
+            gridViewComboBoxColumn1.EnableExpressionEditor = false;
+            gridViewComboBoxColumn1.FieldName = "gvcb_Installmentmode";
+            gridViewComboBoxColumn1.HeaderText = "Install Mode";
+            gridViewComboBoxColumn1.Name = "gvcb_Installmentmode";
+            gridViewComboBoxColumn1.Width = 176;
+            gridViewComboBoxColumn2.EnableExpressionEditor = false;
+            gridViewComboBoxColumn2.FieldName = "gvcb_Code";
+            gridViewComboBoxColumn2.HeaderText = "Code";
+            gridViewComboBoxColumn2.Name = "gvcb_Code";
+            gridViewComboBoxColumn2.Width = 75;
+            gridViewTextBoxColumn5.EnableExpressionEditor = false;
+            gridViewTextBoxColumn5.FieldName = "AcctStSeries";
+            gridViewTextBoxColumn5.HeaderText = "Series ";
+            gridViewTextBoxColumn5.Name = "AcctStSeries";
+            gridViewTextBoxColumn5.SortOrder = Telerik.WinControls.UI.RadSortOrder.Ascending;
+            gridViewTextBoxColumn5.Width = 96;
             this.grdplandata.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn6,
-            gridViewTextBoxColumn7,
-            gridViewTextBoxColumn8,
-            gridViewTextBoxColumn9,
-            gridViewDateTimeColumn2,
-            gridViewDecimalColumn2,
-            gridViewComboBoxColumn3,
-            gridViewComboBoxColumn4,
-            gridViewTextBoxColumn10});
-            sortDescriptor2.PropertyName = "AcctStSeries";
+            gridViewTextBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4,
+            gridViewDateTimeColumn1,
+            gridViewDecimalColumn1,
+            gridViewComboBoxColumn1,
+            gridViewComboBoxColumn2,
+            gridViewTextBoxColumn5});
+            sortDescriptor1.PropertyName = "AcctStSeries";
             this.grdplandata.MasterTemplate.SortDescriptors.AddRange(new Telerik.WinControls.Data.SortDescriptor[] {
-            sortDescriptor2});
-            this.grdplandata.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            sortDescriptor1});
+            this.grdplandata.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.grdplandata.Name = "grdplandata";
             this.grdplandata.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.grdplandata.Size = new System.Drawing.Size(979, 376);

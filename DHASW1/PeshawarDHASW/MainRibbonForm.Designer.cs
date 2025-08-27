@@ -896,7 +896,7 @@
             // tabApplication
             // 
             this.tabApplication.AccessibleDescription = "tabApplication";
-            this.tabApplication.IsSelected = true;
+            this.tabApplication.IsSelected = false;
             this.tabApplication.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.gpApplicationReg,
             this.gpFin_Information,
@@ -1401,11 +1401,13 @@
             // btnInstPlanModify
             // 
             this.btnInstPlanModify.AccessibleDescription = "btnInstPlanModify";
+            this.btnInstPlanModify.AutoToolTip = true;
             this.btnInstPlanModify.Image = global::PeshawarDHASW.Properties.Resources.Modify;
             this.btnInstPlanModify.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnInstPlanModify.Name = "btnInstPlanModify";
             this.btnInstPlanModify.Text = "Modify";
-            this.btnInstPlanModify.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnInstPlanModify.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.btnInstPlanModify.ToolTipText = "Modify";
             this.btnInstPlanModify.Click += new System.EventHandler(this.btnInstPlanModify_Click);
             // 
             // gpReceive
@@ -2843,7 +2845,7 @@
             // 
             this.TabSetting.AccessibleDescription = "TabSetting";
             this.TabSetting.AccessibleName = "TabSetting";
-            this.TabSetting.IsSelected = false;
+            this.TabSetting.IsSelected = true;
             this.TabSetting.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.GbSystemError,
             this.GbDBA,

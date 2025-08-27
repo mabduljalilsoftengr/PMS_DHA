@@ -28,6 +28,19 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
             };
             DataSet _ds = cls_dl_instPlan.InstalPlanReader(param);
             grdplandata.DataSource = _ds.Tables[0].DefaultView;
+
+            // Format DueDate column to show only the date
+            if (grdplandata.Columns.Contains("DueDate"))
+            {
+                grdplandata.Columns["DueDate"].FormatString = "{0:dd-MM-yyyy}";
+                grdplandata.Columns["DueDate"].FormatInfo = System.Globalization.CultureInfo.InvariantCulture;
+                grdplandata.Columns["DueDate"].TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            }
+            // Format DueDate column
+            if (grdplandata.Columns.Contains("Amount"))
+            {
+                grdplandata.Columns["Amount"].FormatString = "{0:N2}";
+            }
         }
 
         private void btnCreateInstallment_Click(object sender, EventArgs e)

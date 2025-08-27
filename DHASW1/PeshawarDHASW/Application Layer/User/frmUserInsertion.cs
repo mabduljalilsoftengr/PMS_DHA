@@ -45,25 +45,25 @@ namespace PeshawarDHASW.Application_Layer.User
         {
             try
             {
-                SqlParameter[] prmt =
-                        {
-                new SqlParameter("@Task","Select"),
-                new SqlParameter("@ID",get_id)
-            };
-                DataSet ds = cls_dl_User.UserReader(prmt);
+                //SqlParameter[] prmt =
+                //        {
+                //new SqlParameter("@Task","Select"),
+                //new SqlParameter("@ID",get_id)
+                // };
+                //DataSet ds = cls_dl_User.UserReader(prmt);
                 #region Find Employee Name
-                int empidd = int.Parse(ds.Tables[0].Rows[0]["EmployeeID"].ToString());
-                SqlParameter[] pr =
-                {
-                    new SqlParameter("@Task","Select"),
-                    new SqlParameter("@ID",empidd)
-                };
-                DataSet ds_t = cls_dl_Employee.Employee_Reader(pr, "App.usp_tbl_Employee");
-                string emp_name = ds_t.Tables[0].Rows[0]["Name"].ToString();
+               // int empidd = int.Parse(ds.Tables[0].Rows[0]["EmployeeID"].ToString());
+                //SqlParameter[] pr =
+                //{
+                //    new SqlParameter("@Task","Select"),
+                //    new SqlParameter("@ID",empidd)
+                //};
+                //DataSet ds_t = cls_dl_Employee.Employee_Reader(pr, "App.usp_tbl_Employee");
+                //string emp_name = ds_t.Tables[0].Rows[0]["Name"].ToString();
                 #endregion
                 ddl_MultiColCombobox_Employee.SelectedValue = get_id;
                 #region Find Role Name
-                int roleid = int.Parse(ds.Tables[0].Rows[0]["Role"].ToString());
+               // int roleid = int.Parse(ds.Tables[0].Rows[0]["Role"].ToString());
                 //SqlParameter[] prm_tr =
                 //{
                 //    new SqlParameter("@Task","Select_Role"),
@@ -72,14 +72,14 @@ namespace PeshawarDHASW.Application_Layer.User
                 //DataTable dt_tt = cls_dl_RolePermission.RolePermission_Reader(prm_tr);
                 //string roleName = dt_tt.Rows[0]["RoleID"].ToString();
                 #endregion
-                ddl_Role.SelectedValue = roleid;
-                txtUserName.Text = ds.Tables[0].Rows[0]["username"].ToString();
-                txtPassword.Text = ds.Tables[0].Rows[0]["password"].ToString();
-                txtFather.Text = ds.Tables[0].Rows[0]["Father"].ToString();
-                txtPhone.Text = ds.Tables[0].Rows[0]["Phone"].ToString();
+                //ddl_Role.SelectedValue = roleid;
+                //txtUserName.Text = ds.Tables[0].Rows[0]["username"].ToString();
+                //txtPassword.Text = ds.Tables[0].Rows[0]["password"].ToString();
+                //txtFather.Text = ds.Tables[0].Rows[0]["Father"].ToString();
+                //txtPhone.Text = ds.Tables[0].Rows[0]["Phone"].ToString();
                 //+++++++++++++++Decryption ++++++++++++++++++++=
-                string Decrypted_Code = cls_dl_User.Decrypt(ds.Tables[0].Rows[0]["Secret_Code"].ToString(), "sblw-3hn8-sqoy19");
-                txtSecretCode.Text = Decrypted_Code;
+                //string Decrypted_Code = cls_dl_User.Decrypt(ds.Tables[0].Rows[0]["Secret_Code"].ToString(), "sblw-3hn8-sqoy19");
+               // txtSecretCode.Text = Decrypted_Code;
             }
             catch (Exception ex)
             {
@@ -174,6 +174,7 @@ namespace PeshawarDHASW.Application_Layer.User
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            int ddlRole = Convert.ToInt32(ddl_Role.SelectedValue);
             try
             {
                 if (UserID == 0)
@@ -184,8 +185,10 @@ namespace PeshawarDHASW.Application_Layer.User
                     string name = a.Rows[cmb_Rowindex].Cells[1].Value.ToString();
                     int EmployeeID = int.Parse(a.Rows[cmb_Rowindex].Cells[0].Value.ToString());
                     string mobile = a.Rows[cmb_Rowindex].Cells[4].Value.ToString();
-                    string address = a.Rows[cmb_Rowindex].Cells[5].Value.ToString();
+                    string address = null; // a.Rows[cmb_Rowindex].Cells[5].Value.ToString();
                     string email = a.Rows[cmb_Rowindex].Cells[6].Value.ToString();
+
+                   
                     // +++++++++++++++++++++++++ Encryption ++++++++++++++++++++++++++++++
                     #region Encryption
                     //Here key is of 128 bit  
@@ -207,10 +210,12 @@ namespace PeshawarDHASW.Application_Layer.User
                         new SqlParameter("@Mobile",mobile),
                         new SqlParameter("@Phone",txtPhone.Text),
                         new SqlParameter("@Address",address),
-                        new SqlParameter("@status","Disable"),
-                        new SqlParameter("@Role",ddl_Role.SelectedValue.ToString()),
+                        new SqlParameter("@status","Active"), //Change from Disabled to Active
+                        //new SqlParameter("@Role",ddl_Role.SelectedValue.ToString()),
+                        new SqlParameter("@Role",ddlRole),
                         new SqlParameter("@EmployeeID",EmployeeID),
-                        new SqlParameter("@Secret_Code",scrt_code_encrpt)
+                        new SqlParameter("@Secret_Code",scrt_code_encrpt),
+                        new SqlParameter("@branch",txtBranch.Text),
                     };
                     int rslt = cls_dl_User.User_NonQuery(prm);
                     if (rslt > 0)
@@ -251,9 +256,11 @@ namespace PeshawarDHASW.Application_Layer.User
                         new SqlParameter("@Mobile",mobile),
                         new SqlParameter("@Phone",txtPhone.Text),
                        // new SqlParameter("@Address",address),
-                        new SqlParameter("@Role",ddl_Role.SelectedValue.ToString()),
+                        //new SqlParameter("@Role",ddl_Role.SelectedValue.ToString()),
+                        new SqlParameter("@Role",ddlRole),
                         new SqlParameter("@EmployeeID",EmployeeID),
                         new SqlParameter("@Secret_Code",scrt_code_encrpt),
+                        new SqlParameter("@branch",txtBranch.Text),
                         new SqlParameter("@ID",UserID)
                     };
                     int rslt = cls_dl_User.User_NonQuery(prm);

@@ -49,7 +49,8 @@ namespace PeshawarDHASW.Application_Layer.Installment.Account_Statement
 
             var ReceData = (from row in dst.Tables[0].AsEnumerable()
                                 // where (string.IsNullOrEmpty(row["ReceAmount"].ToString()) ? 0 : (float)row["ReceAmount"]) > 0
-                            orderby row["DueDate"] ascending
+                                orderby row["DueDate"] ascending
+
                             select row);
             DataTable dt = ReceData.AsDataView().ToTable();
 

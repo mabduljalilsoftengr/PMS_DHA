@@ -4,7 +4,7 @@
   <description asmv2:iconFile="logo_inP_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="PeshawarDHASW" version="1.4.5.37" language="neutral" processorArchitecture="amd64" />
+    <assemblyIdentity name="PeshawarDHASW" version="1.4.5.43" language="neutral" processorArchitecture="amd64" />
     <commandLine file="PeshawarDHASW.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -753,22 +753,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-<<<<<<< HEAD
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PeshawarDHASW.exe" size="63257600">
-=======
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PeshawarDHASW.exe" size="63278080">
->>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
-      <assemblyIdentity name="PeshawarDHASW" version="1.4.5.37" language="neutral" processorArchitecture="amd64" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PeshawarDHASW.exe" size="63288832">
+      <assemblyIdentity name="PeshawarDHASW" version="1.4.5.43" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>gjGc/TnfDR86q/DOVEzLkaceUlwITqFfeeZcSD0G0Fg=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>FYWQ+BmlYFx4Px5ccIrJxjm2nS3zMvso8LCDIyFGWqo=</dsig:DigestValue>
->>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
+        <dsig:DigestValue>ZTO0WpgElyVvXw+4dAtOd2LLjT/fScTC3BT48hgfUQ0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -780,11 +772,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>rDW+Q54GFKILs0yeHK/KACq27uxl9NtTNGClaZ2xn9k=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>qzIfKgeeD8f7by0H3KSltHYd2zv4Axtm0lASs3kXsFQ=</dsig:DigestValue>
->>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
+        <dsig:DigestValue>MrVxWhZW9P2ewI+SGYPHHFKGej+aUbDUEK8+zUiEozI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -857,30 +845,6 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>JM/OGd2EqwzOt5qKWJzgqoK71F/Rl70GotaEZEB8Sag=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.Reporting.dll" size="8542208">
-      <assemblyIdentity name="Telerik.Reporting" version="10.1.16.615" publicKeyToken="A9D7983DFCC261BE" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JaVZq0kvXQ4KTMfzO6Pl5MToy4XSYp7nuJgHa7sn2Ds=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Telerik.ReportViewer.WinForms.dll" size="319488">
-      <assemblyIdentity name="Telerik.ReportViewer.WinForms" version="10.1.16.615" publicKeyToken="A9D7983DFCC261BE" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>toabxYdtdRBxs4uQNyhn2e6QYygTo/OaG7/Of0jRtCs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

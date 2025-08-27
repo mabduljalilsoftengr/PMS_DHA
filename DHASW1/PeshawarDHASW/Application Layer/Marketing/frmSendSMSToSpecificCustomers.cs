@@ -161,7 +161,8 @@ namespace PeshawarDHASW.Application_Layer.Marketing
 
             bool SMSStatus = false;
             string Username = "dhapeshwar@bizsms.pk";//configurationmanager.appsettings["sms.username"];
-            string Password = "dh2p3sh1w";//ConfigurationManager.AppSettings["Sms.Password"];
+            //string Password = "dh2p3sh1w";//ConfigurationManager.AppSettings["Sms.Password"];
+            string Password = "D2h1**ph9";//ConfigurationManager.AppSettings["Sms.Password"];
             string SenderNum = MobileNo;//ConfigurationManager.AppSettings["Sms.Sendernum"];
             string ShortCode = "DHAPESHAWAR";
 
@@ -174,7 +175,7 @@ namespace PeshawarDHASW.Application_Layer.Marketing
             Uri uri = new Uri("http://api.bizsms.pk/api-send-branded-sms.aspx?username=" + Username +
                        "&pass=" + Password + "&" + "text=" + Message + "&" +
                        "masking=" + ShortCode +
-                       "&destinationnum=" + SenderNum + "&language=English");
+                       "&destinationnum=" + SenderNum + "&language=English" + "&responsetype=text" );
 
             var jasonData = "";
 

@@ -171,33 +171,33 @@
             gridViewTextBoxColumn1.FieldName = "NDCNo";
             gridViewTextBoxColumn1.HeaderText = "NDC No.";
             gridViewTextBoxColumn1.Name = "NDCNo";
-            gridViewTextBoxColumn1.Width = 57;
+            gridViewTextBoxColumn1.Width = 58;
             gridViewTextBoxColumn2.FieldName = "FilePlotNo";
             gridViewTextBoxColumn2.HeaderText = "File No.";
             gridViewTextBoxColumn2.Name = "FilePlotNo";
-            gridViewTextBoxColumn2.Width = 57;
+            gridViewTextBoxColumn2.Width = 58;
             gridViewTextBoxColumn3.FieldName = "StatusofNDC";
             gridViewTextBoxColumn3.HeaderText = "Status";
             gridViewTextBoxColumn3.Name = "StatusofNDC";
-            gridViewTextBoxColumn3.Width = 57;
+            gridViewTextBoxColumn3.Width = 58;
             gridViewCommandColumn1.DefaultText = "Cancel";
             gridViewCommandColumn1.FieldName = "btndealcancel";
             gridViewCommandColumn1.HeaderText = "Deal Cancel";
             gridViewCommandColumn1.Name = "btndealcancel";
             gridViewCommandColumn1.UseDefaultText = true;
-            gridViewCommandColumn1.Width = 57;
+            gridViewCommandColumn1.Width = 58;
             gridViewCommandColumn2.DefaultText = "Expr Cncl";
             gridViewCommandColumn2.FieldName = "btnexpcncl";
             gridViewCommandColumn2.HeaderText = "Expr Cncl";
             gridViewCommandColumn2.Name = "btnexpcncl";
             gridViewCommandColumn2.UseDefaultText = true;
-            gridViewCommandColumn2.Width = 42;
+            gridViewCommandColumn2.Width = 43;
             gridViewCommandColumn3.DefaultText = "Print";
             gridViewCommandColumn3.FieldName = "btnprint";
             gridViewCommandColumn3.HeaderText = "Print";
             gridViewCommandColumn3.Name = "btnprint";
             gridViewCommandColumn3.UseDefaultText = true;
-            gridViewCommandColumn3.Width = 38;
+            gridViewCommandColumn3.Width = 39;
             this.grddealcancellation.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,
@@ -374,12 +374,12 @@
             gridViewTextBoxColumn7.FieldName = "NDCNo";
             gridViewTextBoxColumn7.HeaderText = "NDCNo";
             gridViewTextBoxColumn7.Name = "NDCNo";
-            gridViewTextBoxColumn7.Width = 66;
+            gridViewTextBoxColumn7.Width = 67;
             gridViewTextBoxColumn8.EnableExpressionEditor = false;
             gridViewTextBoxColumn8.FieldName = "FilePlotNo";
             gridViewTextBoxColumn8.HeaderText = "FileNo";
             gridViewTextBoxColumn8.Name = "FilePlotNo";
-            gridViewTextBoxColumn8.Width = 90;
+            gridViewTextBoxColumn8.Width = 91;
             gridViewTextBoxColumn9.EnableExpressionEditor = false;
             gridViewTextBoxColumn9.FieldName = "NDCTypeNormalUrgent";
             gridViewTextBoxColumn9.HeaderText = "Type";
@@ -389,26 +389,26 @@
             gridViewTextBoxColumn10.FieldName = "AppCacRemarks";
             gridViewTextBoxColumn10.HeaderText = "Remarks";
             gridViewTextBoxColumn10.Name = "AppCacRemarks";
-            gridViewTextBoxColumn10.Width = 185;
+            gridViewTextBoxColumn10.Width = 187;
             gridViewDateTimeColumn1.EnableExpressionEditor = false;
             gridViewDateTimeColumn1.FieldName = "dtpApprovedDate";
             gridViewDateTimeColumn1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             gridViewDateTimeColumn1.HeaderText = "Approved Date";
             gridViewDateTimeColumn1.Name = "dtpApprovedDate";
-            gridViewDateTimeColumn1.Width = 101;
+            gridViewDateTimeColumn1.Width = 102;
             gridViewCommandColumn5.DefaultText = "App/Can";
             gridViewCommandColumn5.EnableExpressionEditor = false;
             gridViewCommandColumn5.FieldName = "Prnt_NotSnd";
             gridViewCommandColumn5.HeaderText = "App/Can";
             gridViewCommandColumn5.Name = "Prnt_NotSnd";
             gridViewCommandColumn5.UseDefaultText = true;
-            gridViewCommandColumn5.Width = 67;
+            gridViewCommandColumn5.Width = 68;
             gridViewCommandColumn6.DefaultText = "Back";
             gridViewCommandColumn6.FieldName = "btnBack";
             gridViewCommandColumn6.HeaderText = "Back";
             gridViewCommandColumn6.Name = "btnBack";
             gridViewCommandColumn6.UseDefaultText = true;
-            gridViewCommandColumn6.Width = 44;
+            gridViewCommandColumn6.Width = 45;
             this.grdShowVerifiedNDCS.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn7,
             gridViewTextBoxColumn8,

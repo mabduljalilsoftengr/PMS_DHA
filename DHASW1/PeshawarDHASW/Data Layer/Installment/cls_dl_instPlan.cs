@@ -166,5 +166,24 @@ namespace PeshawarDHASW.Data_Layer.Installment
             }
             
         }
+
+        //newly added for non query
+      
+        public static int ExecuteNonQuery(SqlParameter[] param)
+        {
+            using (SqlConnection conn = new SqlConnection(clsMostUseVars.Connectionstring))
+            {
+                using (SqlCommand cmd = new SqlCommand("App.USP_InstallmentPlan", conn)) //"App.USP_InstallmentPlan",
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddRange(param);
+                    conn.Open();
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        
+
+
     }
 }

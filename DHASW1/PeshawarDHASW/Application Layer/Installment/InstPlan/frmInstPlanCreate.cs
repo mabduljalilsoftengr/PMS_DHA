@@ -92,47 +92,6 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
         {
             try
             {
-<<<<<<< HEAD
-                //if (cmbNewInstallTemp.SelectedIndex > 0)
-                //{
-                //    string str = cmbNewInstallTemp.SelectedValue.ToString();
-                //    idtemplete = int.Parse(str);
-                //    SqlParameter[] parameters =
-                //    {
-                //        new SqlParameter("@Task", "select")
-                //    };
-
-                    
-                //    DataSet ds = clsInstallmentTemplate.InstalTemplate_Reader(parameters);
-                //    cmbExistInstTemp.DataSource = ds.Tables[0];
-                //    cmbExistInstTemp.ValueMember = "InstalTempID";
-                //    cmbExistInstTemp.DisplayMember = "TemplateName";
-
-                    //cmbExistInstTemp.DataSource=ds.Tables[0];
-                    //foreach (DataRow dataRow in ds.Tables[0].Rows)
-                    //{
-                        //dtpStartDate.Value = DateTime.Parse(dataRow["StartDate"].ToString());
-                        //dtpStartDate.ReadOnly = true;
-                        //radenddate.Text = DateTime.Parse(dataRow["EndDate"].ToString()).ToString("dd-MM-yyyy");
-                        //raddescrip.Text = dataRow["Descp"].ToString();
-                        //radplotsize.Text = dataRow["PlotSize"].ToString();
-                        //radphase.Text = dataRow["Phase"].ToString();
-                        
-                   // }
-                    //DataSet dataSetInstallment = cls_dl_instPlan.InstalTemplate_Reader(parameters, "App.USP_InstallmentPlan");
-                    //if (dataSetInstallment.Tables[0].Rows.Count > 0)
-                    //{
-                    //    radgvplan.ReadOnly = true;
-                    //    MessageBox.Show("Selected Plan have already Exist Go to Modify Option for Changes");
-                    //}
-                    //else
-                    //{
-                    //    radgvplan.ReadOnly = false;
-                    //}
-                    
-
-               // }
-=======
                 //SelectTempIdWhichIsNotExistInFileMap
 
                 //if (cmbNewInstallTemp.SelectedIndex > 0)
@@ -174,7 +133,6 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
 
 
                 // }
->>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
                 //else
                 //{
                 //    radstartdate.Text = "";
@@ -424,13 +382,6 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                     txtFileNo.Focus();
                     return;
                 }
-                //new file no
-                else if (string.IsNullOrEmpty(txtFileNo.Text.Trim()))
-                {
-                    MessageBox.Show("Please Enter File No for Installment Plan.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    txtFileNo.Focus();
-                    return;
-                }
 
                 else if (dtpStartDate.Value.Date.Year == 1)
                 {
@@ -497,11 +448,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
             frm.Show();
         }
 
-<<<<<<< HEAD
-        //Clone from DropDown
-=======
         //Clone from Installment Template DropDown
->>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
         private void cmbExistInstTemp_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
         {
             if (cmbExistInstTemp.SelectedIndex > 0)
@@ -530,10 +477,6 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
         {
 
         }
-<<<<<<< HEAD
-    }
-    
-=======
 
         private void btnForNewTemplate(object sender, EventArgs e)
         {
@@ -589,6 +532,5 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
         }
     }
 
->>>>>>> 123aefb3cea524e2916eaca1019abcfd8419c83c
 }
 #endregion

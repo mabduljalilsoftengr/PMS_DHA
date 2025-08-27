@@ -265,37 +265,7 @@ namespace PeshawarDHASW.Application_Layer.Chalan
             return fanl;
         }
 
-        private bool PlotActiveNotBlock()
-        {
-            bool fanl = false;
-            SqlParameter[] prm =
-            {
-                new SqlParameter("@Task","FileorPlotActiveNotBlockStatus"),
-                new SqlParameter("@PlotNo",txtPlotNo.Text)
-            };
-            DataSet dst = cls_dl_NDC.NdcRetrival(prm);
-            if (dst.Tables.Count > 0)
-            {
-                if (dst.Tables[0].Rows.Count > 0)
-                {
-                    fanl = true;
-                    btnSave.Enabled = true;
-                }
-                else
-                {
-                    MessageBox.Show("This File No. is Cancel OR Block.");
-                    fanl = false;
-                    btnSave.Enabled = false;
-                }
-            }
-            else
-            {
-                MessageBox.Show("This File No. is Cancel OR Block.");
-                fanl = false;
-                btnSave.Enabled = false;
-            }
-            return fanl;
-        }
+        
         private void btnFind_Click(object sender, EventArgs e)
         {
             SqlParameter[] prm =
@@ -845,11 +815,56 @@ namespace PeshawarDHASW.Application_Layer.Chalan
 
         private void txtPlotNo_Leave(object sender, EventArgs e)
         {
+            RefreshFormForPlotNo();
             if (PlotActiveNotBlock() == true)
             {
                 btnFind_Click(null, null);
             }
         }
+        private bool PlotActiveNotBlock()
+        {
+            bool fanl = false;
+            SqlParameter[] prm =
+            {
+                new SqlParameter("@Task","FileorPlotActiveNotBlockStatus"),
+                new SqlParameter("@PlotNo",txtPlotNo.Text)
+            };
+            DataSet dst = cls_dl_NDC.NdcRetrival(prm);
+            if (dst.Tables.Count > 0)
+            {
+                if (dst.Tables[0].Rows.Count > 0)
+                {
+                    fanl = true;
+                    btnSave.Enabled = true;
+                }
+                else
+                {
+                    MessageBox.Show("This File No. is Cancel OR Block.");
+                    fanl = false;
+                    btnSave.Enabled = false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("This File No. is Cancel OR Block.");
+                fanl = false;
+                btnSave.Enabled = false;
+            }
+            return fanl;
+        }
+
+        private void RefreshFormForPlotNo()
+        {
+            txtfileno.Clear();
+            txtname.Clear();
+            cmbOwnerCategory.SelectedIndex = -1;
+
+            cmbPlotSize.Clear();
+            txtActualMarlaSize.Clear();
+            txtSqft.Clear();
+            txtCNICMask.Clear();
+        }
+
     }
 
     public class ChallanDetail

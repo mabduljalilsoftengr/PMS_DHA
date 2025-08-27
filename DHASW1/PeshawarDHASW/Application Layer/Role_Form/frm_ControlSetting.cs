@@ -42,15 +42,19 @@ namespace PeshawarDHASW.Application_Layer.Role_Form
             radButtonParentGroup.DisplayMember = "ControlName";
             radButtonParentGroup.ValueMember = "Control_ID";
 
-            UserInforamtion.DataSource = dsdp.Tables[2].DefaultView;
+            UserInforamtion.DataSource = dsdp.Tables[2].DefaultView; 
             UserInforamtion.DisplayMember = "username";
             UserInforamtion.ValueMember = "ID";
             UserInforamtion.SelectedIndex = -1;
+            
+
         }
         private void frm_ControlSetting_Load(object sender, EventArgs e)
         {
             DataRefreshinGrids();
+
         }
+        
 
         private void radtabSave_Click(object sender, EventArgs e)
         {
@@ -188,6 +192,13 @@ namespace PeshawarDHASW.Application_Layer.Role_Form
             catch (Exception)
             {
             }
+        }
+        
+
+        private void btnCloneAccess_Click(object sender, EventArgs e)
+        {
+            frmUserAccessClone frm = new frmUserAccessClone();
+            frm.ShowDialog();
         }
     }
 }

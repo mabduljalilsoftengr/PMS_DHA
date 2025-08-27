@@ -47,6 +47,8 @@
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.radLabel4 = new Telerik.WinControls.UI.RadLabel();
             this.btnSave = new Telerik.WinControls.UI.RadButton();
+            this.radLabel8 = new Telerik.WinControls.UI.RadLabel();
+            this.txtBranch = new Telerik.WinControls.UI.RadTextBoxControl();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
@@ -68,12 +70,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBranch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // radGroupBox1
             // 
             this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
+            this.radGroupBox1.Controls.Add(this.txtBranch);
+            this.radGroupBox1.Controls.Add(this.radLabel8);
             this.radGroupBox1.Controls.Add(this.radGroupBox2);
             this.radGroupBox1.Controls.Add(this.radLabel2);
             this.radGroupBox1.Controls.Add(this.radLabel5);
@@ -89,7 +95,7 @@
             this.radGroupBox1.HeaderText = "User Info";
             this.radGroupBox1.Location = new System.Drawing.Point(12, 3);
             this.radGroupBox1.Name = "radGroupBox1";
-            this.radGroupBox1.Size = new System.Drawing.Size(796, 409);
+            this.radGroupBox1.Size = new System.Drawing.Size(796, 492);
             this.radGroupBox1.TabIndex = 10;
             this.radGroupBox1.Text = "User Info";
             // 
@@ -220,7 +226,7 @@
             // txtSecretCode
             // 
             this.txtSecretCode.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSecretCode.Location = new System.Drawing.Point(154, 293);
+            this.txtSecretCode.Location = new System.Drawing.Point(154, 292);
             this.txtSecretCode.Name = "txtSecretCode";
             this.txtSecretCode.Size = new System.Drawing.Size(610, 33);
             this.txtSecretCode.TabIndex = 7;
@@ -228,7 +234,7 @@
             // txtFather
             // 
             this.txtFather.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFather.Location = new System.Drawing.Point(154, 212);
+            this.txtFather.Location = new System.Drawing.Point(154, 211);
             this.txtFather.Name = "txtFather";
             this.txtFather.Size = new System.Drawing.Size(610, 33);
             this.txtFather.TabIndex = 5;
@@ -254,18 +260,35 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(21, 344);
+            this.btnSave.Location = new System.Drawing.Point(21, 400);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(743, 40);
             this.btnSave.TabIndex = 8;
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // radLabel8
+            // 
+            this.radLabel8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radLabel8.Location = new System.Drawing.Point(21, 339);
+            this.radLabel8.Name = "radLabel8";
+            this.radLabel8.Size = new System.Drawing.Size(58, 25);
+            this.radLabel8.TabIndex = 18;
+            this.radLabel8.Text = "Branch";
+            // 
+            // txtBranch
+            // 
+            this.txtBranch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBranch.Location = new System.Drawing.Point(154, 331);
+            this.txtBranch.Name = "txtBranch";
+            this.txtBranch.Size = new System.Drawing.Size(610, 33);
+            this.txtBranch.TabIndex = 19;
+            // 
             // frmUserInsertion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(825, 428);
+            this.ClientSize = new System.Drawing.Size(825, 507);
             this.Controls.Add(this.radGroupBox1);
             this.Name = "frmUserInsertion";
             // 
@@ -299,6 +322,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radLabel8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtBranch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
@@ -324,5 +349,7 @@
         private Telerik.WinControls.UI.RadTextBoxControl txtFather;
         private Telerik.WinControls.UI.RadDropDownList ddl_Role;
         private Telerik.WinControls.UI.RadLabel radLabel7;
+        private Telerik.WinControls.UI.RadTextBoxControl txtBranch;
+        private Telerik.WinControls.UI.RadLabel radLabel8;
     }
 }

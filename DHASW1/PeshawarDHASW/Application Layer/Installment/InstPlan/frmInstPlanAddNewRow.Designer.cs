@@ -41,6 +41,7 @@
             Telerik.WinControls.UI.RadListDataItem radListDataItem11 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem12 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem13 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem14 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
@@ -110,7 +111,7 @@
             this.txtseries.Location = new System.Drawing.Point(918, 457);
             this.txtseries.Name = "txtseries";
             this.txtseries.Size = new System.Drawing.Size(81, 23);
-            this.txtseries.TabIndex = 6;
+            this.txtseries.TabIndex = 9;
             // 
             // btnCreateInstallment
             // 
@@ -143,7 +144,7 @@
             this.ddlcode.Location = new System.Drawing.Point(785, 457);
             this.ddlcode.Name = "ddlcode";
             this.ddlcode.Size = new System.Drawing.Size(127, 23);
-            this.ddlcode.TabIndex = 9;
+            this.ddlcode.TabIndex = 8;
             // 
             // ddlinstallmentmode
             // 
@@ -153,15 +154,17 @@
             radListDataItem11.Text = "Installment";
             radListDataItem12.Text = "Corner Plot Charges";
             radListDataItem13.Text = "Extra Land Charges";
+            radListDataItem14.Text = "Addl Dev Charges";
             this.ddlinstallmentmode.Items.Add(radListDataItem9);
             this.ddlinstallmentmode.Items.Add(radListDataItem10);
             this.ddlinstallmentmode.Items.Add(radListDataItem11);
             this.ddlinstallmentmode.Items.Add(radListDataItem12);
             this.ddlinstallmentmode.Items.Add(radListDataItem13);
+            this.ddlinstallmentmode.Items.Add(radListDataItem14);
             this.ddlinstallmentmode.Location = new System.Drawing.Point(636, 457);
             this.ddlinstallmentmode.Name = "ddlinstallmentmode";
             this.ddlinstallmentmode.Size = new System.Drawing.Size(144, 23);
-            this.ddlinstallmentmode.TabIndex = 8;
+            this.ddlinstallmentmode.TabIndex = 7;
             // 
             // dtpduedate
             // 
@@ -169,7 +172,7 @@
             this.dtpduedate.Location = new System.Drawing.Point(332, 457);
             this.dtpduedate.Name = "dtpduedate";
             this.dtpduedate.Size = new System.Drawing.Size(140, 23);
-            this.dtpduedate.TabIndex = 7;
+            this.dtpduedate.TabIndex = 5;
             this.dtpduedate.TabStop = false;
             this.dtpduedate.Text = "Friday, 23 October 2020";
             this.dtpduedate.Value = new System.DateTime(2020, 10, 23, 14, 31, 6, 215);
@@ -188,7 +191,7 @@
             this.txtdesc.Location = new System.Drawing.Point(182, 457);
             this.txtdesc.Name = "txtdesc";
             this.txtdesc.Size = new System.Drawing.Size(142, 23);
-            this.txtdesc.TabIndex = 5;
+            this.txtdesc.TabIndex = 4;
             // 
             // txtinstl
             // 
@@ -196,14 +199,14 @@
             this.txtinstl.Location = new System.Drawing.Point(8, 457);
             this.txtinstl.Name = "txtinstl";
             this.txtinstl.Size = new System.Drawing.Size(169, 23);
-            this.txtinstl.TabIndex = 4;
+            this.txtinstl.TabIndex = 3;
             // 
             // btnget
             // 
             this.btnget.Location = new System.Drawing.Point(397, 33);
             this.btnget.Name = "btnget";
             this.btnget.Size = new System.Drawing.Size(110, 24);
-            this.btnget.TabIndex = 3;
+            this.btnget.TabIndex = 2;
             this.btnget.Text = "Get dta";
             this.btnget.Click += new System.EventHandler(this.btnget_Click);
             // 

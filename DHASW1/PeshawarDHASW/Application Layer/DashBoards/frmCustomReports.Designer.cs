@@ -319,7 +319,7 @@
             this.PageViews.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PageViews.Location = new System.Drawing.Point(0, 0);
             this.PageViews.Name = "PageViews";
-            this.PageViews.SelectedPage = this.AdvanceReport;
+            this.PageViews.SelectedPage = this.FastReport;
             this.PageViews.Size = new System.Drawing.Size(1221, 536);
             this.PageViews.TabIndex = 12;
             this.PageViews.Text = "radPageView1";

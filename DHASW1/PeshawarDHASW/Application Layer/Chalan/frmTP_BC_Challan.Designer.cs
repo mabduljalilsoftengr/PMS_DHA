@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn1 = new Telerik.WinControls.UI.GridViewDecimalColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewSummaryItem gridViewSummaryItem1 = new Telerik.WinControls.UI.GridViewSummaryItem();
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDecimalColumn gridViewDecimalColumn2 = new Telerik.WinControls.UI.GridViewDecimalColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewSummaryItem gridViewSummaryItem2 = new Telerik.WinControls.UI.GridViewSummaryItem();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
             this.dgvChallanDetails = new Telerik.WinControls.UI.RadGridView();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
@@ -172,50 +172,50 @@
             this.dgvChallanDetails.MasterTemplate.AutoExpandGroups = true;
             this.dgvChallanDetails.MasterTemplate.AutoGenerateColumns = false;
             this.dgvChallanDetails.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn1.EnableExpressionEditor = false;
-            gridViewTextBoxColumn1.FieldName = "SerialNo";
-            gridViewTextBoxColumn1.HeaderText = "S. No.";
-            gridViewTextBoxColumn1.Name = "SerialNo";
-            gridViewTextBoxColumn1.Width = 99;
-            gridViewTextBoxColumn2.EnableExpressionEditor = false;
-            gridViewTextBoxColumn2.FieldName = "Particulars";
-            gridViewTextBoxColumn2.HeaderText = "PARTICULARS";
-            gridViewTextBoxColumn2.Name = "Particulars";
-            gridViewTextBoxColumn2.Width = 518;
-            gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.FieldName = "ID";
-            gridViewTextBoxColumn3.HeaderText = "column1";
-            gridViewTextBoxColumn3.IsVisible = false;
-            gridViewTextBoxColumn3.Name = "ID";
-            gridViewTextBoxColumn3.Width = 46;
-            gridViewDecimalColumn1.EnableExpressionEditor = false;
-            gridViewDecimalColumn1.FieldName = "Amount";
-            gridViewDecimalColumn1.HeaderText = "Amount Rs.";
-            gridViewDecimalColumn1.Name = "Amount";
-            gridViewDecimalColumn1.Width = 189;
-            gridViewTextBoxColumn4.EnableExpressionEditor = false;
-            gridViewTextBoxColumn4.FieldName = "isReadOnly";
-            gridViewTextBoxColumn4.HeaderText = "isReadOnly";
-            gridViewTextBoxColumn4.IsVisible = false;
-            gridViewTextBoxColumn4.Name = "isReadOnly";
-            gridViewTextBoxColumn4.Width = 46;
+            gridViewTextBoxColumn5.EnableExpressionEditor = false;
+            gridViewTextBoxColumn5.FieldName = "SerialNo";
+            gridViewTextBoxColumn5.HeaderText = "S. No.";
+            gridViewTextBoxColumn5.Name = "SerialNo";
+            gridViewTextBoxColumn5.Width = 99;
+            gridViewTextBoxColumn6.EnableExpressionEditor = false;
+            gridViewTextBoxColumn6.FieldName = "Particulars";
+            gridViewTextBoxColumn6.HeaderText = "PARTICULARS";
+            gridViewTextBoxColumn6.Name = "Particulars";
+            gridViewTextBoxColumn6.Width = 518;
+            gridViewTextBoxColumn7.EnableExpressionEditor = false;
+            gridViewTextBoxColumn7.FieldName = "ID";
+            gridViewTextBoxColumn7.HeaderText = "column1";
+            gridViewTextBoxColumn7.IsVisible = false;
+            gridViewTextBoxColumn7.Name = "ID";
+            gridViewTextBoxColumn7.Width = 46;
+            gridViewDecimalColumn2.EnableExpressionEditor = false;
+            gridViewDecimalColumn2.FieldName = "Amount";
+            gridViewDecimalColumn2.HeaderText = "Amount Rs.";
+            gridViewDecimalColumn2.Name = "Amount";
+            gridViewDecimalColumn2.Width = 189;
+            gridViewTextBoxColumn8.EnableExpressionEditor = false;
+            gridViewTextBoxColumn8.FieldName = "isReadOnly";
+            gridViewTextBoxColumn8.HeaderText = "isReadOnly";
+            gridViewTextBoxColumn8.IsVisible = false;
+            gridViewTextBoxColumn8.Name = "isReadOnly";
+            gridViewTextBoxColumn8.Width = 46;
             this.dgvChallanDetails.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn1,
-            gridViewTextBoxColumn2,
-            gridViewTextBoxColumn3,
-            gridViewDecimalColumn1,
-            gridViewTextBoxColumn4});
+            gridViewTextBoxColumn5,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7,
+            gridViewDecimalColumn2,
+            gridViewTextBoxColumn8});
             this.dgvChallanDetails.MasterTemplate.EnableGrouping = false;
             this.dgvChallanDetails.MasterTemplate.EnableSorting = false;
             this.dgvChallanDetails.MasterTemplate.ShowGroupedColumns = true;
             this.dgvChallanDetails.MasterTemplate.ShowTotals = true;
-            gridViewSummaryItem1.Aggregate = Telerik.WinControls.UI.GridAggregateFunction.Sum;
-            gridViewSummaryItem1.AggregateExpression = null;
-            gridViewSummaryItem1.FormatString = "Total Amount Rs. {0}";
-            gridViewSummaryItem1.Name = "Amount";
+            gridViewSummaryItem2.Aggregate = Telerik.WinControls.UI.GridAggregateFunction.Sum;
+            gridViewSummaryItem2.AggregateExpression = null;
+            gridViewSummaryItem2.FormatString = "Total Amount Rs. {0}";
+            gridViewSummaryItem2.Name = "Amount";
             this.dgvChallanDetails.MasterTemplate.SummaryRowsBottom.Add(new Telerik.WinControls.UI.GridViewSummaryRowItem(new Telerik.WinControls.UI.GridViewSummaryItem[] {
-                gridViewSummaryItem1}));
-            this.dgvChallanDetails.MasterTemplate.ViewDefinition = tableViewDefinition1;
+                gridViewSummaryItem2}));
+            this.dgvChallanDetails.MasterTemplate.ViewDefinition = tableViewDefinition2;
             this.dgvChallanDetails.Name = "dgvChallanDetails";
             this.dgvChallanDetails.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgvChallanDetails.ShowGroupPanel = false;

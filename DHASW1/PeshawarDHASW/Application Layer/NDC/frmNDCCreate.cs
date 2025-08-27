@@ -4198,7 +4198,7 @@ namespace PeshawarDHASW.Application_Layer.NDC
                     //int TotalAmount = Convert.ToInt32(fillChallanHeaderDetailds.Tables[0].Rows[3]["Amount"].ToString().Trim().Split('.').First()); 
                     decimal TotalAmount = 00;
                     decimal FBRvalueperMarla = 0;
-                    decimal percentageValue = 0.02m;
+                    decimal percentageValue = 0.01m;
                     if (txtFile_No_.Text.ToUpper().Contains("/COM/"))
                     {
                         if (string.IsNullOrEmpty(sector))
@@ -4720,17 +4720,17 @@ namespace PeshawarDHASW.Application_Layer.NDC
                                         if (Convert.ToDecimal(dealval.ToString()) < 50000000)
                                         {
                                             CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(3)) / 100;
-                                            FBRtaxPercentage = "3%";
+                                            FBRtaxPercentage = "1.5%";
                                         }
                                         else if (Convert.ToDecimal(dealval.ToString()) >= 50000000 && Convert.ToDecimal(dealval.ToString()) <= 100000000)
                                         {
                                             CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(3.5)) / 100;
-                                            FBRtaxPercentage = "3.5%";
+                                            FBRtaxPercentage = "2%";
                                         }
                                         else if (Convert.ToDecimal(dealval.ToString()) > 100000000)
                                         {
                                             CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(4)) / 100;
-                                            FBRtaxPercentage = "4%";
+                                            FBRtaxPercentage = "2.5%";
                                         }
                                         //CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * 3) / 100;
                                         CalculatedTaxBuyerFBROwnerType = "Filer";
@@ -4744,7 +4744,7 @@ namespace PeshawarDHASW.Application_Layer.NDC
 
                                             MessageBox.Show("Buyer is not Valid to Purchase the File/Plot," + Environment.NewLine +
                                                         "Because Deal Value is : " + (dealval.ToString()) + Environment.NewLine
-                                                        + " 3 % On deal value for Filer Buyer  is : " + Math.Round(CalculatedTaxBuyer) + Environment.NewLine +
+                                                        + " 1.5 % On deal value for Filer Buyer  is : " + Math.Round(CalculatedTaxBuyer) + Environment.NewLine +
                                                         "and you are Submit  :" + Math.Round(txtTaxKAmountBuyer), "Information !", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                                         }
                                         #endregion
@@ -4789,18 +4789,18 @@ namespace PeshawarDHASW.Application_Layer.NDC
                                         if (Convert.ToDecimal(dealval.ToString()) <= 50000000)
                                         {
                                             CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(6)) / 100;
-                                            FBRtaxPercentage = "6%";
+                                            FBRtaxPercentage = "4.5%";
 
                                         }
                                         else if (Convert.ToDecimal(dealval.ToString()) > 50000000 && Convert.ToDecimal(dealval.ToString()) <= 100000000)
                                         {
                                             CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(7)) / 100;
-                                            FBRtaxPercentage = "7%";
+                                            FBRtaxPercentage = "5.5%";
                                         }
                                         else if (Convert.ToDecimal(dealval.ToString()) > 100000000)
                                         {
                                             CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(8)) / 100;
-                                            FBRtaxPercentage = "8%";
+                                            FBRtaxPercentage = "6.5%";
                                         }
                                         //end here
                                         //CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(10.5)) / 100;
@@ -4829,17 +4829,17 @@ namespace PeshawarDHASW.Application_Layer.NDC
                                         if (Convert.ToDecimal(dealval.ToString()) <= 50000000)
                                         {
                                             CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(12)) / 100;
-                                            FBRtaxPercentage = "12%";
+                                            FBRtaxPercentage = "10.5%";
                                         }
                                         else if (Convert.ToDecimal(dealval.ToString()) > 50000000 && Convert.ToDecimal(dealval.ToString()) <= 100000000)
                                         {
                                             CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(16)) / 100;
-                                            FBRtaxPercentage = "16%";
+                                            FBRtaxPercentage = "14.5%";
                                         }
                                         else if (Convert.ToDecimal(dealval.ToString()) > 100000000)
                                         {
                                             CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(20)) / 100;
-                                            FBRtaxPercentage = "20%";
+                                            FBRtaxPercentage = "18.5%";
                                         }
                                         //end here
                                         //CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(10.5)) / 100;
@@ -4906,21 +4906,21 @@ namespace PeshawarDHASW.Application_Layer.NDC
                                         //CalculatedTaxSeller = (Convert.ToDecimal(dealval.ToString()) * 3) / 100;
                                         if (Convert.ToDecimal(dealval.ToString()) < 50000000)
                                         {
-                                            CalculatedTaxSeller = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(3)) / 100;
-                                            st = "3 % Tax is apply on Filer Seller, So :";
-                                            FBRtaxPercentage = "3%";
+                                            CalculatedTaxSeller = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(4.5)) / 100;
+                                            st = "4.5 % Tax is apply on Filer Seller, So :";
+                                            FBRtaxPercentage = "4.5%";
                                         }
                                         else if (Convert.ToDecimal(dealval.ToString()) >= 50000000 && Convert.ToDecimal(dealval.ToString()) <= 100000000)
                                         {
-                                            CalculatedTaxSeller = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(3.5)) / 100;
-                                            st = "3.5 % Tax is apply on Filer Seller, So :";
-                                            FBRtaxPercentage = "3.5%";
+                                            CalculatedTaxSeller = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(5)) / 100;
+                                            st = "5 % Tax is apply on Filer Seller, So :";
+                                            FBRtaxPercentage = "5%";
                                         }
                                         else if (Convert.ToDecimal(dealval.ToString()) > 100000000)
                                         {
-                                            CalculatedTaxSeller = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(4)) / 100;
-                                            st = "4 % Tax is apply on Filer Seller, So :";
-                                            FBRtaxPercentage = "4%";
+                                            CalculatedTaxSeller = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(5.5)) / 100;
+                                            st = "5.5 % Tax is apply on Filer Seller, So :";
+                                            FBRtaxPercentage = "5.5%";
                                         }
                                         CalculatedTaxSellerFBROwnerType = "Filer";
                                         if (chkFBRSellerSkip.CheckState == CheckState.Unchecked)
@@ -4958,22 +4958,22 @@ namespace PeshawarDHASW.Application_Layer.NDC
                                         //code line added by zeb according to budget year 2024-2025--start here
                                         if (Convert.ToDecimal(dealval.ToString()) < 50000000)
                                         {
-                                            CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(6)) / 100;
-                                            st = "6 % Tax is apply on Non-Filer Seller, So :";
-                                            FBRtaxPercentage = "6%";
+                                            CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(7.5)) / 100;
+                                            st = "7.5 % Tax is apply on Non-Filer Seller, So :";
+                                            FBRtaxPercentage = "7.5%";
 
                                         }
                                         else if (Convert.ToDecimal(dealval.ToString()) >= 50000000 && Convert.ToDecimal(dealval.ToString()) <= 100000000)
                                         {
-                                            CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(7)) / 100;
-                                            st = "7 % Tax is apply on Non-Filer Seller, So :";
-                                            FBRtaxPercentage = "7%";
+                                            CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(8.5)) / 100;
+                                            st = "8.5 % Tax is apply on Non-Filer Seller, So :";
+                                            FBRtaxPercentage = "8.5%";
                                         }
                                         else if (Convert.ToDecimal(dealval.ToString()) > 100000000)
                                         {
-                                            CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(8)) / 100;
-                                            st = "8 % Tax is apply on Non-Filer Seller, So :";
-                                            FBRtaxPercentage = "8%";
+                                            CalculatedTaxBuyer = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(9.5)) / 100;
+                                            st = "9.5 % Tax is apply on Non-Filer Seller, So :";
+                                            FBRtaxPercentage = "9.5%";
                                         }
                                         //end here
                                         CalculatedTaxSellerFBROwnerType = "Late Filer";
@@ -5008,10 +5008,10 @@ namespace PeshawarDHASW.Application_Layer.NDC
                                     }
                                     else if (sdt.Tables[1].Rows[0]["FBROwnerType"].ToString() == "Non-Filer")
                                     {
-                                        CalculatedTaxSeller = (Convert.ToDecimal(dealval.ToString()) * 10) / 100;
+                                        CalculatedTaxSeller = (Convert.ToDecimal(dealval.ToString()) * Convert.ToDecimal(11.5)) / 100;
                                         CalculatedTaxSellerFBROwnerType = "Non-Filer";
-                                        st = "10 % Tax is apply on Non-Filer Seller, So :";
-                                        FBRtaxPercentage = "10% ";
+                                        st = "11.5 % Tax is apply on Non-Filer Seller, So :";
+                                        FBRtaxPercentage = "11.5% ";
 
 
                                         #region Skip FBR Tax on Seller

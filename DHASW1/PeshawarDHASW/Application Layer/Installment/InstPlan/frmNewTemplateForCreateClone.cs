@@ -73,7 +73,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 Name = "gvcb_Code",
                 HeaderText = "Code",
                 FieldName = "CODE",
-                DataSource = new string[] { "--Select--", "TAX", "DCDP", "DC", "INSDP", "INST", "CPC", "ELC" } // You can fetch these from DB
+                DataSource = new string[] { "--Select--", "TAX", "OTHER", "DCDP", "DC", "INSDP", "INST", "CPC", "ELC" } // You can fetch these from DB
             };
             grdplandata.Columns.Add(gvcb_Code);
 

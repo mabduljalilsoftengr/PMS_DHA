@@ -25,6 +25,16 @@ namespace PeshawarDHASW.Application_Layer.NDC.Baskets
         {
             InitializeComponent();
         }
+
+        public frmBasketReviewedApproved(string NDCNo_, string FileNo_)
+        {
+            NDCNo = NDCNo_;
+            FileNo = FileNo_;
+        }
+
+        public string NDCNo { get; set; }
+        public string FileNo { get; set; }
+
         private int ndcno { get; set; }
         private int MSNewID_OutPut { get; set; }
         private String UserName { get; set; }
@@ -32,6 +42,7 @@ namespace PeshawarDHASW.Application_Layer.NDC.Baskets
         const string ServerURI = "http://172.16.0.1:8181/signalr";
         private HubConnection Connection { get; set; }
         private string rfrString { get; set; }
+
         private void FillGrid(RadGridView dv,string Query)
         {
             try
@@ -47,7 +58,9 @@ namespace PeshawarDHASW.Application_Layer.NDC.Baskets
             }
            
         }
-        private void BasketFilling()
+
+        // change from private to public
+        public void BasketFilling()
         {
             try
             {

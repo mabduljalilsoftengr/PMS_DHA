@@ -191,6 +191,11 @@ namespace PeshawarDHASW
             {
                 ApplyTheme(clsUser.ThemeName);
             }
+
+            btnInstPlanCreate.ToolTipText = "Create Template";
+            btn_instPlanEdit.ToolTipText = "Re-Order Plan";
+            btnInstPlansearch.ToolTipText = "Search Plan";
+            btnInstPlanModify.ToolTipText = "Modify Plan";
         }
         protected override void OnSizeChanged(EventArgs e)
         {
@@ -444,6 +449,8 @@ namespace PeshawarDHASW
         private Application_Layer.Installment.InstPlan.frmInstPlanCreate objfrmInstPlanCreate;
         private void btnInstPlanCreate_Click(object sender, EventArgs e)
         {
+            btnInstPlanCreate.ToolTipText = "Create Template";
+
             if (objfrmInstPlanCreate == null)
             {
                 objfrmInstPlanCreate = new Application_Layer.Installment.InstPlan.frmInstPlanCreate();
@@ -469,6 +476,7 @@ namespace PeshawarDHASW
         private Application_Layer.Installment.InstPlan.frmInstlPlanSearch objfrmInstlPlanSearch;
         private void btnInstPlansearch_Click(object sender, EventArgs e)
         {
+            //btnInstPlansearch.ToolTipText = "Search Plan";
             if (objfrmInstlPlanSearch == null)
             {
                 objfrmInstlPlanSearch = new Application_Layer.Installment.InstPlan.frmInstlPlanSearch();
@@ -494,6 +502,7 @@ namespace PeshawarDHASW
         private Application_Layer.Installment.InstPlan.frmInstalPlanEdit objfrmInstalPlanEdit;
         private void btn_instPlanEdit_Click(object sender, EventArgs e)
         {
+            //btn_instPlanEdit.ToolTipText = "Re-Order Plan";
             if (objfrmInstalPlanEdit == null)
             {
                 objfrmInstalPlanEdit = new Application_Layer.Installment.InstPlan.frmInstalPlanEdit();
@@ -519,6 +528,8 @@ namespace PeshawarDHASW
         private Application_Layer.Installment.InstPlan.frmInstPlanModify objfrmInstPlanModify;
         private void btnInstPlanModify_Click(object sender, EventArgs e)
         {
+            //btnInstPlanModify.ToolTipText = "Modify Plan";
+
             if (objfrmInstPlanModify == null)
             {
                 objfrmInstPlanModify = new Application_Layer.Installment.InstPlan.frmInstPlanModify();

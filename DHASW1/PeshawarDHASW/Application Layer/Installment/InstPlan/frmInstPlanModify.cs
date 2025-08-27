@@ -1,98 +1,44 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using PeshawarDHASW.Data_Layer.clsErrorLog;
 using PeshawarDHASW.Data_Layer.Installment;
 using Telerik.WinControls;
 using Telerik.WinControls.UI;
 using PeshawarDHASW.Application_Layer.CustomDialog;
+using PeshawarDHASW.Helper;
 
 namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
 {
-    public partial class frmInstPlanModify : Telerik.WinControls.UI.RadForm
+    public partial class frmInstPlanModify : RadForm
     {
         public frmInstPlanModify()
         {
             InitializeComponent();
         }
 
-        private string TemplateID { get; set; }
-
-        private void SelectIndexChange_InstallmentTemplate()
-        {
-            try
-            {
-                radgvplan.DataSource = null;
-                if (rad_dropDown_Template.SelectedIndex != 0)
-                {
-                    string str = rad_dropDown_Template.SelectedValue.ToString();
-                    TemplateID = str;
-                    var idtemplete = int.Parse(str);
-                    SqlParameter[] parameters =
-                    {
-                    new SqlParameter("@Task", "select"),
-                    new SqlParameter("@InstalTempID", str)
-                };
-                    DataSet ds = clsInstallmentTemplate.InstalTemplate_Reader(parameters);
-                    foreach (DataRow dataRow in ds.Tables[0].Rows)
-                    {
-                        radstartdate.Text = DateTime.Parse(dataRow["StartDate"].ToString()).ToString("dd-MM-yyyy");
-                        radenddate.Text = DateTime.Parse(dataRow["EndDate"].ToString()).ToString("dd-MM-yyyy");
-                        raddescrip.Text = dataRow["Descp"].ToString();
-                        radplotsize.Text = dataRow["PlotSize"].ToString();
-                        radphase.Text = dataRow["Phase"].ToString();
-                    }
-                    LoadDefaultData(idtemplete.ToString());
-                    btnSearch.Visible = true;
-                }
-                else
-                {
-                    radstartdate.Text = "";
-                    radenddate.Text = "";
-                    radplotsize.Text = "";
-                    radphase.Text = "";
-                    raddescrip.Text = "";
-                    btnSearch.Visible = false;
-                    TemplateID = "";
-                }
-            }
-            catch (Exception ex)
-            {
-                frmExceptionCatched frmobj = new frmExceptionCatched("Exception is through on SelectIndexChange_InstallmentTemplate.", ex, "frmInstPlanModify");
-                frmobj.ShowDialog();
-
-            }
-        }
-        private void rad_dropDown_Template_SelectedIndexChanged(object sender, Telerik.WinControls.UI.Data.PositionChangedEventArgs e)
-        {
-            SelectIndexChange_InstallmentTemplate();
-        }
+        private int TemplateID { get; set; }
 
         private void LoadDefaultData()
         {
             try
             {
-                //radgvplan.Rows.Clear();
                 SqlCommand cmd = new SqlCommand("App.USP_InstallmentPlan");
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Task", "select");
                 DataSet ds = cls_dl_instPlan.InstalPlan_Reader(cmd);
-                  radgvplan.DataSource = ds.Tables[0].DefaultView;
-
+                radgvplan.DataSource = ds.Tables[0].DefaultView;
             }
             catch (Exception ex)
             {
-                frmExceptionCatched frmobj = new frmExceptionCatched("Exception is through on LoadDefaultData.", ex, "frmInstPlanModify");
+                frmExceptionCatched frmobj = new frmExceptionCatched("Exception in LoadDefaultData.", ex, "frmInstPlanModify");
                 frmobj.ShowDialog();
             }
         }
 
-        private void LoadDefaultData(string InstTemplateNo)
+        private void LoadDefaultData(int InstTemplateNo)
         {
             try
             {
@@ -101,108 +47,304 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                 cmd.Parameters.AddWithValue("@Task", "select");
                 cmd.Parameters.AddWithValue("@instalTempID", InstTemplateNo);
                 DataSet ds = cls_dl_instPlan.InstalPlan_Reader(cmd);
-                  radgvplan.DataSource = ds.Tables[0].DefaultView;
-
-            
+                radgvplan.DataSource = ds.Tables[0].DefaultView;
             }
             catch (Exception ex)
             {
-                frmExceptionCatched frmobj = new frmExceptionCatched("Exception is through on LoadDefaultData.", ex, "frmInstPlanModify");
+                frmExceptionCatched frmobj = new frmExceptionCatched("Exception in LoadDefaultData (with Template).", ex, "frmInstPlanModify");
                 frmobj.ShowDialog();
             }
         }
 
         private void addingControltoGrid()
         {
-            GridViewCommandColumn BioInfo = new GridViewCommandColumn();
-            BioInfo.Name = "Edit";
-            BioInfo.UseDefaultText = true;
-            BioInfo.FieldName = "tPlanID";
-            BioInfo.DefaultText = "View";
-            BioInfo.Width = 80;
-            BioInfo.TextAlignment = ContentAlignment.MiddleCenter;
-            BioInfo.HeaderText = "Edit";
-            radgvplan.MasterTemplate.Columns.Add(BioInfo);
+            GridViewCommandColumn editColumn = new GridViewCommandColumn
+            {
+                Name = "Edit",
+                UseDefaultText = true,
+                FieldName = "tPlanID",
+                DefaultText = "Edit",
+                Width = 80,
+                TextAlignment = ContentAlignment.MiddleCenter,
+                HeaderText = "Edit"
+            };
+            radgvplan.MasterTemplate.Columns.Add(editColumn);
+
+            GridViewCommandColumn deleteColumn = new GridViewCommandColumn
+            {
+                Name = "Delete",
+                UseDefaultText = true,
+                FieldName = "Delete",
+                DefaultText = "Delete",
+                Width = 80,
+                TextAlignment = ContentAlignment.MiddleCenter,
+                HeaderText = "Delete"
+            };
+            radgvplan.MasterTemplate.Columns.Add(deleteColumn);
         }
 
         private void frmInstPlanModify_Load(object sender, EventArgs e)
         {
             try
             {
-                btnSearch.Visible = false;
+                btnAdd.Visible = false;
                 radgvplan.DataSource = null;
-                RadListDataItem Select = new RadListDataItem();
-                Select.Value = 0;
-                Select.Text = "-- Select --";
-                this.rad_dropDown_Template.Items.Add(Select);
-                SqlParameter[] param =
-                  {
-                    new SqlParameter("@Task", "PlanExist")
-                };
-
-                foreach (DataRow row in clsInstallmentTemplate.InstalTemplate_Reader(param).Tables[0].Rows)
-                {
-                    RadListDataItem dataItem = new RadListDataItem();
-                    dataItem.Value = row["InstalTempID"].ToString();
-                    dataItem.Text = row["Name"].ToString();
-                    this.rad_dropDown_Template.Items.Add(dataItem);
-                }
                 addingControltoGrid();
-                LoadDefaultData();
+                //LoadDefaultData();
+                txtFileNo.Focus();
             }
             catch (Exception ex)
             {
-                frmExceptionCatched frmobj = new frmExceptionCatched("Exception is through on frmInstPlanModify_Load.", ex, "frmInstPlanModify");
+                frmExceptionCatched frmobj = new frmExceptionCatched("Exception in frmInstPlanModify_Load.", ex, "frmInstPlanModify");
                 frmobj.ShowDialog();
             }
-          
         }
+
+        
 
         private void radgvplan_CellClick(object sender, GridViewCellEventArgs e)
         {
             try
             {
-                int rowindex = radgvplan.CurrentCell.RowIndex;
-                int columnindex = radgvplan.CurrentCell.ColumnIndex;
-                if (e.Column.Name == "Edit")
+                int rowIndex = radgvplan.CurrentCell.RowIndex;
+                
+                if (e.Column.Name == "Edit" && TemplateID > 0)
                 {
-                    if (TemplateID != "")
-                    {
-                        int ID = int.Parse(radgvplan.Rows[rowindex].Cells[0].Value.ToString());
-                        frmInstPlanAdd_MOdify obj = new frmInstPlanAdd_MOdify(ID.ToString(), TemplateID);
-                        obj.ShowDialog();
-                        // SelectIndexChange_InstallmentTemplate();
-                    }
-                   
-                 
-                    // Installment.InstTemplate.InstTemplateCreate obj = new InstTemplateCreate(ID.ToString());
-                    //  obj.ShowDialog();
-                    //  showallData();
-                    // MessageBox.Show("BioInfo - > " + SearchDGV.Rows[rowindex].Cells[0].Value.ToString());
+                    int ID = int.Parse(radgvplan.Rows[rowIndex].Cells[0].Value.ToString());
+                    int oldaccntseries = int.Parse(e.Row.Cells["AcctStSeries"].Value.ToString());
+                    frmInstPlanAdd_MOdify obj = new frmInstPlanAdd_MOdify(ID, TemplateID, txtFileNo.Text.Trim(), oldaccntseries);
+                    obj.ShowDialog();
+                    LoadDefaultData(TemplateID); // Refresh grid after deletion
+                    //LoadTemplateByFileNo(txtFileNo.Text.Trim()); // Refresh grid
+                    RefreshGridByFileNo(txtFileNo.Text.Trim());
                 }
 
+                //new change code
+
+                else if (e.Column.Name == "Delete")
+                {
+                    DialogResult result = RadMessageBox.Show(
+                        "Do you want to delete this record?",
+                        "Confirm Delete",
+                        MessageBoxButtons.YesNo,
+                        RadMessageIcon.Question);
+
+                    if (result == DialogResult.Yes)
+                    {
+                        try
+                        {
+                            int planID = int.Parse(e.Row.Cells["PlanID"].Value.ToString());
+                            int oldaccntseries = int.Parse(e.Row.Cells["AcctStSeries"].Value.ToString());
+
+                            string connectionString = clsMostUseVars.Connectionstring;
+                            using (SqlConnection conn = new SqlConnection(connectionString))
+                            {
+                                conn.Open();
+
+                                using (SqlCommand cmd = new SqlCommand("App.USP_InstallmentPlan", conn))
+                                {
+                                    cmd.CommandType = CommandType.StoredProcedure;
+
+                                    // Add parameters
+                                    cmd.Parameters.AddWithValue("@Task", "delete");
+                                    cmd.Parameters.AddWithValue("@PlanID", planID);
+                                    cmd.Parameters.AddWithValue("@instalTempID", TemplateID);
+                                    cmd.Parameters.AddWithValue("@userID", Models.clsUser.ID);
+                                    cmd.Parameters.AddWithValue("@FileNo", txtFileNo.Text.Trim());
+                                    cmd.Parameters.AddWithValue("@OldAccntSeries", oldaccntseries);
+
+                                    // Add return parameter
+                                    SqlParameter returnParam = cmd.Parameters.Add("@RETURN_VALUE", SqlDbType.Int);
+                                    returnParam.Direction = ParameterDirection.ReturnValue;
+
+                                    cmd.ExecuteNonQuery();
+
+                                    int returnValue = (int)returnParam.Value;
+
+                                    if (returnValue == 1)
+                                    {
+                                        RadMessageBox.Show("Record deleted successfully",
+                                            "Success",
+                                            MessageBoxButtons.OK,
+                                            RadMessageIcon.Info);
+
+                                        LoadDefaultData(TemplateID);
+                                        ReorderAcctStSeries(TemplateID);
+                                        RefreshGridByFileNo(txtFileNo.Text.Trim());
+                                    }
+                                    else if (returnValue == 0)
+                                    {
+                                        RadMessageBox.Show("No records were deleted",
+                                            "Information",
+                                            MessageBoxButtons.OK,
+                                            RadMessageIcon.Exclamation);
+                                    }
+                                    else if (returnValue == -1)
+                                    {
+                                        RadMessageBox.Show("Error occurred during deletion",
+                                            "Error",
+                                            MessageBoxButtons.OK,
+                                            RadMessageIcon.Error);
+                                    }
+                                }
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            RadMessageBox.Show($"Error deleting record: {ex.Message}",
+                                "Error",
+                                MessageBoxButtons.OK,
+                                RadMessageIcon.Error);
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
-                frmExceptionCatched frmobj = new frmExceptionCatched("Exception is through on radgvplan_CellClick.", ex, "frmInstPlanModify");
+                frmExceptionCatched frmobj = new frmExceptionCatched("Exception in radgvplan_CellClick.", ex, "frmInstPlanModify");
                 frmobj.ShowDialog();
             }
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             try
             {
-                frmInstPlanAdd_MOdify obj = new frmInstPlanAdd_MOdify(TemplateID);
+                frmInstPlanAdd_MOdify obj = new frmInstPlanAdd_MOdify(TemplateID, txtFileNo.Text.Trim());
                 obj.ShowDialog();
-                SelectIndexChange_InstallmentTemplate();
+                ReorderAcctStSeries(TemplateID);
+                //LoadTemplateByFileNo(txtFileNo.Text.Trim());
+                RefreshGridByFileNo(txtFileNo.Text.Trim());
             }
             catch (Exception ex)
             {
-                frmExceptionCatched frmobj = new frmExceptionCatched("Exception is through on btnSearch_Click.", ex, "frmInstPlanModify");
+                frmExceptionCatched frmobj = new frmExceptionCatched("Exception in btnAdd_Click.", ex, "frmInstPlanModify");
                 frmobj.ShowDialog();
             }
-           
         }
+
+        private void radBtnSearch_Click(object sender, EventArgs e)
+        {
+            RefreshGridByFileNo(txtFileNo.Text.Trim());
+
+        }
+
+        private void RefreshGridByFileNo(string fileNo)
+        {
+            if (string.IsNullOrWhiteSpace(fileNo))
+            {
+                MessageBox.Show("Please enter a File No.");
+                return;
+            }
+
+            LoadTemplateByFileNo(fileNo);
+
+            if (TemplateID > 0)
+            {
+                try
+                {
+                    SqlParameter[] param =
+                    {
+                        new SqlParameter("@Task", "GetPlan"),
+                        new SqlParameter("@FileNo", fileNo)
+                    };
+
+                    DataSet _ds = cls_dl_instPlan.InstalPlanReader(param);
+                    radgvplan.DataSource = _ds.Tables[0].DefaultView;
+
+                    //this.radGridView1.Columns["Amount"].FormatString = "{0:N2}";
+
+
+                    // Format DueDate column
+                    if (radgvplan.Columns.Contains("DueDate")) 
+                    {
+                        radgvplan.Columns["DueDate"].FormatString = "{0:dd-MM-yyyy}";
+                        radgvplan.Columns["DueDate"].FormatInfo = System.Globalization.CultureInfo.InvariantCulture;
+                        radgvplan.Columns["DueDate"].TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+                    }
+
+                    // Format DueDate column
+                    if (radgvplan.Columns.Contains("Amount"))
+                    {
+                        radgvplan.Columns["Amount"].FormatString = "{0:N2}";
+                    }
+
+                    btnAdd.Visible = true;
+                }
+                catch (Exception ex)
+                {
+                    frmExceptionCatched frmobj = new frmExceptionCatched("Exception in RefreshGridByFileNo.", ex, "frmInstPlanModify");
+                    frmobj.ShowDialog();
+                }
+            }
+            else
+            {
+                radgvplan.DataSource = null;
+                btnAdd.Visible = true;
+                MessageBox.Show("Template not found for the provided File No.");
+            }
+        }
+
+        
+        private void LoadTemplateByFileNo(string fileNo)
+        {
+            try
+            {
+                radgvplan.DataSource = null;
+
+                SqlParameter[] param =
+                {
+                    new SqlParameter("@Task", "GetTemplateIDByFileNo"),
+                    new SqlParameter("@FileNo", fileNo)
+                };
+
+                // DataSet ds = clsInstallmentTemplate.CreateInsallmentTemplate(param);
+                DataSet ds = cls_dl_instPlan.InstalPlanReader(param);
+
+                if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    //TemplateID = ds.Tables[0].Rows[0]["InstalTempID"].ToString();
+                    TemplateID = Convert.ToInt32(ds.Tables[0].Rows[0]["InstalTempID"]);
+                    LoadDefaultData(TemplateID);
+                }
+                else
+                {
+                    TemplateID = 0;
+                    MessageBox.Show("No template found for the provided File No.");
+                }
+            }
+            catch (Exception ex)
+            {
+                frmExceptionCatched frmobj = new frmExceptionCatched("Exception in LoadTemplateByFileNo.", ex, "frmInstPlanModify");
+                frmobj.ShowDialog();
+            }
+        }
+
+
+
+        private void ReorderAcctStSeries(int templateID)
+        {
+            try
+            {
+                SqlParameter[] param =
+                {
+                    new SqlParameter("@Task", "ReorderAcctStSeries"),
+                    new SqlParameter("@TemplateID", templateID)
+                };
+
+                // This method should return an int if you want to confirm update count
+                cls_dl_instPlan.ExecuteNonQuery(param);
+            }
+            catch (Exception ex)
+            {
+                frmExceptionCatched frmobj = new frmExceptionCatched("Exception in ReorderAcctStSeries.", ex, "frmInstPlanModify");
+                frmobj.ShowDialog();
+            }
+        }
+
+
+        
+
     }
 }
