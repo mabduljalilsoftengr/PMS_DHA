@@ -78,7 +78,7 @@ namespace PeshawarDHASW.Application_Layer.Transfer.TransferReport
                     ReportDocument rptdoc1 = new ReportDocument();
                 TFRChecklistDataSet tfrchkds_ = new TFRChecklistDataSet();
                 tfrchkds_.Tables["tblTFRSlips"].Merge(dtbl, true, MissingSchemaAction.Ignore);
-                string path1 = Helper.clsMostUseVars.applicationstartuppath + "\\Report\\My_Reports\\TFRSlipsReport_OfficeCopy.rpt";
+                string path1 = Helper.clsMostUseVars.applicationstartuppath + "\\Report\\OpenNDC\\TFRSlipsReport_OfficeCopy.rpt";
                 if (!string.IsNullOrEmpty(path1))
                 {
                     rptdoc1.Load(path1);

@@ -696,5 +696,42 @@ namespace PeshawarDHASW.Application_Layer.FileMap.SvcBenefitFiles
         {
 
         }
+
+        private void btnAddPlotAllData_Click(object sender, EventArgs e)
+        {
+
+            frmAddPlotNoAllRecordData obj = new frmAddPlotNoAllRecordData();
+            obj.ShowDialog();
+            txtplotno_Leave(null, null);
+        }
+
+        private void txtplotno_Leave(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtplotno.Text))
+            {
+                SqlParameter[] param =
+                          {
+                new SqlParameter("@Task","AddPlotNotoAllDataExist"),
+                new SqlParameter("@PlotNo",txtplotno.Text),
+            };
+                DataSet ds = Helper.SQLHelper.ExecuteDataset(Helper.SQLHelper.createConnection(), CommandType.StoredProcedure, "App.USP_PlotAllot", param);
+                if (ds.Tables.Count > 0)
+                {
+                    if (ds.Tables[0].Rows.Count > 0)
+                    {
+                        btnSaveandprinttheschedule.Enabled = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Plot No is not Exists. \n Please Add to PlotNo");
+                        btnSaveandprinttheschedule.Enabled = false;
+                    }
+                }
+                else
+                {
+                    btnSaveandprinttheschedule.Enabled = false;
+                }
+            }
+        }
     }
 }

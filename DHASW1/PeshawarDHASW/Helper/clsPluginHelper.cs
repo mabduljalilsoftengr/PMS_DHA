@@ -658,7 +658,7 @@ namespace PeshawarDHASW.Helper
           
           
             string Username = "dhapeshwar@bizsms.pk";//ConfigurationManager.AppSettings["Sms.Username"];
-            string Password = "dh2p3sh1w";//ConfigurationManager.AppSettings["Sms.Password"];
+            string Password = "D2h1**ph9";//ConfigurationManager.AppSettings["Sms.Password"];
             string SenderNum = MobileNo;//ConfigurationManager.AppSettings["Sms.Sendernum"];
             string Masking = "DHAPESHAWAR";
 

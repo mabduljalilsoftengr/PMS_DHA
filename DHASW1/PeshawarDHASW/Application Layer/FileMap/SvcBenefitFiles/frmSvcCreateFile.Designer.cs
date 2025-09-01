@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.RadListDataItem radListDataItem1 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem2 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem3 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem4 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem5 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem6 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem7 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem8 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem9 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem10 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem11 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem12 = new Telerik.WinControls.UI.RadListDataItem();
             this.btnSaveandprinttheschedule = new Telerik.WinControls.UI.RadButton();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
             this.lblplotbuisinesstype = new Telerik.WinControls.UI.RadLabel();
@@ -65,6 +65,7 @@
             this.radLabel11 = new Telerik.WinControls.UI.RadLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnAddPlotAllData = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnSaveandprinttheschedule)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
@@ -96,6 +97,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdboversize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdbnormal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddPlotAllData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,18 +160,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dpPlotSize.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
             this.dpPlotSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            radListDataItem1.Text = "2 Kanal";
-            radListDataItem2.Text = "1 Kanal";
-            radListDataItem3.Text = "10 Marla";
-            radListDataItem4.Text = "8 Marla";
-            radListDataItem5.Text = "5 Marla";
-            radListDataItem6.Text = "4 Marla";
-            this.dpPlotSize.Items.Add(radListDataItem1);
-            this.dpPlotSize.Items.Add(radListDataItem2);
-            this.dpPlotSize.Items.Add(radListDataItem3);
-            this.dpPlotSize.Items.Add(radListDataItem4);
-            this.dpPlotSize.Items.Add(radListDataItem5);
-            this.dpPlotSize.Items.Add(radListDataItem6);
+            radListDataItem7.Text = "2 Kanal";
+            radListDataItem8.Text = "1 Kanal";
+            radListDataItem9.Text = "10 Marla";
+            radListDataItem10.Text = "8 Marla";
+            radListDataItem11.Text = "5 Marla";
+            radListDataItem12.Text = "4 Marla";
+            this.dpPlotSize.Items.Add(radListDataItem7);
+            this.dpPlotSize.Items.Add(radListDataItem8);
+            this.dpPlotSize.Items.Add(radListDataItem9);
+            this.dpPlotSize.Items.Add(radListDataItem10);
+            this.dpPlotSize.Items.Add(radListDataItem11);
+            this.dpPlotSize.Items.Add(radListDataItem12);
             this.dpPlotSize.Location = new System.Drawing.Point(130, 50);
             this.dpPlotSize.Name = "dpPlotSize";
             this.dpPlotSize.NullText = "- Select Plot Size . . .";
@@ -268,8 +270,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtplotno.Location = new System.Drawing.Point(139, 184);
             this.txtplotno.Name = "txtplotno";
-            this.txtplotno.Size = new System.Drawing.Size(746, 20);
+            this.txtplotno.Size = new System.Drawing.Size(627, 20);
             this.txtplotno.TabIndex = 12;
+            this.txtplotno.Leave += new System.EventHandler(this.txtplotno_Leave);
             // 
             // radLabel5
             // 
@@ -420,11 +423,23 @@
             this.label2.TabIndex = 28;
             this.label2.Text = "Convert Sq Yd to Marla\'s Then Over-Size (2.5) or Under-Size (-2.5) in Marla";
             // 
+            // btnAddPlotAllData
+            // 
+            this.btnAddPlotAllData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddPlotAllData.Location = new System.Drawing.Point(786, 180);
+            this.btnAddPlotAllData.Name = "btnAddPlotAllData";
+            this.btnAddPlotAllData.Size = new System.Drawing.Size(99, 24);
+            this.btnAddPlotAllData.TabIndex = 29;
+            this.btnAddPlotAllData.Text = "Add Plot";
+            this.btnAddPlotAllData.ThemeName = "TelerikMetro";
+            this.btnAddPlotAllData.Click += new System.EventHandler(this.btnAddPlotAllData_Click);
+            // 
             // frmSvcCreateFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(905, 450);
+            this.Controls.Add(this.btnAddPlotAllData);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtextralessarea);
@@ -485,6 +500,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.rdboversize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdbnormal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAddPlotAllData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -524,5 +540,6 @@
         private Telerik.WinControls.UI.RadLabel radLabel11;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private Telerik.WinControls.UI.RadButton btnAddPlotAllData;
     }
 }
