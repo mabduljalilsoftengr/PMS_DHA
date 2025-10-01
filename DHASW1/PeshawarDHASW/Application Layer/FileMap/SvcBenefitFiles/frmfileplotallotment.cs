@@ -55,6 +55,12 @@ namespace PeshawarDHASW.Application_Layer.FileMap.SvcBenefitFiles
         private void frmfileplotallotment_Load(object sender, EventArgs e)
         {
             rad_allotmentgrdview.DataSource = ds.Tables[0].DefaultView;
+            
+            if (rad_allotmentgrdview.Columns.Contains("AllotmentDate"))
+            {
+                var dateCol = rad_allotmentgrdview.Columns["AllotmentDate"];
+                dateCol.FormatString = "{0:dd-MM-yyyy}";   // or whatever format you need
+            }
 
 
         }
@@ -119,7 +125,8 @@ namespace PeshawarDHASW.Application_Layer.FileMap.SvcBenefitFiles
         {
             if (e.Column.Name == "btndelete")
             {
-                int altid = int.Parse(e.Row.Cells["AllotmentID"].Value.ToString());
+                string alt = e.Row.Cells["AllotmentID"].Value.ToString();
+                int altid = int.Parse(alt);
                 string flNo = e.Row.Cells["FileNo"].Value.ToString();
                 string pltNo = e.Row.Cells["PlotNo"].Value.ToString();
                 // delete allotment detail

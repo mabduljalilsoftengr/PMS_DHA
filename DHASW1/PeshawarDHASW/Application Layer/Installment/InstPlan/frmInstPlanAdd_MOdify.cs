@@ -16,10 +16,12 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
         private int PLANID = 0;
         private string fileNo;
         private int oldacctseries_ = 0;
+       
 
         public frmInstPlanAdd_MOdify()
         {
             InitializeComponent();
+            
         }
 
         public frmInstPlanAdd_MOdify(int instalTemplateID, string FileNo)
@@ -62,7 +64,8 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstPlan
                         cmd.Parameters.AddWithValue("@FileNo", fileNo);
                     }
 
-                    cmd.Parameters.Add("@DueDate", SqlDbType.DateTime).Value = DateTime.Parse(dtpduedate.Text);
+                    cmd.Parameters.Add("@DueDate", SqlDbType.VarChar, 10).Value = dtpduedate.Value.ToString("yyyy-MM-dd");
+                    //cmd.Parameters.Add("@DueDate", SqlDbType.DateTime).Value = DateTime.Parse(dtpduedate.Text);
                     cmd.Parameters.AddWithValue("@InstNo", txtinstlno.Text);
                     cmd.Parameters.Add("@instalTempID", SqlDbType.Int).Value = instal_Templateid;
                     cmd.Parameters.AddWithValue("@Descp", txtdescrip.Text);

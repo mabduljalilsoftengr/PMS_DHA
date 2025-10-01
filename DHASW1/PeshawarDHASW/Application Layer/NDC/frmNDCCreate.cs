@@ -2264,7 +2264,7 @@ namespace PeshawarDHASW.Application_Layer.NDC
 
             decimal TotalAmount = 00;
             decimal FBRvalueperMarla = 0;
-            decimal percentageValue = 0.02m;
+            decimal percentageValue = 0.01m;
             double stampDutyAmount = 0;
             decimal stmdtyfee_minus = Convert.ToDecimal(txtStmDtyFee_minus.Text == "" ? "0" : txtStmDtyFee_minus.Text);
             SqlParameter[] prm_ =

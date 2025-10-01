@@ -108,7 +108,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstTemplate
                         txtinstalName.Text = row["TemplateName"].ToString();
                         txtInstDescp.Text = row["Descp"].ToString();
                         dtpInstStartDate.Value = Helper.clsPluginHelper.GetDateTime(row["StartDate"].ToString());
-                        dtpInstalEndDate.Value = Helper.clsPluginHelper.GetDateTime(row["EndDate"].ToString());
+                        //dtpInstalEndDate.Value = Helper.clsPluginHelper.GetDateTime(row["EndDate"].ToString());
                         cmbPhase.SelectedValue = string.IsNullOrEmpty(row["Phase"].ToString()) ? -1 : Convert.ToInt32(row["Phase"].ToString());
                         cmdPlotSize.Text = row["PlotSize"].ToString();
                         cbStatus.SelectedValue = string.IsNullOrEmpty(row["InstalTempStatus"].ToString()) ? -1 : Convert.ToInt32(row["InstalTempStatus"].ToString());
@@ -171,11 +171,11 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstTemplate
                     MessageBox.Show("Please enter Start Date for Installment Template.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-                if (dtpInstalEndDate.Value.Date.Year == 1)
-                {
-                    MessageBox.Show("Please enter End Date for Installment Template.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
+                //if (dtpInstalEndDate.Value.Date.Year == 1)
+                //{
+                //    MessageBox.Show("Please enter End Date for Installment Template.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //    return;
+                //}
                 if (cmbPhase.SelectedIndex > -1)
                 {
                     if (!string.IsNullOrEmpty(cmdPlotSize.Text))
@@ -239,7 +239,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstTemplate
                     new SqlParameter("@Name", clsPluginHelper.DbNullIfNullOrEmpty(txtinstalName.Text)),
                     new SqlParameter("@Descp", clsPluginHelper.DbNullIfNullOrEmpty(txtInstDescp.Text)),
                     new SqlParameter("@StartDate",dtpInstStartDate.Value.Date),
-                    new SqlParameter("@EndDate",dtpInstalEndDate.Value.Date),
+                    //new SqlParameter("@EndDate",dtpInstalEndDate.Value.Date),
                     new SqlParameter("@Phase", clsPluginHelper.DbNullIfNullOrEmpty(cmbPhase.SelectedValue.ToString())),
                     new SqlParameter("@PlotSize", clsPluginHelper.DbNullIfNullOrEmpty(cmdPlotSize.Text)),
                     new SqlParameter("@userID", Models.clsUser.ID),
@@ -278,7 +278,7 @@ namespace PeshawarDHASW.Application_Layer.Installment.InstTemplate
                     new SqlParameter("@Name", clsPluginHelper.DbNullIfNullOrEmpty(txtinstalName.Text)),
                     new SqlParameter("@Descp", clsPluginHelper.DbNullIfNullOrEmpty(txtInstDescp.Text)),
                     new SqlParameter("@StartDate", clsPluginHelper.GetDateTime(dtpInstStartDate.Value.ToString())),
-                    new SqlParameter("@EndDate", clsPluginHelper.GetDateTime(dtpInstalEndDate.Value.ToString())),
+                    //new SqlParameter("@EndDate", clsPluginHelper.GetDateTime(dtpInstalEndDate.Value.ToString())),
                     new SqlParameter("@Phase", clsPluginHelper.DbNullIfNullOrEmpty(cmbPhase.SelectedValue.ToString())),
                     new SqlParameter("@PlotSize", clsPluginHelper.DbNullIfNullOrEmpty(cmdPlotSize.Text)),
                     new SqlParameter("@userID", Models.clsUser.ID),

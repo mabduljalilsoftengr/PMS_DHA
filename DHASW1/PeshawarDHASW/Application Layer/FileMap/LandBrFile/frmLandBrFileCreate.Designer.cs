@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.RadListDataItem radListDataItem1 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem2 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem3 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem4 = new Telerik.WinControls.UI.RadListDataItem();
             this.btnSaveandprinttheschedule = new Telerik.WinControls.UI.RadButton();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
             this.radLabel21 = new Telerik.WinControls.UI.RadLabel();
@@ -58,6 +58,7 @@
             this.txtfileno = new Telerik.WinControls.UI.RadTextBox();
             this.radLabel3 = new Telerik.WinControls.UI.RadLabel();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
+            this.btntradeoff = new Telerik.WinControls.UI.RadButton();
             this.radLabel24 = new Telerik.WinControls.UI.RadLabel();
             this.rdIsAmalgamation = new Telerik.WinControls.UI.RadRadioButton();
             this.radLabel19 = new Telerik.WinControls.UI.RadLabel();
@@ -90,7 +91,6 @@
             this.btnAddPlotAllData = new Telerik.WinControls.UI.RadButton();
             this.radLabel22 = new Telerik.WinControls.UI.RadLabel();
             this.ddlSector = new Telerik.WinControls.UI.RadDropDownList();
-            this.btntradeoff = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.btnSaveandprinttheschedule)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
@@ -121,6 +121,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
             this.radGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btntradeoff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdIsAmalgamation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).BeginInit();
@@ -154,7 +155,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnAddPlotAllData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlSector)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btntradeoff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,7 +164,7 @@
             this.btnSaveandprinttheschedule.Location = new System.Drawing.Point(599, 329);
             this.btnSaveandprinttheschedule.Name = "btnSaveandprinttheschedule";
             this.btnSaveandprinttheschedule.Size = new System.Drawing.Size(276, 55);
-            this.btnSaveandprinttheschedule.TabIndex = 6;
+            this.btnSaveandprinttheschedule.TabIndex = 28;
             this.btnSaveandprinttheschedule.Text = "Save and Print the Schedule";
             this.btnSaveandprinttheschedule.ThemeName = "TelerikMetro";
             this.btnSaveandprinttheschedule.Click += new System.EventHandler(this.btnSaveandprinttheschedule_Click);
@@ -191,7 +191,7 @@
             this.radGroupBox1.Location = new System.Drawing.Point(7, 69);
             this.radGroupBox1.Name = "radGroupBox1";
             this.radGroupBox1.Size = new System.Drawing.Size(891, 240);
-            this.radGroupBox1.TabIndex = 2;
+            this.radGroupBox1.TabIndex = 5;
             this.radGroupBox1.Text = "File Information";
             this.radGroupBox1.ThemeName = "TelerikMetro";
             // 
@@ -208,7 +208,7 @@
             this.btnLandProvider.Location = new System.Drawing.Point(756, 199);
             this.btnLandProvider.Name = "btnLandProvider";
             this.btnLandProvider.Size = new System.Drawing.Size(119, 24);
-            this.btnLandProvider.TabIndex = 8;
+            this.btnLandProvider.TabIndex = 12;
             this.btnLandProvider.Text = "Add Land Provider";
             this.btnLandProvider.ThemeName = "TelerikMetro";
             this.btnLandProvider.Click += new System.EventHandler(this.btnLandProvider_Click);
@@ -219,7 +219,7 @@
             this.rdd_SubCategory.Location = new System.Drawing.Point(129, 52);
             this.rdd_SubCategory.Name = "rdd_SubCategory";
             this.rdd_SubCategory.Size = new System.Drawing.Size(746, 24);
-            this.rdd_SubCategory.TabIndex = 2;
+            this.rdd_SubCategory.TabIndex = 6;
             this.rdd_SubCategory.ThemeName = "TelerikMetro";
             // 
             // radLabel20
@@ -247,7 +247,7 @@
             this.InvestorNameList.Location = new System.Drawing.Point(128, 199);
             this.InvestorNameList.Name = "InvestorNameList";
             this.InvestorNameList.Size = new System.Drawing.Size(621, 26);
-            this.InvestorNameList.TabIndex = 37;
+            this.InvestorNameList.TabIndex = 11;
             this.InvestorNameList.ThemeName = "TelerikMetro";
             this.InvestorNameList.SelectedIndexChanged += new Telerik.WinControls.UI.Data.PositionChangedEventHandler(this.LandProviderList_SelectedIndexChanged);
             // 
@@ -265,14 +265,14 @@
             this.filestatus.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.filestatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            radListDataItem1.Text = "Active";
-            radListDataItem2.Text = "Cancel";
-            this.filestatus.Items.Add(radListDataItem1);
-            this.filestatus.Items.Add(radListDataItem2);
+            radListDataItem3.Text = "Active";
+            radListDataItem4.Text = "Cancel";
+            this.filestatus.Items.Add(radListDataItem3);
+            this.filestatus.Items.Add(radListDataItem4);
             this.filestatus.Location = new System.Drawing.Point(128, 169);
             this.filestatus.Name = "filestatus";
             this.filestatus.Size = new System.Drawing.Size(748, 24);
-            this.filestatus.TabIndex = 35;
+            this.filestatus.TabIndex = 10;
             this.filestatus.ThemeName = "TelerikMetro";
             // 
             // ddlplotbuisinesstype
@@ -281,7 +281,7 @@
             this.ddlplotbuisinesstype.Location = new System.Drawing.Point(130, 110);
             this.ddlplotbuisinesstype.Name = "ddlplotbuisinesstype";
             this.ddlplotbuisinesstype.Size = new System.Drawing.Size(746, 24);
-            this.ddlplotbuisinesstype.TabIndex = 33;
+            this.ddlplotbuisinesstype.TabIndex = 8;
             this.ddlplotbuisinesstype.Text = "-- Select Plot Buisines Type --";
             this.ddlplotbuisinesstype.ThemeName = "TelerikMetro";
             // 
@@ -293,7 +293,7 @@
             this.dpPlotSize.Name = "dpPlotSize";
             this.dpPlotSize.NullText = "- Select Plot Size . . .";
             this.dpPlotSize.Size = new System.Drawing.Size(746, 24);
-            this.dpPlotSize.TabIndex = 4;
+            this.dpPlotSize.TabIndex = 7;
             this.dpPlotSize.ThemeName = "TelerikMetro";
             // 
             // radLabel2
@@ -318,7 +318,7 @@
             this.OwnerCategory.Location = new System.Drawing.Point(130, 23);
             this.OwnerCategory.Name = "OwnerCategory";
             this.OwnerCategory.Size = new System.Drawing.Size(746, 24);
-            this.OwnerCategory.TabIndex = 0;
+            this.OwnerCategory.TabIndex = 5;
             this.OwnerCategory.ThemeName = "TelerikMetro";
             // 
             // radLabel4
@@ -336,7 +336,7 @@
             this.LandBrIssueDate.Location = new System.Drawing.Point(130, 139);
             this.LandBrIssueDate.Name = "LandBrIssueDate";
             this.LandBrIssueDate.Size = new System.Drawing.Size(746, 24);
-            this.LandBrIssueDate.TabIndex = 6;
+            this.LandBrIssueDate.TabIndex = 9;
             this.LandBrIssueDate.TabStop = false;
             this.LandBrIssueDate.Text = "07/11/2018";
             this.LandBrIssueDate.ThemeName = "TelerikMetro";
@@ -347,7 +347,7 @@
             this.txtremarks.Location = new System.Drawing.Point(128, 297);
             this.txtremarks.Name = "txtremarks";
             this.txtremarks.Size = new System.Drawing.Size(747, 20);
-            this.txtremarks.TabIndex = 5;
+            this.txtremarks.TabIndex = 25;
             // 
             // radLabel8
             // 
@@ -362,7 +362,7 @@
             this.txtplotno.Location = new System.Drawing.Point(128, 74);
             this.txtplotno.Name = "txtplotno";
             this.txtplotno.Size = new System.Drawing.Size(622, 20);
-            this.txtplotno.TabIndex = 2;
+            this.txtplotno.TabIndex = 15;
             this.txtplotno.Leave += new System.EventHandler(this.txtplotno_Leave);
             // 
             // radLabel7
@@ -378,14 +378,14 @@
             this.LandProviderName.Location = new System.Drawing.Point(128, 124);
             this.LandProviderName.Name = "LandProviderName";
             this.LandProviderName.Size = new System.Drawing.Size(299, 20);
-            this.LandProviderName.TabIndex = 4;
+            this.LandProviderName.TabIndex = 18;
             // 
             // txtFirstBuyerName
             // 
             this.txtFirstBuyerName.Location = new System.Drawing.Point(128, 198);
             this.txtFirstBuyerName.Name = "txtFirstBuyerName";
             this.txtFirstBuyerName.Size = new System.Drawing.Size(747, 20);
-            this.txtFirstBuyerName.TabIndex = 3;
+            this.txtFirstBuyerName.TabIndex = 21;
             // 
             // radLabel6
             // 
@@ -408,7 +408,7 @@
             this.txtfileno.Location = new System.Drawing.Point(128, 47);
             this.txtfileno.Name = "txtfileno";
             this.txtfileno.Size = new System.Drawing.Size(749, 20);
-            this.txtfileno.TabIndex = 10;
+            this.txtfileno.TabIndex = 14;
             this.txtfileno.TextChanged += new System.EventHandler(this.txtfileno_TextChanged);
             this.txtfileno.Leave += new System.EventHandler(this.txtfileno_Leave);
             // 
@@ -436,9 +436,19 @@
             this.radGroupBox2.Location = new System.Drawing.Point(7, 5);
             this.radGroupBox2.Name = "radGroupBox2";
             this.radGroupBox2.Size = new System.Drawing.Size(891, 58);
-            this.radGroupBox2.TabIndex = 10;
+            this.radGroupBox2.TabIndex = 0;
             this.radGroupBox2.Text = "Sale Option";
             this.radGroupBox2.ThemeName = "TelerikMetro";
+            // 
+            // btntradeoff
+            // 
+            this.btntradeoff.Location = new System.Drawing.Point(714, 21);
+            this.btntradeoff.Name = "btntradeoff";
+            this.btntradeoff.Size = new System.Drawing.Size(163, 24);
+            this.btntradeoff.TabIndex = 4;
+            this.btntradeoff.Text = "Enter TRADE OFF";
+            this.btntradeoff.ThemeName = "TelerikMetro";
+            this.btntradeoff.Click += new System.EventHandler(this.btntradeoff_Click);
             // 
             // radLabel24
             // 
@@ -454,7 +464,7 @@
             this.rdIsAmalgamation.Location = new System.Drawing.Point(423, 27);
             this.rdIsAmalgamation.Name = "rdIsAmalgamation";
             this.rdIsAmalgamation.Size = new System.Drawing.Size(93, 18);
-            this.rdIsAmalgamation.TabIndex = 14;
+            this.rdIsAmalgamation.TabIndex = 2;
             this.rdIsAmalgamation.TabStop = false;
             this.rdIsAmalgamation.Text = "Amalgamation";
             this.rdIsAmalgamation.CheckStateChanged += new System.EventHandler(this.rdIsAmalgamation_CheckStateChanged);
@@ -480,7 +490,7 @@
             this.rdph1Extension.Location = new System.Drawing.Point(159, 27);
             this.rdph1Extension.Name = "rdph1Extension";
             this.rdph1Extension.Size = new System.Drawing.Size(111, 18);
-            this.rdph1Extension.TabIndex = 8;
+            this.rdph1Extension.TabIndex = 1;
             this.rdph1Extension.TabStop = false;
             this.rdph1Extension.Text = "Phase-1 Extension";
             this.rdph1Extension.ToggleStateChanged += new Telerik.WinControls.UI.StateChangedEventHandler(this.rdph1Extension_ToggleStateChanged);
@@ -490,7 +500,7 @@
             this.btnadnewplotcategory.Location = new System.Drawing.Point(545, 21);
             this.btnadnewplotcategory.Name = "btnadnewplotcategory";
             this.btnadnewplotcategory.Size = new System.Drawing.Size(163, 24);
-            this.btnadnewplotcategory.TabIndex = 7;
+            this.btnadnewplotcategory.TabIndex = 3;
             this.btnadnewplotcategory.Text = "Add New Plot Size Category";
             this.btnadnewplotcategory.ThemeName = "TelerikMetro";
             this.btnadnewplotcategory.Click += new System.EventHandler(this.btnadnewplotcategory_Click);
@@ -501,7 +511,7 @@
             this.rdbnodirectsale.Location = new System.Drawing.Point(36, 27);
             this.rdbnodirectsale.Name = "rdbnodirectsale";
             this.rdbnodirectsale.Size = new System.Drawing.Size(57, 18);
-            this.rdbnodirectsale.TabIndex = 1;
+            this.rdbnodirectsale.TabIndex = 0;
             this.rdbnodirectsale.Text = "Normal";
             this.rdbnodirectsale.ToggleState = Telerik.WinControls.Enumerations.ToggleState.On;
             // 
@@ -531,7 +541,7 @@
             this.radGroupBox3.Location = new System.Drawing.Point(163, 323);
             this.radGroupBox3.Name = "radGroupBox3";
             this.radGroupBox3.Size = new System.Drawing.Size(386, 33);
-            this.radGroupBox3.TabIndex = 12;
+            this.radGroupBox3.TabIndex = 26;
             this.radGroupBox3.ThemeName = "ControlDefault";
             // 
             // rdbundersize
@@ -567,7 +577,7 @@
             this.txtextralessarea.Location = new System.Drawing.Point(165, 364);
             this.txtextralessarea.Name = "txtextralessarea";
             this.txtextralessarea.Size = new System.Drawing.Size(384, 20);
-            this.txtextralessarea.TabIndex = 13;
+            this.txtextralessarea.TabIndex = 27;
             this.txtextralessarea.ThemeName = "ControlDefault";
             // 
             // radLabel12
@@ -592,7 +602,7 @@
             this.LandProviderFather.Location = new System.Drawing.Point(464, 125);
             this.LandProviderFather.Name = "LandProviderFather";
             this.LandProviderFather.Size = new System.Drawing.Size(413, 20);
-            this.LandProviderFather.TabIndex = 5;
+            this.LandProviderFather.TabIndex = 19;
             // 
             // radLabel14
             // 
@@ -607,14 +617,14 @@
             this.FirstOwnerCNIC.Location = new System.Drawing.Point(128, 223);
             this.FirstOwnerCNIC.Name = "FirstOwnerCNIC";
             this.FirstOwnerCNIC.Size = new System.Drawing.Size(747, 20);
-            this.FirstOwnerCNIC.TabIndex = 4;
+            this.FirstOwnerCNIC.TabIndex = 22;
             // 
             // FirstOwnerAddress
             // 
             this.FirstOwnerAddress.Location = new System.Drawing.Point(128, 272);
             this.FirstOwnerAddress.Name = "FirstOwnerAddress";
             this.FirstOwnerAddress.Size = new System.Drawing.Size(747, 20);
-            this.FirstOwnerAddress.TabIndex = 8;
+            this.FirstOwnerAddress.TabIndex = 24;
             // 
             // radLabel15
             // 
@@ -637,14 +647,14 @@
             this.FirstOwnerMobile.Location = new System.Drawing.Point(128, 246);
             this.FirstOwnerMobile.Name = "FirstOwnerMobile";
             this.FirstOwnerMobile.Size = new System.Drawing.Size(747, 20);
-            this.FirstOwnerMobile.TabIndex = 5;
+            this.FirstOwnerMobile.TabIndex = 23;
             // 
             // chkMultiOwnercheck
             // 
             this.chkMultiOwnercheck.Location = new System.Drawing.Point(126, 175);
             this.chkMultiOwnercheck.Name = "chkMultiOwnercheck";
             this.chkMultiOwnercheck.Size = new System.Drawing.Size(368, 18);
-            this.chkMultiOwnercheck.TabIndex = 16;
+            this.chkMultiOwnercheck.TabIndex = 20;
             this.chkMultiOwnercheck.Text = "Multiple Owner (In Case More than one First Owners Please this Field)";
             // 
             // radLabel17
@@ -671,7 +681,7 @@
             this.txtAmalgamationFileNo.Location = new System.Drawing.Point(187, 21);
             this.txtAmalgamationFileNo.Name = "txtAmalgamationFileNo";
             this.txtAmalgamationFileNo.Size = new System.Drawing.Size(688, 20);
-            this.txtAmalgamationFileNo.TabIndex = 12;
+            this.txtAmalgamationFileNo.TabIndex = 13;
             this.txtAmalgamationFileNo.Leave += new System.EventHandler(this.txtAmalgamationFileNo_Leave);
             // 
             // radGroupBox4
@@ -711,7 +721,7 @@
             this.radGroupBox4.Location = new System.Drawing.Point(7, 315);
             this.radGroupBox4.Name = "radGroupBox4";
             this.radGroupBox4.Size = new System.Drawing.Size(891, 394);
-            this.radGroupBox4.TabIndex = 18;
+            this.radGroupBox4.TabIndex = 13;
             this.radGroupBox4.Text = "File Information";
             this.radGroupBox4.ThemeName = "TelerikMetro";
             // 
@@ -720,7 +730,7 @@
             this.btnAddPlotAllData.Location = new System.Drawing.Point(756, 72);
             this.btnAddPlotAllData.Name = "btnAddPlotAllData";
             this.btnAddPlotAllData.Size = new System.Drawing.Size(121, 24);
-            this.btnAddPlotAllData.TabIndex = 9;
+            this.btnAddPlotAllData.TabIndex = 16;
             this.btnAddPlotAllData.Text = "Add Plot";
             this.btnAddPlotAllData.ThemeName = "TelerikMetro";
             this.btnAddPlotAllData.Click += new System.EventHandler(this.btnAddPlotAllData_Click);
@@ -741,17 +751,7 @@
             this.ddlSector.Location = new System.Drawing.Point(128, 98);
             this.ddlSector.Name = "ddlSector";
             this.ddlSector.Size = new System.Drawing.Size(746, 20);
-            this.ddlSector.TabIndex = 23;
-            // 
-            // btntradeoff
-            // 
-            this.btntradeoff.Location = new System.Drawing.Point(714, 21);
-            this.btntradeoff.Name = "btntradeoff";
-            this.btntradeoff.Size = new System.Drawing.Size(163, 24);
-            this.btntradeoff.TabIndex = 16;
-            this.btntradeoff.Text = "Enter TRADE OFF";
-            this.btntradeoff.ThemeName = "TelerikMetro";
-            this.btntradeoff.Click += new System.EventHandler(this.btntradeoff_Click);
+            this.ddlSector.TabIndex = 17;
             // 
             // frmLandBrFileCreate
             // 
@@ -802,6 +802,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).EndInit();
             this.radGroupBox2.ResumeLayout(false);
             this.radGroupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btntradeoff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rdIsAmalgamation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel19)).EndInit();
@@ -837,7 +838,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnAddPlotAllData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ddlSector)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btntradeoff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 

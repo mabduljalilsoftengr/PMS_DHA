@@ -9,13 +9,13 @@ namespace PMS_Setting
     {
 
 
-        //public static string ConnectionString_MainServer { get; set; } = "Server=172.16.0.1; Database=DHAPeshawarDB;   user Id=sa; Password=!#bU+Ue9;";
-        //public static string ConnectionString_MainServer_DHADB { get; set; } = "Server=172.16.0.1; Database=DHADB;   user Id=sa; Password=!#bU+Ue9;";
-        ////public static string ConnectionString_MainServer_DHADB { get; set; } = "Server=sql7004.site4now.net; Database=DB_A430E8_APITest16;   user Id=DB_A430E8_APITest16_admin; Password=Samsung@831;";
-        //public static string ConnectionString_VerifiedImageDB { get; set; } = "Server=172.16.0.1; Database=VerifiedDbMembershipImages; user Id=sa; Password=!#bU+Ue9;";
-        //public static string ConnectionString_WebDatabase { get; set; } = "Server=sql7004.site4now.net; Database=DB_A430E8_LvWEBdB;  user Id=DB_A430E8_LvWEBdB_admin; Password=lDHA@WeBdB_Ms*19;";
-        //public static string ConnectionString_ImageArchive { get; set; } = "Server=172.16.0.1; Database=ImageArchiveDB; Integrated Security=true;";
-        //public static string ConnectionString_ComplaintMgt { get; set; } = "Server=172.16.0.1; Database=ComplaintMgtDB; user Id=sa; Password=abcd@1234;";// Integrated Security=true;";
+        public static string ConnectionString_MainServer { get; set; } = "Server=172.16.0.1; Database=DHAPeshawarDB;   user Id=sa; Password=!#bU+Ue9;";
+        public static string ConnectionString_MainServer_DHADB { get; set; } = "Server=172.16.0.1; Database=DHADB;   user Id=sa; Password=!#bU+Ue9;";
+        //public static string ConnectionString_MainServer_DHADB { get; set; } = "Server=sql7004.site4now.net; Database=DB_A430E8_APITest16;   user Id=DB_A430E8_APITest16_admin; Password=Samsung@831;";
+        public static string ConnectionString_VerifiedImageDB { get; set; } = "Server=172.16.0.1; Database=VerifiedDbMembershipImages; user Id=sa; Password=!#bU+Ue9;";
+        public static string ConnectionString_WebDatabase { get; set; } = "Server=sql7004.site4now.net; Database=DB_A430E8_LvWEBdB;  user Id=DB_A430E8_LvWEBdB_admin; Password=lDHA@WeBdB_Ms*19;";
+        public static string ConnectionString_ImageArchive { get; set; } = "Server=172.16.0.1; Database=ImageArchiveDB; Integrated Security=true;";
+        public static string ConnectionString_ComplaintMgt { get; set; } = "Server=172.16.0.1; Database=ComplaintMgtDB; user Id=sa; Password=abcd@1234;";// Integrated Security=true;";
 
 
 
@@ -40,14 +40,14 @@ namespace PMS_Setting
         //public static string ConnectionString_ComplaintMgt { get; set; } = "Server=172.16.0.7; Database=ComplaintMgtDB; user Id=sa; Password=abcd@1234;";// Integrated Security=true;";
 
 
-        /////////////   Testing 2    
-        public static string ConnectionString_MainServer { get; set; } = "Server=172.16.0.6; Database=DHAPeshawarDB;   user Id=sa; Password=abcd@1234;";
-        //public static string ConnectionString_MainServer_DHADB { get; set; } = "Server=172.16.0.127; Database=DHADB;   user Id=sa; Password=!#bU+Ue9;";
-        public static string ConnectionString_VerifiedImageDB { get; set; } = "Server=172.16.0.6; Database=VerifiedDbMembershipImages; user Id=sa; Password=abcd@1234;";
-        public static string ConnectionString_WebDatabase { get; set; } = "Server=sql7004.site4now.net; Database=DB_A430E8_LvWEBdB;  user Id=DB_A430E8_LvWEBdB_admin; Password=lDHA@WeBdB_Ms*19;";
-        public static string ConnectionString_MainServer_DHADB { get; set; } = "Server=sql7004.site4now.net; Database=DB_A430E8_APITest16;   user Id=DB_A430E8_APITest16_admin; Password=Samsung@831;";
-        public static string ConnectionString_ImageArchive { get; set; } = "Server=172.16.0.6; Failover Partner=172.16.0.7; Initial Catalog=ImageArchiveDB; user Id=sa; Password=!#bU+Ue9;";
-        public static string ConnectionString_ComplaintMgt { get; set; } = "Server=172.16.0.6; Database=ComplaintMgtDB; user Id=sa; Password=abcd@1234;";
+        ///////////////   Testing 2    
+        //public static string ConnectionString_MainServer { get; set; } = "Server=172.16.0.6; Database=DHAPeshawarDB;   user Id=sa; Password=abcd@1234;";
+        ////public static string ConnectionString_MainServer_DHADB { get; set; } = "Server=172.16.0.127; Database=DHADB;   user Id=sa; Password=!#bU+Ue9;";
+        //public static string ConnectionString_VerifiedImageDB { get; set; } = "Server=172.16.0.6; Database=VerifiedDbMembershipImages; user Id=sa; Password=abcd@1234;";
+        //public static string ConnectionString_WebDatabase { get; set; } = "Server=sql7004.site4now.net; Database=DB_A430E8_LvWEBdB;  user Id=DB_A430E8_LvWEBdB_admin; Password=lDHA@WeBdB_Ms*19;";
+        //public static string ConnectionString_MainServer_DHADB { get; set; } = "Server=sql7004.site4now.net; Database=DB_A430E8_APITest16;   user Id=DB_A430E8_APITest16_admin; Password=Samsung@831;";
+        //public static string ConnectionString_ImageArchive { get; set; } = "Server=172.16.0.6; Failover Partner=172.16.0.7; Initial Catalog=ImageArchiveDB; user Id=sa; Password=!#bU+Ue9;";
+        //public static string ConnectionString_ComplaintMgt { get; set; } = "Server=172.16.0.6; Database=ComplaintMgtDB; user Id=sa; Password=abcd@1234;";
 
         ////////////    Local  Testing
         //public static string ConnectionString_MainServer { get; set; } = "Server=172.16.0.24; Database=DHAPeshawarDB; user Id=sa; Password=abcd@1234;";// Integrated Security=true;";

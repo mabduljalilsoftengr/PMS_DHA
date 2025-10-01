@@ -62,7 +62,7 @@
             // 
             this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this.radGroupBox1.HeaderText = "Allotment Details";
-            this.radGroupBox1.Location = new System.Drawing.Point(12, 3);
+            this.radGroupBox1.Location = new System.Drawing.Point(12, 155);
             this.radGroupBox1.Name = "radGroupBox1";
             this.radGroupBox1.Size = new System.Drawing.Size(661, 185);
             this.radGroupBox1.TabIndex = 3;
@@ -79,7 +79,7 @@
             this.radGroupBox2.Controls.Add(this.txt_plotno);
             this.radGroupBox2.Controls.Add(this.label7);
             this.radGroupBox2.HeaderText = "New Allotment Detail";
-            this.radGroupBox2.Location = new System.Drawing.Point(12, 207);
+            this.radGroupBox2.Location = new System.Drawing.Point(12, 12);
             this.radGroupBox2.Name = "radGroupBox2";
             this.radGroupBox2.Size = new System.Drawing.Size(353, 137);
             this.radGroupBox2.TabIndex = 4;
@@ -155,45 +155,45 @@
             // 
             // rad_allotmentgrdview
             // 
-            this.rad_allotmentgrdview.Location = new System.Drawing.Point(12, 24);
+            this.rad_allotmentgrdview.Location = new System.Drawing.Point(12, 176);
             // 
             // 
             // 
             this.rad_allotmentgrdview.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
             gridViewTextBoxColumn1.FieldName = "AllotmentID";
             gridViewTextBoxColumn1.HeaderText = "AllotmentID";
-            gridViewTextBoxColumn1.IsVisible = false;
             gridViewTextBoxColumn1.Name = "AllotmentID";
+            gridViewTextBoxColumn1.Width = 46;
             gridViewTextBoxColumn2.FieldName = "FileNo";
             gridViewTextBoxColumn2.HeaderText = "FileNo";
             gridViewTextBoxColumn2.Name = "FileNo";
-            gridViewTextBoxColumn2.Width = 85;
+            gridViewTextBoxColumn2.Width = 79;
             gridViewTextBoxColumn3.FieldName = "AllotmentDate";
             gridViewTextBoxColumn3.HeaderText = "AllotmentDate";
             gridViewTextBoxColumn3.Name = "AllotmentDate";
-            gridViewTextBoxColumn3.Width = 119;
+            gridViewTextBoxColumn3.Width = 111;
             gridViewTextBoxColumn4.FieldName = "PlotNo";
             gridViewTextBoxColumn4.HeaderText = "PlotNo";
             gridViewTextBoxColumn4.Name = "PlotNo";
-            gridViewTextBoxColumn4.Width = 119;
+            gridViewTextBoxColumn4.Width = 111;
             gridViewTextBoxColumn5.FieldName = "Status";
             gridViewTextBoxColumn5.HeaderText = "Status";
             gridViewTextBoxColumn5.Name = "Status";
-            gridViewTextBoxColumn5.Width = 119;
+            gridViewTextBoxColumn5.Width = 111;
             gridViewTextBoxColumn6.FieldName = "Remarks";
             gridViewTextBoxColumn6.HeaderText = "Remarks";
             gridViewTextBoxColumn6.IsVisible = false;
             gridViewTextBoxColumn6.Name = "Remarks";
             gridViewTextBoxColumn7.HeaderText = "Message";
             gridViewTextBoxColumn7.Name = "Message";
-            gridViewTextBoxColumn7.Width = 128;
+            gridViewTextBoxColumn7.Width = 119;
             gridViewTextBoxColumn7.WrapText = true;
             gridViewCommandColumn1.DefaultText = "Delete";
             gridViewCommandColumn1.FieldName = "btndelete";
             gridViewCommandColumn1.HeaderText = "Delete";
             gridViewCommandColumn1.Name = "btndelete";
             gridViewCommandColumn1.UseDefaultText = true;
-            gridViewCommandColumn1.Width = 67;
+            gridViewCommandColumn1.Width = 61;
             this.rad_allotmentgrdview.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,
@@ -214,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 396);
+            this.ClientSize = new System.Drawing.Size(677, 395);
             this.Controls.Add(this.rad_allotmentgrdview);
             this.Controls.Add(this.radGroupBox2);
             this.Controls.Add(this.radGroupBox1);

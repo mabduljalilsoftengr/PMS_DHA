@@ -394,12 +394,73 @@ namespace PeshawarDHASW.Application_Layer.FileMap.LandBrFile
 
         }
 
-        private void btnSaveandprinttheschedule_Click(object sender, EventArgs e)
+
+        public void GeneratePlan(string fileNo, string OwnerCategory, string BusinessType, string PlotSize, string DevUnDev, string startDate, int userId)
         {
-            string ownerCategory = OwnerCategory.SelectedItem.Text;//.SelectedItem.Text;
-            string plottype = ddlplotbuisinesstype.SelectedItem.Text;//.SelectedItem.Text;
-            string PlotSize = dpPlotSize.SelectedItem.Text;
+
+            DateTime ScheduleDate;
+            try
+            {
+
+                DateTime parsedStartDate = DateTime.Parse(startDate);
+
+                if (OwnerCategory == "Svc Benefit")
+                {
+                    ScheduleDate = parsedStartDate.AddDays(30);
+                }
+                else if (OwnerCategory == "Investors")
+                {
+                    ScheduleDate = parsedStartDate.AddDays(45);
+                }
+                else
+                {
+                    ScheduleDate = parsedStartDate;
+                }
+
+                string connectionString = clsMostUseVars.Connectionstring;
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand("App.USP_GenerateInstallmentPlan", con))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@FileNo", fileNo);
+                        cmd.Parameters.AddWithValue("@OwnerCategory", OwnerCategory);
+                        cmd.Parameters.AddWithValue("@BusinessType", BusinessType);
+                        cmd.Parameters.AddWithValue("@PlotSize", PlotSize);
+                        cmd.Parameters.AddWithValue("@DevUnDev", DevUnDev);
+                        cmd.Parameters.AddWithValue("@StartDate", ScheduleDate);
+                        cmd.Parameters.AddWithValue("@UserID", userId);
+
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Something went wrong: " + ex.Message);
+            }
+        }
+        private void btnSaveandprinttheschedule_Click(object sender, EventArgs e)
+        { 
+            string ownerCategory = OwnerCategory.SelectedItem.Text;//.SelectedItem.Text;   Investor/Svc Benefits
+            string plottype = ddlplotbuisinesstype.SelectedItem.Text;//.SelectedItem.Text; Resid / Comm
+            string PlotSize = dpPlotSize.SelectedItem.Text; //                             5 Marla
+            string BusinessType = ddlplotbuisinesstype.SelectedItem.Text;//.SelectedItem.Text; Resid / Comm
+            string DevUnDev = ddlSector.Text;  //ddlSector.SelectedValue.ToString(); //                       Dev / Un-Dev
+            int UserId = Models.clsUser.ID;
+            string fileNo = txtfileno.Text;
+            string startDate = Convert.ToString(LandBrIssueDate.Value);
+
+            //string selectedValue = ddlSector.SelectedValue.ToString();
+            //string selectedText = ddlSector.Text; // Gets the text displayed in the dropdown
+            //DateTime StartDate
             bool suspended = false;///this will be removed once schedual is done.
+
+
+            //planGerante(ownerCategory, plottype, PlotSize, DevUnDev);
 
             if (string.IsNullOrWhiteSpace(txtfileno.Text))
             {
@@ -424,12 +485,12 @@ namespace PeshawarDHASW.Application_Layer.FileMap.LandBrFile
                 string repl = PlotNoNewSet.Substring(LastIndex, lengthofArry);
                 string LastPlotNo = PlotNoNewSet.Replace(repl, "").ToUpper();
                 string Sector = ddlSector.SelectedItem.Text.ToUpper();
-
-                if (Sector.Contains(LastPlotNo) == false)
-                {
-                    MessageBox.Show("Sector Selection is Not Match with Plot No.");
-                    return;
-                }
+                string FileNo = txtfileno.Text;
+                //if (Sector.Contains(LastPlotNo) == false)
+                //{
+                //    MessageBox.Show("Sector Selection is Not Match with Plot No.");
+                //    return;
+                //}
             }
 
             //if (string.IsNullOrWhiteSpace(LandProviderName.Text))
@@ -451,30 +512,140 @@ namespace PeshawarDHASW.Application_Layer.FileMap.LandBrFile
             using (SqlConnection Objcon = Helper.SQLHelper.createConnection())
             {
 
-                using (SqlTransaction sqlTrans = Objcon.BeginTransaction("LandBrFileSaving"))
+                //using (SqlTransaction sqlTrans = Objcon.BeginTransaction("LandBrFileSaving"))
+                //{
+                try
                 {
-                    try
+                    if (string.IsNullOrWhiteSpace(txtfileno.Text))
                     {
-                        if (string.IsNullOrWhiteSpace(txtfileno.Text))
-                        {
-                            MessageBox.Show("FileNo is Missing. Please Enter File No.");
-                            txtfileno.Focus();
-                            return;
-                        }
-                        //if (txtfileno.Text.ToUpper().Contains("COM") == true && rdbnodirectsale.CheckState == CheckState.Checked)
-                        //{
-                        //    MessageBox.Show("Please Change the Sale Option of File.");
-                        //    return;
-                        //}
+                        MessageBox.Show("FileNo is Missing. Please Enter File No.");
+                        txtfileno.Focus();
+                        return;
+                    }
+                    //if (txtfileno.Text.ToUpper().Contains("COM") == true && rdbnodirectsale.CheckState == CheckState.Checked)
+                    //{
+                    //    MessageBox.Show("Please Change the Sale Option of File.");
+                    //    return;
+                    //}
 
-                        //File No Verification
-                        SqlParameter[] searchparamFile ={  new SqlParameter("@Task","select"),
-                                 new SqlParameter("@FileNo", clsPluginHelper.DbNullIfNullOrEmpty(txtfileno.Text)) };
-                        DataSet dsFile = SQLHelper.ExecuteDataset(sqlTrans,
+                    //File No Verification
+                    SqlParameter[] searchparamFile =
+                        {
+                                 new SqlParameter("@Task","select"),
+                                 new SqlParameter("@FileNo", clsPluginHelper.DbNullIfNullOrEmpty(txtfileno.Text))
+                            };
+
+                    DataSet dsFile = SQLHelper.ExecuteDataset(Helper.SQLHelper.createConnection(),
                                                     CommandType.StoredProcedure,
                                                     "App.USP_tbl_FileMap",
                                                     searchparamFile
-                                                    );
+
+                    );
+                    if (dsFile.Tables[0].Rows.Count > 0)
+                    {
+                        DialogResult results = RadMessageBox.Show(
+                        "This FileNo is Already Exist, Do you want to do the Allotment",
+                        "Attention!",
+                        MessageBoxButtons.YesNo,
+                        RadMessageIcon.Question);
+
+                        if (results == DialogResult.Yes)
+                        {
+                            try
+                            {
+                                // Example: dpPlotSize.SelectedItem.Text might be "1 Marla", "5 Marla", "1 Kanal", "2 Kanal"
+                                string sizeText = dpPlotSize.SelectedItem.Text.Trim();   // e.g. "5 Marla"
+
+                                int kanal = 0;
+                                int marla = 0;
+
+                                // Extract the first integer from the text (e.g. 1, 5, 2)
+                                int number = 0;
+                                int.TryParse(System.Text.RegularExpressions.Regex.Match(sizeText, @"\d+").Value, out number);
+
+                                if (sizeText.IndexOf("Marla", StringComparison.OrdinalIgnoreCase) >= 0)
+                                {
+                                    marla = number;
+                                    kanal = 0;
+                                }
+                                else if (sizeText.IndexOf("Kanal", StringComparison.OrdinalIgnoreCase) >= 0)
+                                {
+                                    kanal = number;
+                                    marla = 0;
+                                }
+
+
+                                SqlParameter[] parameters =
+                                {
+                                    new SqlParameter("@Task", "PlotAllotment"),
+                                    new SqlParameter("@FileNo", txtfileno.Text.Trim()),
+                                    new SqlParameter("@PlotNo", txtplotno.Text.Trim()),
+                                    new SqlParameter("@Sector_ID", ddlSector.SelectedValue),
+                                    new SqlParameter("@LandBrIssueDate", LandBrIssueDate.Value),
+                                    //new
+                                    new SqlParameter("@PlotBusinessTypeID", ddlplotbuisinesstype.SelectedValue),
+                                    new SqlParameter("@Kanal", kanal),
+                                    new SqlParameter("@Marla", marla),
+                                    new SqlParameter("@SqYard", "0"),
+                                    new SqlParameter("@Status", clsPluginHelper.DbNullIfNullOrEmpty(filestatus.Text)),
+                                    new SqlParameter("@Remarks",txtremarks.Text),
+                                    new SqlParameter("@userID",Models.clsUser.ID),
+                                };
+
+                                using (DataSet ds = SQLHelper.ExecuteDataset(
+                                                        Helper.SQLHelper.createConnection(),
+                                                        CommandType.StoredProcedure,
+                                                        "App.USP_tbl_FileMap",
+                                                        parameters))
+                                {
+                                   if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                                    {
+                                        int plotId = Convert.ToInt32(ds.Tables[0].Rows[0]["PlotID"]);
+                                        int fileKeyId = Convert.ToInt32(ds.Tables[0].Rows[0]["FileKeyID"]);
+                                        string allotmentDate = Convert.ToString(ds.Tables[0].Rows[0]["AllotmentDate"]);
+                                        string plotNo = Convert.ToString(ds.Tables[0].Rows[0]["PlotNo"]);   // new
+                                        string fileNu = Convert.ToString(ds.Tables[0].Rows[0]["FileNo"]);   // new
+                                        string status = Convert.ToString(ds.Tables[0].Rows[0]["Status"]);   // new
+                                        frmfileplotallotment frm_plotallot = new frmfileplotallotment(
+                                            txtfileno.Text,
+                                            txtplotno.Text,
+                                            dpPlotSize.Text,
+                                            Convert.ToInt32(ddlplotbuisinesstype.SelectedValue),
+                                            Convert.ToInt32(ddlSector.SelectedValue),
+                                            Convert.ToString(LandBrIssueDate.Value),
+                                            txtremarks.Text,
+                                            "",
+                                            ds);
+
+                                        frm_plotallot.ShowDialog();
+                                    }
+
+                                   else if (ds.Tables.Count >= 0 && ds.Tables[0].Rows.Count >= 0)
+                                    {
+                                       
+                                        frmfileplotallotment frm_plotallot = new frmfileplotallotment(
+                                            txtfileno.Text,
+                                            txtplotno.Text,
+                                            dpPlotSize.Text,
+                                            Convert.ToInt32(ddlplotbuisinesstype.SelectedValue),
+                                            Convert.ToInt32(ddlSector.SelectedValue),
+                                            Convert.ToString(LandBrIssueDate.Value),
+                                            txtremarks.Text,
+                                            "",
+                                           ds);
+
+                                        frm_plotallot.ShowDialog();
+                                    }
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show("Error allocating plot: " + ex.Message);
+                            }
+
+                        }
+                    }
+
                         #region File Existing Checked
                         if (dsFile.Tables[0].Rows.Count == 0)
                         {
@@ -514,16 +685,16 @@ namespace PeshawarDHASW.Application_Layer.FileMap.LandBrFile
                                 new SqlParameter("@IsAmalgamation",rdIsAmalgamation.IsChecked ==  true? 1 : 0),
                                 new SqlParameter("@Amal_ParentFileNo",txtAmalgamationFileNo.Text),
                                 new SqlParameter("@SubOwnerCategory", rdd_SubCategory.Text),
-                                 new SqlParameter("@Sector_ID",ddlSector.SelectedValue.ToString()),
-                        };
+                                new SqlParameter("@Sector_ID",ddlSector.SelectedValue.ToString()),
+                            };
 
-                            DataSet result = SQLHelper.ExecuteDataset(sqlTrans, CommandType.StoredProcedure, "App.USP_tbl_FileMap", parameters);
+                            DataSet result = SQLHelper.ExecuteDataset(Helper.SQLHelper.createConnection(), CommandType.StoredProcedure, "App.USP_tbl_FileMap", parameters);
 
                             #region Allotment and Plot Saving of File
                             if (result.Tables[1].Rows.Count > 0)
                             {
                                 string allotmsg = result.Tables[1].Rows[0]["Message"].ToString();
-                                string Conditionform = result.Tables[1].Rows[0]["ConditionalDetail"].ToString();
+                                string Conditionform = result.Tables[1].Rows[0]["ConditionalDetail"].ToString(); //ConditionalDetail
                                 string AttachRemarks = result.Tables[1].Rows[0]["AttachRemarks"].ToString();
 
                                 if (!string.IsNullOrWhiteSpace(txtplotno.Text))
@@ -555,20 +726,26 @@ namespace PeshawarDHASW.Application_Layer.FileMap.LandBrFile
                                 }
                             }
                             #endregion
-                          
+
+
+
                             if (result.Tables[0].Rows.Count > 0)
                             {
+
+                               // GeneratePlan(fileNo, ownerCategory, BusinessType, PlotSize, DevUnDev, startDate, UserId);
+
+
                                 if (txtfileno.Text.ToUpper().Contains("COM") != true && ownerCategory == "Investors"
                                     && plottype == "Residential" && (PlotSize == "1 Kanal" || PlotSize == "5 Marla")
                                     )
                                 {
                                     if (rdbnodirectsale.CheckState == CheckState.Checked)
                                     {
-                                        sqlTrans.Commit(); //this line and if condition is added for temprory schedual print suspension, the line will be removed after once done
+                                        // sqlTrans.Commit(); //this line and if condition is added for temprory schedual print suspension, the line will be removed after once done
                                         if (suspended == true)  //this line and if condition is added for temprory schedual print suspension, the line will be removed after once done
                                         {
-                                            PlanGenerationData(sqlTrans);
-                                            sqlTrans.Commit();
+                                            // PlanGenerationData(sqlTrans);
+                                            //  sqlTrans.Commit();
                                             //Plan Generation
                                             Report.ScheuldeCopy.frmSchedulePrint obj = new Report.ScheuldeCopy.frmSchedulePrint(0, txtfileno.Text);
                                             obj.ShowDialog();
@@ -578,9 +755,9 @@ namespace PeshawarDHASW.Application_Layer.FileMap.LandBrFile
                                             MessageBox.Show("Schedual Attachment is temporary suspended by IT br"); //this line and if condition is added for temprory schedual print suspension, the line will be removed after once done
                                         }
 
-                                     
-                                     
-                                   
+
+
+
                                     }
                                 }
 
@@ -588,11 +765,11 @@ namespace PeshawarDHASW.Application_Layer.FileMap.LandBrFile
                                 else if (rdph1Extension.IsChecked)
                                 {
                                     txtfileno.Text = result.Tables[0].Rows[0]["FileNo"].ToString();
-                                    sqlTrans.Commit();//this line and if condition is added for temprory schedual print suspension, the line will be removed after once done
+                                    // sqlTrans.Commit();//this line and if condition is added for temprory schedual print suspension, the line will be removed after once done
                                     if (suspended == true)  //this line and if condition is added for temprory schedual print suspension, the line will be removed after once done
                                     {
-                                        PlanGenerationData(sqlTrans);
-                                        sqlTrans.Commit();
+                                        // PlanGenerationData(sqlTrans);
+                                        //sqlTrans.Commit();
                                         Report.ScheuldeCopy.frmSchedulePrint obj = new Report.ScheuldeCopy.frmSchedulePrint(0, txtfileno.Text);
                                         obj.ShowDialog();
                                         //Acknowledgement.IntimationReport objreport = new Acknowledgement.IntimationReport(txtfileno.Text); //this lin will be uncommented
@@ -607,15 +784,17 @@ namespace PeshawarDHASW.Application_Layer.FileMap.LandBrFile
                                 }
                                 else
                                 {
-                                    sqlTrans.Commit();
+                                    //sqlTrans.Commit();
                                 }
+
+
 
                                 MessageBox.Show("File Saved Successfully.");
                                 this.Close();
                             }
                             else
                             {
-                                sqlTrans.Rollback();
+                                //sqlTrans.Rollback();
                                 MessageBox.Show("Fail Contact to Administrator.");
                                 return;
                             }
@@ -623,57 +802,61 @@ namespace PeshawarDHASW.Application_Layer.FileMap.LandBrFile
                         }
                         #endregion
 
-                        #region Generate Schedule for Existing File
-                        else
-                        {
-                            if (txtfileno.Text.ToUpper().Contains("COM") != true && ownerCategory == "Investors" && plottype == "Residential")
-                            {
-                                if (!string.IsNullOrEmpty(dsFile.Tables[0].Rows[0]["InstallmentPlan"].ToString()))
-                                {
-                                    sqlTrans.Commit();
-                                    MessageBox.Show("Schedule is Already Attach with this File.", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                                    Report.ScheuldeCopy.frmSchedulePrint obj = new Report.ScheuldeCopy.frmSchedulePrint(0, txtfileno.Text);
-                                    obj.ShowDialog();
-                                    this.Close();
-                                }
-                                else
-                                {
-                                    if (MessageBox.Show("If you want to generate Plan then press (Yes) button otherwise press No.", "Attention", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-                                    {
-                                        sqlTrans.Commit();//this line will be removed
-                                        if (suspended == true) //this line and if condition is added for temprory schedual print suspension, the line will be removed after once done
-                                        { 
-                                            PlanGenerationData(sqlTrans);
-                                        sqlTrans.Commit();
-                                        //Plan Generation
-                                        Report.ScheuldeCopy.frmSchedulePrint obj = new Report.ScheuldeCopy.frmSchedulePrint(0, txtfileno.Text);
-                                        obj.ShowDialog();
-                                        //this.Close();
-                                    }
-                                        else//this line and if condition is added for temprory schedual print suspension, the line will be removed after once done
-                                        {
-                                            MessageBox.Show("Schedual Attachment is temporary suspended by IT br");
-                                        }
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                MessageBox.Show(this, "Schedule is not Attached FileNo : " + txtfileno.Text, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            }
 
-                        }
+
+
+                        #region Generate Schedule for Existing File
+                        //else
+                        //{
+                        //    if (txtfileno.Text.ToUpper().Contains("COM") != true && ownerCategory == "Investors" && plottype == "Residential")
+                        //    {
+                        //        if (!string.IsNullOrEmpty(dsFile.Tables[0].Rows[0]["InstallmentPlan"].ToString()))
+                        //        {
+                        //            sqlTrans.Commit();
+                        //            MessageBox.Show("Schedule is Already Attach with this File.", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        //            Report.ScheuldeCopy.frmSchedulePrint obj = new Report.ScheuldeCopy.frmSchedulePrint(0, txtfileno.Text);
+                        //            obj.ShowDialog();
+                        //            this.Close();
+                        //        }
+                        //        else
+                        //        {
+                        //            if (MessageBox.Show("If you want to generate Plan then press (Yes) button otherwise press No.", "Attention", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                        //            {
+                        //                sqlTrans.Commit();//this line will be removed
+                        //                if (suspended == true) //this line and if condition is added for temprory schedual print suspension, the line will be removed after once done
+                        //                { 
+                        //                    PlanGenerationData(sqlTrans);
+                        //                sqlTrans.Commit();
+                        //                //Plan Generation
+                        //                Report.ScheuldeCopy.frmSchedulePrint obj = new Report.ScheuldeCopy.frmSchedulePrint(0, txtfileno.Text);
+                        //                obj.ShowDialog();
+                        //                //this.Close();
+                        //            }
+                        //                else//this line and if condition is added for temprory schedual print suspension, the line will be removed after once done
+                        //                {
+                        //                    MessageBox.Show("Schedual Attachment is temporary suspended by IT br");
+                        //                }
+                        //            }
+                        //        }
+                        //    }
+                        //    else
+                        //    {
+                        //        MessageBox.Show(this, "Schedule is not Attached FileNo : " + txtfileno.Text, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //    }
+
+                        //}
                         #endregion
 
 
-                    }
-                    catch (Exception ex)
-                    {
-                        sqlTrans.Rollback();
-                        frmExceptionCatched frmobj = new frmExceptionCatched("Exception is through on btnsavefile_Click.", ex, "frmCreateFileNoRPlot");
-                        frmobj.ShowDialog();
-                    }
+                   
                 }
+                catch (Exception ex)
+                {
+                    //sqlTrans.Rollback();
+                    frmExceptionCatched frmobj = new frmExceptionCatched("Exception is through on btnsavefile_Click.", ex, "frmCreateFileNoRPlot");
+                    frmobj.ShowDialog();
+                }
+                //}
             }
         }
 

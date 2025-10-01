@@ -4,7 +4,7 @@
   <description asmv2:iconFile="logo_inP_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="PeshawarDHASW" version="1.4.5.47" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="PeshawarDHASW" version="1.4.5.55" language="neutral" processorArchitecture="msil" />
     <commandLine file="PeshawarDHASW.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -753,14 +753,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PeshawarDHASW.exe" size="62789120">
-      <assemblyIdentity name="PeshawarDHASW" version="1.4.5.47" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PeshawarDHASW.exe" size="62790656">
+      <assemblyIdentity name="PeshawarDHASW" version="1.4.5.55" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0SxIdS2HRAvRm37DMF+hPEMaJ2yh3mDGHVnSOmukYDw=</dsig:DigestValue>
+        <dsig:DigestValue>QSANlTrRUWxMS21rMz7I9+wpaaY3fAUY0mKH8JurGLs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -772,7 +772,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aTEpDO06F/JtLzpqV6DqkEe/MmlI+QEXQukDg62UOgA=</dsig:DigestValue>
+        <dsig:DigestValue>wd6lbbu9y1apqZi8ooTlubk6IIxKISoiueuepbO+oU8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1496,7 +1496,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>zR3f8JTcMy6590nCG2Hj5fBvuaOnrFhVrENIetH8Nnw=</dsig:DigestValue>
+      <dsig:DigestValue>N5Vsw2lmckFxmONBtVUQDCRRA09nBlMW47IWEJtXkPo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Report\OpenTransfer\Buyer_TFRSlipsReport_OfficeCopy.rpt" size="65536">
@@ -1505,7 +1505,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>J2flmsGv8T8IggyYhkBtZjFmVIKJmHUCqPqa7MIhXA4=</dsig:DigestValue>
+      <dsig:DigestValue>EHzky73gCe85kSvyXb9yXWXjxMpRJHKcPFUZxHwIxzU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Report\OpenTransfer\Buyer_TFRSlipsReportQuestionare.rpt" size="65536">
@@ -1541,7 +1541,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>48UTh2yXiT5mZ8a3dfyw3UZUDMZj6cuWNHWlPq1Ljyw=</dsig:DigestValue>
+      <dsig:DigestValue>H3vD9dT/7VEB7ID6Ngom/oo8lYKxdcRjhbeEaYWi25Y=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Script\DatabaseScript.txt" size="3351771">

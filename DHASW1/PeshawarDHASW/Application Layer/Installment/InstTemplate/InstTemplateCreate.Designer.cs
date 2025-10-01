@@ -68,6 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).BeginInit();
+            this.radLabel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtinstalName)).BeginInit();
@@ -87,7 +88,6 @@
             this.radGroupBox1.Controls.Add(this.btnClear);
             this.radGroupBox1.Controls.Add(this.radbtnCreateTemplateInst);
             this.radGroupBox1.Controls.Add(this.cmdPlotSize);
-            this.radGroupBox1.Controls.Add(this.dtpInstalEndDate);
             this.radGroupBox1.Controls.Add(this.dtpInstStartDate);
             this.radGroupBox1.Controls.Add(this.cmbPhase);
             this.radGroupBox1.Controls.Add(this.txtInstDescp);
@@ -111,7 +111,7 @@
             // radLabel9
             // 
             this.radLabel9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radLabel9.Location = new System.Drawing.Point(4, 328);
+            this.radLabel9.Location = new System.Drawing.Point(4, 324);
             this.radLabel9.Name = "radLabel9";
             this.radLabel9.Size = new System.Drawing.Size(126, 25);
             this.radLabel9.TabIndex = 4;
@@ -120,10 +120,10 @@
             // cmbTempGroup
             // 
             this.cmbTempGroup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbTempGroup.Location = new System.Drawing.Point(137, 326);
+            this.cmbTempGroup.Location = new System.Drawing.Point(137, 322);
             this.cmbTempGroup.Name = "cmbTempGroup";
             this.cmbTempGroup.Size = new System.Drawing.Size(434, 30);
-            this.cmbTempGroup.TabIndex = 4;
+            this.cmbTempGroup.TabIndex = 6;
             this.cmbTempGroup.ThemeName = "TelerikMetro";
             ((Telerik.WinControls.UI.RadDropDownListElement)(this.cmbTempGroup.GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
@@ -135,15 +135,15 @@
             this.txtRemarks.Multiline = true;
             this.txtRemarks.Name = "txtRemarks";
             this.txtRemarks.Size = new System.Drawing.Size(434, 53);
-            this.txtRemarks.TabIndex = 4;
+            this.txtRemarks.TabIndex = 7;
             // 
             // cbStatus
             // 
             this.cbStatus.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbStatus.Location = new System.Drawing.Point(137, 290);
+            this.cbStatus.Location = new System.Drawing.Point(137, 279);
             this.cbStatus.Name = "cbStatus";
             this.cbStatus.Size = new System.Drawing.Size(434, 30);
-            this.cbStatus.TabIndex = 7;
+            this.cbStatus.TabIndex = 5;
             this.cbStatus.ThemeName = "TelerikMetro";
             ((Telerik.WinControls.UI.RadDropDownListElement)(this.cbStatus.GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
@@ -159,7 +159,7 @@
             // radLabel7
             // 
             this.radLabel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radLabel7.Location = new System.Drawing.Point(42, 292);
+            this.radLabel7.Location = new System.Drawing.Point(42, 281);
             this.radLabel7.Name = "radLabel7";
             this.radLabel7.Size = new System.Drawing.Size(88, 25);
             this.radLabel7.TabIndex = 3;
@@ -170,7 +170,7 @@
             this.btnClear.Location = new System.Drawing.Point(360, 430);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(211, 38);
-            this.btnClear.TabIndex = 8;
+            this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear";
             this.btnClear.ThemeName = "TelerikMetro";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -180,7 +180,7 @@
             this.radbtnCreateTemplateInst.Location = new System.Drawing.Point(137, 430);
             this.radbtnCreateTemplateInst.Name = "radbtnCreateTemplateInst";
             this.radbtnCreateTemplateInst.Size = new System.Drawing.Size(217, 38);
-            this.radbtnCreateTemplateInst.TabIndex = 7;
+            this.radbtnCreateTemplateInst.TabIndex = 8;
             this.radbtnCreateTemplateInst.Text = "Save";
             this.radbtnCreateTemplateInst.ThemeName = "TelerikMetro";
             this.radbtnCreateTemplateInst.Click += new System.EventHandler(this.radbtnCreateTemplateInst_Click);
@@ -188,10 +188,10 @@
             // cmdPlotSize
             // 
             this.cmdPlotSize.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdPlotSize.Location = new System.Drawing.Point(137, 253);
+            this.cmdPlotSize.Location = new System.Drawing.Point(137, 235);
             this.cmdPlotSize.Name = "cmdPlotSize";
             this.cmdPlotSize.Size = new System.Drawing.Size(434, 30);
-            this.cmdPlotSize.TabIndex = 6;
+            this.cmdPlotSize.TabIndex = 4;
             this.cmdPlotSize.ThemeName = "TelerikMetro";
             ((Telerik.WinControls.UI.RadDropDownListElement)(this.cmdPlotSize.GetChildAt(0))).Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
@@ -200,13 +200,14 @@
             this.dtpInstalEndDate.CustomFormat = "dd/MM/yyyy";
             this.dtpInstalEndDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpInstalEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpInstalEndDate.Location = new System.Drawing.Point(137, 186);
+            this.dtpInstalEndDate.Location = new System.Drawing.Point(3, 22);
             this.dtpInstalEndDate.Name = "dtpInstalEndDate";
-            this.dtpInstalEndDate.Size = new System.Drawing.Size(434, 30);
+            this.dtpInstalEndDate.Size = new System.Drawing.Size(50, 30);
             this.dtpInstalEndDate.TabIndex = 5;
             this.dtpInstalEndDate.TabStop = false;
             this.dtpInstalEndDate.ThemeName = "TelerikMetro";
             this.dtpInstalEndDate.Value = new System.DateTime(((long)(0)));
+            this.dtpInstalEndDate.Visible = false;
             // 
             // dtpInstStartDate
             // 
@@ -216,7 +217,7 @@
             this.dtpInstStartDate.Location = new System.Drawing.Point(137, 152);
             this.dtpInstStartDate.Name = "dtpInstStartDate";
             this.dtpInstStartDate.Size = new System.Drawing.Size(434, 30);
-            this.dtpInstStartDate.TabIndex = 4;
+            this.dtpInstStartDate.TabIndex = 2;
             this.dtpInstStartDate.TabStop = false;
             this.dtpInstStartDate.ThemeName = "TelerikMetro";
             this.dtpInstStartDate.Value = new System.DateTime(((long)(0)));
@@ -224,7 +225,7 @@
             // cmbPhase
             // 
             this.cmbPhase.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbPhase.Location = new System.Drawing.Point(137, 219);
+            this.cmbPhase.Location = new System.Drawing.Point(137, 194);
             this.cmbPhase.Name = "cmbPhase";
             this.cmbPhase.Size = new System.Drawing.Size(434, 30);
             this.cmbPhase.TabIndex = 3;
@@ -239,12 +240,12 @@
             this.txtInstDescp.Multiline = true;
             this.txtInstDescp.Name = "txtInstDescp";
             this.txtInstDescp.Size = new System.Drawing.Size(434, 53);
-            this.txtInstDescp.TabIndex = 2;
+            this.txtInstDescp.TabIndex = 1;
             // 
             // radLabel6
             // 
             this.radLabel6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radLabel6.Location = new System.Drawing.Point(60, 255);
+            this.radLabel6.Location = new System.Drawing.Point(60, 237);
             this.radLabel6.Name = "radLabel6";
             this.radLabel6.Size = new System.Drawing.Size(70, 25);
             this.radLabel6.TabIndex = 2;
@@ -253,7 +254,7 @@
             // radLabel5
             // 
             this.radLabel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radLabel5.Location = new System.Drawing.Point(80, 220);
+            this.radLabel5.Location = new System.Drawing.Point(80, 195);
             this.radLabel5.Name = "radLabel5";
             this.radLabel5.Size = new System.Drawing.Size(50, 25);
             this.radLabel5.TabIndex = 2;
@@ -261,12 +262,14 @@
             // 
             // radLabel4
             // 
+            this.radLabel4.Controls.Add(this.dtpInstalEndDate);
             this.radLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radLabel4.Location = new System.Drawing.Point(56, 188);
+            this.radLabel4.Location = new System.Drawing.Point(5, 395);
             this.radLabel4.Name = "radLabel4";
             this.radLabel4.Size = new System.Drawing.Size(74, 25);
             this.radLabel4.TabIndex = 2;
             this.radLabel4.Text = "End Date";
+            this.radLabel4.Visible = false;
             // 
             // radLabel3
             // 
@@ -294,7 +297,7 @@
             this.txtinstalName.Multiline = true;
             this.txtinstalName.Name = "txtinstalName";
             this.txtinstalName.Size = new System.Drawing.Size(434, 56);
-            this.txtinstalName.TabIndex = 1;
+            this.txtinstalName.TabIndex = 0;
             // 
             // radLabel1
             // 
@@ -339,6 +342,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.radLabel6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel4)).EndInit();
+            this.radLabel4.ResumeLayout(false);
+            this.radLabel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radLabel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtinstalName)).EndInit();

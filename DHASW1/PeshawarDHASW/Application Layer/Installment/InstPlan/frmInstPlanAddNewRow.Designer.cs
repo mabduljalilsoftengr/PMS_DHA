@@ -42,6 +42,8 @@
             Telerik.WinControls.UI.RadListDataItem radListDataItem12 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem13 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.RadListDataItem radListDataItem14 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem15 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem16 = new Telerik.WinControls.UI.RadListDataItem();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
@@ -133,6 +135,8 @@
             radListDataItem6.Text = "INS";
             radListDataItem7.Text = "CPC";
             radListDataItem8.Text = "ELC";
+            radListDataItem9.Text = "ADC";
+            radListDataItem10.Text = "OTHER";
             this.ddlcode.Items.Add(radListDataItem1);
             this.ddlcode.Items.Add(radListDataItem2);
             this.ddlcode.Items.Add(radListDataItem3);
@@ -141,6 +145,8 @@
             this.ddlcode.Items.Add(radListDataItem6);
             this.ddlcode.Items.Add(radListDataItem7);
             this.ddlcode.Items.Add(radListDataItem8);
+            this.ddlcode.Items.Add(radListDataItem9);
+            this.ddlcode.Items.Add(radListDataItem10);
             this.ddlcode.Location = new System.Drawing.Point(785, 457);
             this.ddlcode.Name = "ddlcode";
             this.ddlcode.Size = new System.Drawing.Size(127, 23);
@@ -149,18 +155,18 @@
             // ddlinstallmentmode
             // 
             this.ddlinstallmentmode.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            radListDataItem9.Text = "-- Select --";
-            radListDataItem10.Text = "Development Charges";
-            radListDataItem11.Text = "Installment";
-            radListDataItem12.Text = "Corner Plot Charges";
-            radListDataItem13.Text = "Extra Land Charges";
-            radListDataItem14.Text = "Addl Dev Charges";
-            this.ddlinstallmentmode.Items.Add(radListDataItem9);
-            this.ddlinstallmentmode.Items.Add(radListDataItem10);
+            radListDataItem11.Text = "-- Select --";
+            radListDataItem12.Text = "Development Charges";
+            radListDataItem13.Text = "Installment";
+            radListDataItem14.Text = "Corner Plot Charges";
+            radListDataItem15.Text = "Extra Land Charges";
+            radListDataItem16.Text = "Addl Dev Charges";
             this.ddlinstallmentmode.Items.Add(radListDataItem11);
             this.ddlinstallmentmode.Items.Add(radListDataItem12);
             this.ddlinstallmentmode.Items.Add(radListDataItem13);
             this.ddlinstallmentmode.Items.Add(radListDataItem14);
+            this.ddlinstallmentmode.Items.Add(radListDataItem15);
+            this.ddlinstallmentmode.Items.Add(radListDataItem16);
             this.ddlinstallmentmode.Location = new System.Drawing.Point(636, 457);
             this.ddlinstallmentmode.Name = "ddlinstallmentmode";
             this.ddlinstallmentmode.Size = new System.Drawing.Size(144, 23);

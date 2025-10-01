@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.RadListDataItem radListDataItem7 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem8 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem9 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem10 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem11 = new Telerik.WinControls.UI.RadListDataItem();
-            Telerik.WinControls.UI.RadListDataItem radListDataItem12 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem1 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem2 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem3 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem4 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem5 = new Telerik.WinControls.UI.RadListDataItem();
+            Telerik.WinControls.UI.RadListDataItem radListDataItem6 = new Telerik.WinControls.UI.RadListDataItem();
             this.btnSaveandprinttheschedule = new Telerik.WinControls.UI.RadButton();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
             this.lblplotbuisinesstype = new Telerik.WinControls.UI.RadLabel();
@@ -160,18 +160,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dpPlotSize.DropDownStyle = Telerik.WinControls.RadDropDownStyle.DropDownList;
             this.dpPlotSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            radListDataItem7.Text = "2 Kanal";
-            radListDataItem8.Text = "1 Kanal";
-            radListDataItem9.Text = "10 Marla";
-            radListDataItem10.Text = "8 Marla";
-            radListDataItem11.Text = "5 Marla";
-            radListDataItem12.Text = "4 Marla";
-            this.dpPlotSize.Items.Add(radListDataItem7);
-            this.dpPlotSize.Items.Add(radListDataItem8);
-            this.dpPlotSize.Items.Add(radListDataItem9);
-            this.dpPlotSize.Items.Add(radListDataItem10);
-            this.dpPlotSize.Items.Add(radListDataItem11);
-            this.dpPlotSize.Items.Add(radListDataItem12);
+            radListDataItem1.Text = "2 Kanal";
+            radListDataItem2.Text = "1 Kanal";
+            radListDataItem3.Text = "10 Marla";
+            radListDataItem4.Text = "8 Marla";
+            radListDataItem5.Text = "5 Marla";
+            radListDataItem6.Text = "4 Marla";
+            this.dpPlotSize.Items.Add(radListDataItem1);
+            this.dpPlotSize.Items.Add(radListDataItem2);
+            this.dpPlotSize.Items.Add(radListDataItem3);
+            this.dpPlotSize.Items.Add(radListDataItem4);
+            this.dpPlotSize.Items.Add(radListDataItem5);
+            this.dpPlotSize.Items.Add(radListDataItem6);
             this.dpPlotSize.Location = new System.Drawing.Point(130, 50);
             this.dpPlotSize.Name = "dpPlotSize";
             this.dpPlotSize.NullText = "- Select Plot Size . . .";

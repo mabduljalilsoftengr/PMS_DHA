@@ -541,7 +541,7 @@ namespace PeshawarDHASW.Application_Layer.NDC.Baskets
                                 }
                                 else
                                 {
-                                    row["DateOfAllocation"] = "With in One Month.";
+                                    row["DateOfAllocation"] = "With in 15 Days.";
                                 }
                                
                                 

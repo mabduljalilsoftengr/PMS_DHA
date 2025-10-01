@@ -1,5 +1,5 @@
 F:\NewPMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.dll
 F:\NewPMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Release\PMS_Setting.pdb
+F:\NewPMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.csprojResolveAssemblyReference.cache
 F:\NewPMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.dll
 F:\NewPMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.pdb
-F:\NewPMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Release\PMS_Setting.csprojResolveAssemblyReference.cache

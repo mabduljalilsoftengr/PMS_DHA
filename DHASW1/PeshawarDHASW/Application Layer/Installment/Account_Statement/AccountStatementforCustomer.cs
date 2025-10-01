@@ -167,7 +167,10 @@ namespace PeshawarDHASW.Application_Layer.Installment.Account_Statement
                             dst.Tables[1].Rows.Clear();
 
                             var DataSorting = (from row in dtt.AsEnumerable()
-                                               orderby row["PlanID"] ascending, row["Descp"] ascending, row["InstallmentMode"] ascending, row["DueDate"] ascending
+                                               orderby
+                                               //row["AcctStSeries"] ascending,
+                                               row["PlanID"] ascending, 
+                                               row["Descp"] ascending, row["InstallmentMode"] ascending, row["DueDate"] ascending
                                                select row);
 
                             dst.Tables[0].Merge(DataSorting.AsDataView().ToTable());
