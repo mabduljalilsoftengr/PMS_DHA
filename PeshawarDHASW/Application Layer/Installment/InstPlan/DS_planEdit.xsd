@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_planEdit" targetNamespace="http://tempuri.org/DS_planEdit.xsd" xmlns:mstns="http://tempuri.org/DS_planEdit.xsd" xmlns="http://tempuri.org/DS_planEdit.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_planEdit" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_planEdit" msprop:Generator_UserDSName="DS_planEdit">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dt_InstallmentPlan" msprop:Generator_TableClassName="dt_InstallmentPlanDataTable" msprop:Generator_TableVarName="tabledt_InstallmentPlan" msprop:Generator_TablePropName="dt_InstallmentPlan" msprop:Generator_RowDeletingName="dt_InstallmentPlanRowDeleting" msprop:Generator_RowChangingName="dt_InstallmentPlanRowChanging" msprop:Generator_RowEvHandlerName="dt_InstallmentPlanRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_InstallmentPlanRowDeleted" msprop:Generator_UserTableName="dt_InstallmentPlan" msprop:Generator_RowChangedName="dt_InstallmentPlanRowChanged" msprop:Generator_RowEvArgName="dt_InstallmentPlanRowChangeEvent" msprop:Generator_RowClassName="dt_InstallmentPlanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="InstallmentNo" msprop:Generator_ColumnVarNameInTable="columnInstallmentNo" msprop:Generator_ColumnPropNameInRow="InstallmentNo" msprop:Generator_ColumnPropNameInTable="InstallmentNoColumn" msprop:Generator_UserColumnName="InstallmentNo" type="xs:string" minOccurs="0" />
+              <xs:element name="InstallmentDesc" msprop:Generator_ColumnVarNameInTable="columnInstallmentDesc" msprop:Generator_ColumnPropNameInRow="InstallmentDesc" msprop:Generator_ColumnPropNameInTable="InstallmentDescColumn" msprop:Generator_UserColumnName="InstallmentDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="dueDate" msprop:Generator_ColumnVarNameInTable="columndueDate" msprop:Generator_ColumnPropNameInRow="dueDate" msprop:Generator_ColumnPropNameInTable="dueDateColumn" msprop:Generator_UserColumnName="dueDate" type="xs:string" minOccurs="0" />
+              <xs:element name="dueAmount" msprop:Generator_ColumnVarNameInTable="columndueAmount" msprop:Generator_ColumnPropNameInRow="dueAmount" msprop:Generator_ColumnPropNameInTable="dueAmountColumn" msprop:Generator_UserColumnName="dueAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="series" msprop:Generator_ColumnVarNameInTable="columnseries" msprop:Generator_ColumnPropNameInRow="series" msprop:Generator_ColumnPropNameInTable="seriesColumn" msprop:Generator_UserColumnName="series" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

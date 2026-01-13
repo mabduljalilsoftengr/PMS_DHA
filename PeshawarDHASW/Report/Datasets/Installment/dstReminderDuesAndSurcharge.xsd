@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstReminderDuesAndSurcharge" targetNamespace="http://tempuri.org/dstReminderDuesAndSurcharge.xsd" xmlns:mstns="http://tempuri.org/dstReminderDuesAndSurcharge.xsd" xmlns="http://tempuri.org/dstReminderDuesAndSurcharge.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstReminderDuesAndSurcharge" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dstReminderDuesAndSurcharge" msprop:Generator_UserDSName="dstReminderDuesAndSurcharge">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_ReminderOfDuesAndSurcharge" msprop:Generator_TableClassName="tbl_ReminderOfDuesAndSurchargeDataTable" msprop:Generator_TableVarName="tabletbl_ReminderOfDuesAndSurcharge" msprop:Generator_RowChangedName="tbl_ReminderOfDuesAndSurchargeRowChanged" msprop:Generator_TablePropName="tbl_ReminderOfDuesAndSurcharge" msprop:Generator_RowDeletingName="tbl_ReminderOfDuesAndSurchargeRowDeleting" msprop:Generator_RowChangingName="tbl_ReminderOfDuesAndSurchargeRowChanging" msprop:Generator_RowEvHandlerName="tbl_ReminderOfDuesAndSurchargeRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_ReminderOfDuesAndSurchargeRowDeleted" msprop:Generator_RowClassName="tbl_ReminderOfDuesAndSurchargeRow" msprop:Generator_UserTableName="tbl_ReminderOfDuesAndSurcharge" msprop:Generator_RowEvArgName="tbl_ReminderOfDuesAndSurchargeRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FileNo" msprop:Generator_ColumnVarNameInTable="columnFileNo" msprop:Generator_ColumnPropNameInRow="FileNo" msprop:Generator_ColumnPropNameInTable="FileNoColumn" msprop:Generator_UserColumnName="FileNo" type="xs:string" minOccurs="0" />
+              <xs:element name="DueAmount" msprop:Generator_ColumnVarNameInTable="columnDueAmount" msprop:Generator_ColumnPropNameInRow="DueAmount" msprop:Generator_ColumnPropNameInTable="DueAmountColumn" msprop:Generator_UserColumnName="DueAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ReceiveAmount" msprop:Generator_ColumnVarNameInTable="columnReceiveAmount" msprop:Generator_ColumnPropNameInRow="ReceiveAmount" msprop:Generator_ColumnPropNameInTable="ReceiveAmountColumn" msprop:Generator_UserColumnName="ReceiveAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RemainingAmount" msprop:Generator_ColumnVarNameInTable="columnRemainingAmount" msprop:Generator_ColumnPropNameInRow="RemainingAmount" msprop:Generator_ColumnPropNameInTable="RemainingAmountColumn" msprop:Generator_UserColumnName="RemainingAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalDueSurcharge" msprop:Generator_ColumnVarNameInTable="columnTotalDueSurcharge" msprop:Generator_ColumnPropNameInRow="TotalDueSurcharge" msprop:Generator_ColumnPropNameInTable="TotalDueSurchargeColumn" msprop:Generator_UserColumnName="TotalDueSurcharge" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalPaidSurcharge" msprop:Generator_ColumnVarNameInTable="columnTotalPaidSurcharge" msprop:Generator_ColumnPropNameInRow="TotalPaidSurcharge" msprop:Generator_ColumnPropNameInTable="TotalPaidSurchargeColumn" msprop:Generator_UserColumnName="TotalPaidSurcharge" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalWaiveOffSurcharge" msprop:Generator_ColumnVarNameInTable="columnTotalWaiveOffSurcharge" msprop:Generator_ColumnPropNameInRow="TotalWaiveOffSurcharge" msprop:Generator_ColumnPropNameInTable="TotalWaiveOffSurchargeColumn" msprop:Generator_UserColumnName="TotalWaiveOffSurcharge" type="xs:decimal" minOccurs="0" />
+              <xs:element name="OutStandingAmount" msprop:Generator_ColumnVarNameInTable="columnOutStandingAmount" msprop:Generator_ColumnPropNameInRow="OutStandingAmount" msprop:Generator_ColumnPropNameInTable="OutStandingAmountColumn" msprop:Generator_UserColumnName="OutStandingAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Category_Name" msprop:Generator_ColumnVarNameInTable="columnCategory_Name" msprop:Generator_ColumnPropNameInRow="Category_Name" msprop:Generator_ColumnPropNameInTable="Category_NameColumn" msprop:Generator_UserColumnName="Category_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="CurrentDate" msprop:Generator_ColumnVarNameInTable="columnCurrentDate" msprop:Generator_ColumnPropNameInRow="CurrentDate" msprop:Generator_ColumnPropNameInTable="CurrentDateColumn" msprop:Generator_UserColumnName="CurrentDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="MobileNo" msprop:Generator_ColumnVarNameInTable="columnMobileNo" msprop:Generator_ColumnPropNameInRow="MobileNo" msprop:Generator_ColumnPropNameInTable="MobileNoColumn" msprop:Generator_UserColumnName="MobileNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="PresentAddress" msprop:Generator_ColumnVarNameInTable="columnPresentAddress" msprop:Generator_ColumnPropNameInRow="PresentAddress" msprop:Generator_ColumnPropNameInTable="PresentAddressColumn" msprop:Generator_UserColumnName="PresentAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="RemainingSur" msprop:Generator_ColumnVarNameInTable="columnRemainingSur" msprop:Generator_ColumnPropNameInRow="RemainingSur" msprop:Generator_ColumnPropNameInTable="RemainingSurColumn" msprop:Generator_UserColumnName="RemainingSur" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PlotNo" msprop:Generator_ColumnVarNameInTable="columnPlotNo" msprop:Generator_ColumnPropNameInRow="PlotNo" msprop:Generator_ColumnPropNameInTable="PlotNoColumn" msprop:Generator_UserColumnName="PlotNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
+              <xs:element name="PreviousLetterNo" msprop:Generator_ColumnVarNameInTable="columnPreviousLetterNo" msprop:Generator_ColumnPropNameInRow="PreviousLetterNo" msprop:Generator_ColumnPropNameInTable="PreviousLetterNoColumn" msprop:Generator_UserColumnName="PreviousLetterNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PreviousLetterdate" msprop:Generator_ColumnVarNameInTable="columnPreviousLetterdate" msprop:Generator_ColumnPropNameInRow="PreviousLetterdate" msprop:Generator_ColumnPropNameInTable="PreviousLetterdateColumn" msprop:Generator_UserColumnName="PreviousLetterdate" type="xs:string" minOccurs="0" />
+              <xs:element name="Prv_PreviousLetterNo" msprop:Generator_ColumnVarNameInTable="columnPrv_PreviousLetterNo" msprop:Generator_ColumnPropNameInRow="Prv_PreviousLetterNo" msprop:Generator_ColumnPropNameInTable="Prv_PreviousLetterNoColumn" msprop:Generator_UserColumnName="Prv_PreviousLetterNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Prv_PreviousLetterDate" msprop:Generator_ColumnVarNameInTable="columnPrv_PreviousLetterDate" msprop:Generator_ColumnPropNameInRow="Prv_PreviousLetterDate" msprop:Generator_ColumnPropNameInTable="Prv_PreviousLetterDateColumn" msprop:Generator_UserColumnName="Prv_PreviousLetterDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

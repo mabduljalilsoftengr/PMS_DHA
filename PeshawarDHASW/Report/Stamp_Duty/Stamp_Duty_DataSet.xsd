@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Stamp_Duty_DataSet" targetNamespace="http://tempuri.org/Stamp_Duty_DataSet.xsd" xmlns:mstns="http://tempuri.org/Stamp_Duty_DataSet.xsd" xmlns="http://tempuri.org/Stamp_Duty_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DHAPeshawarDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DHAPeshawarDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PeshawarDHASW.Properties.Settings.GlobalReference.Default.DHAPeshawarDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Stamp_Duty_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Stamp_Duty_DataSet" msprop:Generator_UserDSName="Stamp_Duty_DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="stamp_duty_report_view" msprop:Generator_TableClassName="stamp_duty_report_viewDataTable" msprop:Generator_TableVarName="tablestamp_duty_report_view" msprop:Generator_TablePropName="stamp_duty_report_view" msprop:Generator_RowDeletingName="stamp_duty_report_viewRowDeleting" msprop:Generator_RowChangingName="stamp_duty_report_viewRowChanging" msprop:Generator_RowEvHandlerName="stamp_duty_report_viewRowChangeEventHandler" msprop:Generator_RowDeletedName="stamp_duty_report_viewRowDeleted" msprop:Generator_UserTableName="stamp_duty_report_view" msprop:Generator_RowChangedName="stamp_duty_report_viewRowChanged" msprop:Generator_RowEvArgName="stamp_duty_report_viewRowChangeEvent" msprop:Generator_RowClassName="stamp_duty_report_viewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StmpDuty_ID" msprop:Generator_ColumnVarNameInTable="columnStmpDuty_ID" msprop:Generator_ColumnPropNameInRow="StmpDuty_ID" msprop:Generator_ColumnPropNameInTable="StmpDuty_IDColumn" msprop:Generator_UserColumnName="StmpDuty_ID" type="xs:int" />
+              <xs:element name="RefNo" msprop:Generator_ColumnVarNameInTable="columnRefNo" msprop:Generator_ColumnPropNameInRow="RefNo" msprop:Generator_ColumnPropNameInTable="RefNoColumn" msprop:Generator_UserColumnName="RefNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stamp_Duty_Type" msprop:Generator_ColumnVarNameInTable="columnStamp_Duty_Type" msprop:Generator_ColumnPropNameInRow="Stamp_Duty_Type" msprop:Generator_ColumnPropNameInTable="Stamp_Duty_TypeColumn" msprop:Generator_UserColumnName="Stamp_Duty_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Amount_In_Words" msprop:Generator_ColumnVarNameInTable="columnAmount_In_Words" msprop:Generator_ColumnPropNameInRow="Amount_In_Words" msprop:Generator_ColumnPropNameInTable="Amount_In_WordsColumn" msprop:Generator_UserColumnName="Amount_In_Words" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GUI" msprop:Generator_ColumnVarNameInTable="columnGUI" msprop:Generator_ColumnPropNameInRow="GUI" msprop:Generator_ColumnPropNameInTable="GUIColumn" msprop:Generator_UserColumnName="GUI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stm_Generation_Date" msprop:Generator_ColumnVarNameInTable="columnStm_Generation_Date" msprop:Generator_ColumnPropNameInRow="Stm_Generation_Date" msprop:Generator_ColumnPropNameInTable="Stm_Generation_DateColumn" msprop:Generator_UserColumnName="Stm_Generation_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Stm_Deposite_Date" msprop:Generator_ColumnVarNameInTable="columnStm_Deposite_Date" msprop:Generator_ColumnPropNameInRow="Stm_Deposite_Date" msprop:Generator_ColumnPropNameInTable="Stm_Deposite_DateColumn" msprop:Generator_UserColumnName="Stm_Deposite_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Stm_State" msprop:Generator_ColumnVarNameInTable="columnStm_State" msprop:Generator_ColumnPropNameInRow="Stm_State" msprop:Generator_ColumnPropNameInTable="Stm_StateColumn" msprop:Generator_UserColumnName="Stm_State" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="user_ID" msprop:Generator_ColumnVarNameInTable="columnuser_ID" msprop:Generator_ColumnPropNameInRow="user_ID" msprop:Generator_ColumnPropNameInTable="user_IDColumn" msprop:Generator_UserColumnName="user_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="Stm_Dt_SellerBuyer_ID" msprop:Generator_ColumnVarNameInTable="columnStm_Dt_SellerBuyer_ID" msprop:Generator_ColumnPropNameInRow="Stm_Dt_SellerBuyer_ID" msprop:Generator_ColumnPropNameInTable="Stm_Dt_SellerBuyer_IDColumn" msprop:Generator_UserColumnName="Stm_Dt_SellerBuyer_ID" type="xs:int" />
+              <xs:element name="Stamp_Duty_SellerBuyer_Type" msprop:Generator_ColumnVarNameInTable="columnStamp_Duty_SellerBuyer_Type" msprop:Generator_ColumnPropNameInRow="Stamp_Duty_SellerBuyer_Type" msprop:Generator_ColumnPropNameInTable="Stamp_Duty_SellerBuyer_TypeColumn" msprop:Generator_UserColumnName="Stamp_Duty_SellerBuyer_Type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CNIC" msprop:Generator_ColumnVarNameInTable="columnCNIC" msprop:Generator_ColumnPropNameInRow="CNIC" msprop:Generator_ColumnPropNameInTable="CNICColumn" msprop:Generator_UserColumnName="CNIC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FileNo" msprop:Generator_ColumnVarNameInTable="columnFileNo" msprop:Generator_ColumnPropNameInRow="FileNo" msprop:Generator_ColumnPropNameInTable="FileNoColumn" msprop:Generator_UserColumnName="FileNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MembershipNo" msprop:Generator_ColumnVarNameInTable="columnMembershipNo" msprop:Generator_ColumnPropNameInRow="MembershipNo" msprop:Generator_ColumnPropNameInTable="MembershipNoColumn" msprop:Generator_UserColumnName="MembershipNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StampDuty_ID" msprop:Generator_ColumnVarNameInTable="columnStampDuty_ID" msprop:Generator_ColumnPropNameInRow="StampDuty_ID" msprop:Generator_ColumnPropNameInTable="StampDuty_IDColumn" msprop:Generator_UserColumnName="StampDuty_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_UserColumnName="UserName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StampDutyBulkReportTable" msprop:Generator_TableClassName="StampDutyBulkReportTableDataTable" msprop:Generator_TableVarName="tableStampDutyBulkReportTable" msprop:Generator_TablePropName="StampDutyBulkReportTable" msprop:Generator_RowDeletingName="StampDutyBulkReportTableRowDeleting" msprop:Generator_RowChangingName="StampDutyBulkReportTableRowChanging" msprop:Generator_RowEvHandlerName="StampDutyBulkReportTableRowChangeEventHandler" msprop:Generator_RowDeletedName="StampDutyBulkReportTableRowDeleted" msprop:Generator_UserTableName="StampDutyBulkReportTable" msprop:Generator_RowChangedName="StampDutyBulkReportTableRowChanged" msprop:Generator_RowEvArgName="StampDutyBulkReportTableRowChangeEvent" msprop:Generator_RowClassName="StampDutyBulkReportTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StmpDuty_ID" msprop:Generator_ColumnVarNameInTable="columnStmpDuty_ID" msprop:Generator_ColumnPropNameInRow="StmpDuty_ID" msprop:Generator_ColumnPropNameInTable="StmpDuty_IDColumn" msprop:Generator_UserColumnName="StmpDuty_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="FileNo" msprop:Generator_ColumnVarNameInTable="columnFileNo" msprop:Generator_ColumnPropNameInRow="FileNo" msprop:Generator_ColumnPropNameInTable="FileNoColumn" msprop:Generator_UserColumnName="FileNo" type="xs:string" minOccurs="0" />
+              <xs:element name="RefNo" msprop:Generator_ColumnVarNameInTable="columnRefNo" msprop:Generator_ColumnPropNameInRow="RefNo" msprop:Generator_ColumnPropNameInTable="RefNoColumn" msprop:Generator_UserColumnName="RefNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Stm_Generation_Date" msprop:Generator_ColumnVarNameInTable="columnStm_Generation_Date" msprop:Generator_ColumnPropNameInRow="Stm_Generation_Date" msprop:Generator_ColumnPropNameInTable="Stm_Generation_DateColumn" msprop:Generator_UserColumnName="Stm_Generation_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SellerNames" msprop:Generator_ColumnVarNameInTable="columnSellerNames" msprop:Generator_ColumnPropNameInRow="SellerNames" msprop:Generator_ColumnPropNameInTable="SellerNamesColumn" msprop:Generator_UserColumnName="SellerNames" type="xs:string" minOccurs="0" />
+              <xs:element name="SellerCNIC" msprop:Generator_ColumnVarNameInTable="columnSellerCNIC" msprop:Generator_ColumnPropNameInRow="SellerCNIC" msprop:Generator_ColumnPropNameInTable="SellerCNICColumn" msprop:Generator_UserColumnName="SellerCNIC" type="xs:string" minOccurs="0" />
+              <xs:element name="BuyerNames" msprop:Generator_ColumnVarNameInTable="columnBuyerNames" msprop:Generator_ColumnPropNameInRow="BuyerNames" msprop:Generator_ColumnPropNameInTable="BuyerNamesColumn" msprop:Generator_UserColumnName="BuyerNames" type="xs:string" minOccurs="0" />
+              <xs:element name="BuyerCNIC" msprop:Generator_ColumnVarNameInTable="columnBuyerCNIC" msprop:Generator_ColumnPropNameInRow="BuyerCNIC" msprop:Generator_ColumnPropNameInTable="BuyerCNICColumn" msprop:Generator_UserColumnName="BuyerCNIC" type="xs:string" minOccurs="0" />
+              <xs:element name="PlotSize" msprop:Generator_ColumnVarNameInTable="columnPlotSize" msprop:Generator_ColumnPropNameInRow="PlotSize" msprop:Generator_ColumnPropNameInTable="PlotSizeColumn" msprop:Generator_UserColumnName="PlotSize" type="xs:string" minOccurs="0" />
+              <xs:element name="FromDate" msprop:Generator_ColumnVarNameInTable="columnFromDate" msprop:Generator_ColumnPropNameInRow="FromDate" msprop:Generator_ColumnPropNameInTable="FromDateColumn" msprop:Generator_UserColumnName="FromDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ToDate" msprop:Generator_ColumnVarNameInTable="columnToDate" msprop:Generator_ColumnPropNameInRow="ToDate" msprop:Generator_ColumnPropNameInTable="ToDateColumn" msprop:Generator_UserColumnName="ToDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:stamp_duty_report_view" />
+      <xs:field xpath="mstns:StmpDuty_ID" />
+      <xs:field xpath="mstns:Stm_Dt_SellerBuyer_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

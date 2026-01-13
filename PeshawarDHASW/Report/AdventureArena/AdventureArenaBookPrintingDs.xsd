@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AdventureArenaBookPrintingDs" targetNamespace="http://tempuri.org/AdventureArenaBookPrintingDs.xsd" xmlns:mstns="http://tempuri.org/AdventureArenaBookPrintingDs.xsd" xmlns="http://tempuri.org/AdventureArenaBookPrintingDs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AdventureArenaBookPrintingDs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AdventureArenaBookPrintingDs" msprop:Generator_UserDSName="AdventureArenaBookPrintingDs">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BookList" msprop:Generator_TableClassName="BookListDataTable" msprop:Generator_TableVarName="tableBookList" msprop:Generator_TablePropName="BookList" msprop:Generator_RowDeletingName="BookListRowDeleting" msprop:Generator_RowChangingName="BookListRowChanging" msprop:Generator_RowEvHandlerName="BookListRowChangeEventHandler" msprop:Generator_RowDeletedName="BookListRowDeleted" msprop:Generator_UserTableName="BookList" msprop:Generator_RowChangedName="BookListRowChanged" msprop:Generator_RowEvArgName="BookListRowChangeEvent" msprop:Generator_RowClassName="BookListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TicketBookID" msprop:Generator_ColumnVarNameInTable="columnTicketBookID" msprop:Generator_ColumnPropNameInRow="TicketBookID" msprop:Generator_ColumnPropNameInTable="TicketBookIDColumn" msprop:Generator_UserColumnName="TicketBookID" type="xs:int" minOccurs="0" />
+              <xs:element name="TicketDetailTitle" msprop:Generator_ColumnVarNameInTable="columnTicketDetailTitle" msprop:Generator_ColumnPropNameInRow="TicketDetailTitle" msprop:Generator_ColumnPropNameInTable="TicketDetailTitleColumn" msprop:Generator_UserColumnName="TicketDetailTitle" type="xs:string" minOccurs="0" />
+              <xs:element name="Type_AgeGroup" msprop:Generator_ColumnVarNameInTable="columnType_AgeGroup" msprop:Generator_ColumnPropNameInRow="Type_AgeGroup" msprop:Generator_ColumnPropNameInTable="Type_AgeGroupColumn" msprop:Generator_UserColumnName="Type_AgeGroup" type="xs:string" minOccurs="0" />
+              <xs:element name="TicketNoFrom" msprop:Generator_ColumnVarNameInTable="columnTicketNoFrom" msprop:Generator_ColumnPropNameInRow="TicketNoFrom" msprop:Generator_ColumnPropNameInTable="TicketNoFromColumn" msprop:Generator_UserColumnName="TicketNoFrom" type="xs:string" minOccurs="0" />
+              <xs:element name="TicketNoTo" msprop:Generator_ColumnVarNameInTable="columnTicketNoTo" msprop:Generator_ColumnPropNameInRow="TicketNoTo" msprop:Generator_ColumnPropNameInTable="TicketNoToColumn" msprop:Generator_UserColumnName="TicketNoTo" type="xs:string" minOccurs="0" />
+              <xs:element name="GenerationDate" msprop:Generator_ColumnVarNameInTable="columnGenerationDate" msprop:Generator_ColumnPropNameInRow="GenerationDate" msprop:Generator_ColumnPropNameInTable="GenerationDateColumn" msprop:Generator_UserColumnName="GenerationDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="QrCode" msprop:Generator_ColumnVarNameInTable="columnQrCode" msprop:Generator_ColumnPropNameInRow="QrCode" msprop:Generator_ColumnPropNameInTable="QrCodeColumn" msprop:Generator_UserColumnName="QrCode" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
