@@ -2529,7 +2529,7 @@
             // 
             this.tabNDC.AccessibleDescription = "tabNDC";
             this.tabNDC.AccessibleName = "tabNDC";
-            this.tabNDC.IsSelected = false;
+            this.tabNDC.IsSelected = true;
             this.tabNDC.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.gbNDCInformation,
             this.gbNDCCheck_List,
@@ -3937,7 +3937,7 @@
             // 
             // ribbonTab7
             // 
-            this.ribbonTab7.IsSelected = true;
+            this.ribbonTab7.IsSelected = false;
             this.ribbonTab7.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.radRibbonBarGroup8,
             this.grpNDCBulkReport,

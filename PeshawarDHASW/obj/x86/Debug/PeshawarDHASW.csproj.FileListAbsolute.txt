@@ -1,4 +1,3 @@
-F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\PeshawarDHASW.exe
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\Images\duplicate.png
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\Report\My_Reports\NDC_Report.rpt
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\Report\My_Reports\NDC_Report.cs
@@ -129,6 +128,8 @@ F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\Report\SurchargeWavierApp
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\PeshawarDHASW.exe.config
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\PeshawarDHASW.exe.manifest
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\PeshawarDHASW.application
+F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\PeshawarDHASW.exe
+F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\PeshawarDHASW.pdb
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\AForge.Controls.dll
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\AForge.dll
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\AForge.Genetic.dll
@@ -780,4 +781,3 @@ F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.exe.man
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.application
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.exe
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.pdb
-F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\bin\Debug\PeshawarDHASW.pdb

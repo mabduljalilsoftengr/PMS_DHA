@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PeshawarDHASW.Helper;
+using PeshawarDHASW.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +24,7 @@ namespace PeshawarDHASW.Application_Layer.Amalgamation
 
         }
 
+        string branch = UserHelper.GetUserBranch();
         private void btnFind_Click(object sender, EventArgs e)
         {
             try
@@ -68,6 +71,7 @@ namespace PeshawarDHASW.Application_Layer.Amalgamation
                 return;
 
             int challanId = Convert.ToInt32(e.Row.Cells["ChallanID"].Value);
+            string fileNo = Convert.ToString(e.Row.Cells["FileNo"].Value);
             int approvedBy = Models.clsUser.ID;
             //string remarks = "Approved from PMS";
             DateTime approvedDate = DateTime.Now;
@@ -106,6 +110,7 @@ namespace PeshawarDHASW.Application_Layer.Amalgamation
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
+                bool rslt = clsPluginHelper.ApplicationLogSaving(fileNo, Models.clsUser.ID + "-" + clsUser.Name + "-" + branch, "After - Modification of Recorcds", param, "frmApprovedAmalgamation - btnApproved", " SQLParam");
 
                 LoadData();
             }
