@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Posession_Dataset" targetNamespace="http://tempuri.org/Posession_Dataset.xsd" xmlns:mstns="http://tempuri.org/Posession_Dataset.xsd" xmlns="http://tempuri.org/Posession_Dataset.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Posession_Dataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Posession_Dataset" msprop:Generator_UserDSName="Posession_Dataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_UptoPosessionDueRemaining" msprop:Generator_TableClassName="tbl_UptoPosessionDueRemainingDataTable" msprop:Generator_TableVarName="tabletbl_UptoPosessionDueRemaining" msprop:Generator_TablePropName="tbl_UptoPosessionDueRemaining" msprop:Generator_RowDeletingName="tbl_UptoPosessionDueRemainingRowDeleting" msprop:Generator_RowChangingName="tbl_UptoPosessionDueRemainingRowChanging" msprop:Generator_RowEvHandlerName="tbl_UptoPosessionDueRemainingRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_UptoPosessionDueRemainingRowDeleted" msprop:Generator_UserTableName="tbl_UptoPosessionDueRemaining" msprop:Generator_RowChangedName="tbl_UptoPosessionDueRemainingRowChanged" msprop:Generator_RowEvArgName="tbl_UptoPosessionDueRemainingRowChangeEvent" msprop:Generator_RowClassName="tbl_UptoPosessionDueRemainingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FileNo" msprop:Generator_ColumnVarNameInTable="columnFileNo" msprop:Generator_ColumnPropNameInRow="FileNo" msprop:Generator_ColumnPropNameInTable="FileNoColumn" msprop:Generator_UserColumnName="FileNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_Due_ReceAmount" msprop:Generator_ColumnVarNameInTable="columnTotal_Due_ReceAmount" msprop:Generator_ColumnPropNameInRow="Total_Due_ReceAmount" msprop:Generator_ColumnPropNameInTable="Total_Due_ReceAmountColumn" msprop:Generator_UserColumnName="Total_Due_ReceAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_ReceAmount" msprop:Generator_ColumnVarNameInTable="columnTotal_ReceAmount" msprop:Generator_ColumnPropNameInRow="Total_ReceAmount" msprop:Generator_ColumnPropNameInTable="Total_ReceAmountColumn" msprop:Generator_UserColumnName="Total_ReceAmount" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalRemainingDueRece_Amount" msprop:Generator_ColumnVarNameInTable="columnTotalRemainingDueRece_Amount" msprop:Generator_ColumnPropNameInRow="TotalRemainingDueRece_Amount" msprop:Generator_ColumnPropNameInTable="TotalRemainingDueRece_AmountColumn" msprop:Generator_UserColumnName="TotalRemainingDueRece_Amount" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_Due_Surcharge" msprop:Generator_ColumnVarNameInTable="columnTotal_Due_Surcharge" msprop:Generator_ColumnPropNameInRow="Total_Due_Surcharge" msprop:Generator_ColumnPropNameInTable="Total_Due_SurchargeColumn" msprop:Generator_UserColumnName="Total_Due_Surcharge" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalSurcPaid" msprop:Generator_ColumnVarNameInTable="columnTotalSurcPaid" msprop:Generator_ColumnPropNameInRow="TotalSurcPaid" msprop:Generator_ColumnPropNameInTable="TotalSurcPaidColumn" msprop:Generator_UserColumnName="TotalSurcPaid" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalWaiedOffSur" msprop:Generator_ColumnVarNameInTable="columnTotalWaiedOffSur" msprop:Generator_ColumnPropNameInRow="TotalWaiedOffSur" msprop:Generator_ColumnPropNameInTable="TotalWaiedOffSurColumn" msprop:Generator_UserColumnName="TotalWaiedOffSur" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalRemaining_DueSurcharge" msprop:Generator_ColumnVarNameInTable="columnTotalRemaining_DueSurcharge" msprop:Generator_ColumnPropNameInRow="TotalRemaining_DueSurcharge" msprop:Generator_ColumnPropNameInTable="TotalRemaining_DueSurchargeColumn" msprop:Generator_UserColumnName="TotalRemaining_DueSurcharge" type="xs:string" minOccurs="0" />
+              <xs:element name="GrandDueTotal" msprop:Generator_ColumnVarNameInTable="columnGrandDueTotal" msprop:Generator_ColumnPropNameInRow="GrandDueTotal" msprop:Generator_ColumnPropNameInTable="GrandDueTotalColumn" msprop:Generator_UserColumnName="GrandDueTotal" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

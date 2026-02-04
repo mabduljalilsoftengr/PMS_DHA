@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IntimationDS" targetNamespace="http://tempuri.org/IntimationDS.xsd" xmlns:mstns="http://tempuri.org/IntimationDS.xsd" xmlns="http://tempuri.org/IntimationDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IntimationDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="IntimationDS" msprop:Generator_UserDSName="IntimationDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FileInfo" msprop:Generator_TableClassName="FileInfoDataTable" msprop:Generator_TableVarName="tableFileInfo" msprop:Generator_TablePropName="FileInfo" msprop:Generator_RowDeletingName="FileInfoRowDeleting" msprop:Generator_RowChangingName="FileInfoRowChanging" msprop:Generator_RowEvHandlerName="FileInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="FileInfoRowDeleted" msprop:Generator_UserTableName="FileInfo" msprop:Generator_RowChangedName="FileInfoRowChanged" msprop:Generator_RowEvArgName="FileInfoRowChangeEvent" msprop:Generator_RowClassName="FileInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FileMapKey" msprop:Generator_ColumnVarNameInTable="columnFileMapKey" msprop:Generator_ColumnPropNameInRow="FileMapKey" msprop:Generator_ColumnPropNameInTable="FileMapKeyColumn" msprop:Generator_UserColumnName="FileMapKey" type="xs:string" minOccurs="0" />
+              <xs:element name="PlotSize" msprop:Generator_ColumnVarNameInTable="columnPlotSize" msprop:Generator_ColumnPropNameInRow="PlotSize" msprop:Generator_ColumnPropNameInTable="PlotSizeColumn" msprop:Generator_UserColumnName="PlotSize" type="xs:string" minOccurs="0" />
+              <xs:element name="FileNo" msprop:Generator_ColumnVarNameInTable="columnFileNo" msprop:Generator_ColumnPropNameInRow="FileNo" msprop:Generator_ColumnPropNameInTable="FileNoColumn" msprop:Generator_UserColumnName="FileNo" type="xs:string" minOccurs="0" />
+              <xs:element name="FileIssueDate" msprop:Generator_ColumnVarNameInTable="columnFileIssueDate" msprop:Generator_ColumnPropNameInRow="FileIssueDate" msprop:Generator_ColumnPropNameInTable="FileIssueDateColumn" msprop:Generator_UserColumnName="FileIssueDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LandProviderName" msprop:Generator_ColumnVarNameInTable="columnLandProviderName" msprop:Generator_ColumnPropNameInRow="LandProviderName" msprop:Generator_ColumnPropNameInTable="LandProviderNameColumn" msprop:Generator_UserColumnName="LandProviderName" type="xs:string" minOccurs="0" />
+              <xs:element name="InvestorFathers" msprop:Generator_ColumnVarNameInTable="columnInvestorFathers" msprop:Generator_ColumnPropNameInRow="InvestorFathers" msprop:Generator_ColumnPropNameInTable="InvestorFathersColumn" msprop:Generator_UserColumnName="InvestorFathers" type="xs:string" minOccurs="0" />
+              <xs:element name="FirstBuyerName" msprop:Generator_ColumnVarNameInTable="columnFirstBuyerName" msprop:Generator_ColumnPropNameInRow="FirstBuyerName" msprop:Generator_ColumnPropNameInTable="FirstBuyerNameColumn" msprop:Generator_UserColumnName="FirstBuyerName" type="xs:string" minOccurs="0" />
+              <xs:element name="LandBrIssueDate" msprop:Generator_ColumnVarNameInTable="columnLandBrIssueDate" msprop:Generator_ColumnPropNameInRow="LandBrIssueDate" msprop:Generator_ColumnPropNameInTable="LandBrIssueDateColumn" msprop:Generator_UserColumnName="LandBrIssueDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PlotNo" msprop:Generator_ColumnVarNameInTable="columnPlotNo" msprop:Generator_ColumnPropNameInRow="PlotNo" msprop:Generator_ColumnPropNameInTable="PlotNoColumn" msprop:Generator_UserColumnName="PlotNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Addresss" msprop:Generator_ColumnVarNameInTable="columnAddresss" msprop:Generator_ColumnPropNameInRow="Addresss" msprop:Generator_ColumnPropNameInTable="AddresssColumn" msprop:Generator_UserColumnName="Addresss" type="xs:string" minOccurs="0" />
+              <xs:element name="MobileNos" msprop:Generator_ColumnVarNameInTable="columnMobileNos" msprop:Generator_ColumnPropNameInRow="MobileNos" msprop:Generator_ColumnPropNameInTable="MobileNosColumn" msprop:Generator_UserColumnName="MobileNos" type="xs:string" minOccurs="0" />
+              <xs:element name="CNICNos" msprop:Generator_ColumnVarNameInTable="columnCNICNos" msprop:Generator_ColumnPropNameInRow="CNICNos" msprop:Generator_ColumnPropNameInTable="CNICNosColumn" msprop:Generator_UserColumnName="CNICNos" type="xs:string" minOccurs="0" />
+              <xs:element name="QRCode" msprop:Generator_ColumnVarNameInTable="columnQRCode" msprop:Generator_ColumnPropNameInRow="QRCode" msprop:Generator_ColumnPropNameInTable="QRCodeColumn" msprop:Generator_UserColumnName="QRCode" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

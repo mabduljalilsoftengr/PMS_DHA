@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SurWaiveApp" targetNamespace="http://tempuri.org/SurWaiveApp.xsd" xmlns:mstns="http://tempuri.org/SurWaiveApp.xsd" xmlns="http://tempuri.org/SurWaiveApp.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SurWaiveApp" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SurWaiveApp" msprop:Generator_UserDSName="SurWaiveApp">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SurvWaiverTable" msprop:Generator_TableClassName="SurvWaiverTableDataTable" msprop:Generator_TableVarName="tableSurvWaiverTable" msprop:Generator_RowChangedName="SurvWaiverTableRowChanged" msprop:Generator_TablePropName="SurvWaiverTable" msprop:Generator_RowDeletingName="SurvWaiverTableRowDeleting" msprop:Generator_RowChangingName="SurvWaiverTableRowChanging" msprop:Generator_RowEvHandlerName="SurvWaiverTableRowChangeEventHandler" msprop:Generator_RowDeletedName="SurvWaiverTableRowDeleted" msprop:Generator_RowClassName="SurvWaiverTableRow" msprop:Generator_UserTableName="SurvWaiverTable" msprop:Generator_RowEvArgName="SurvWaiverTableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SWA_ID" msprop:Generator_ColumnVarNameInTable="columnSWA_ID" msprop:Generator_ColumnPropNameInRow="SWA_ID" msprop:Generator_ColumnPropNameInTable="SWA_IDColumn" msprop:Generator_UserColumnName="SWA_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="RefrenceNo" msprop:Generator_ColumnVarNameInTable="columnRefrenceNo" msprop:Generator_ColumnPropNameInRow="RefrenceNo" msprop:Generator_ColumnPropNameInTable="RefrenceNoColumn" msprop:Generator_UserColumnName="RefrenceNo" type="xs:string" minOccurs="0" />
+              <xs:element name="FileNo" msprop:Generator_ColumnVarNameInTable="columnFileNo" msprop:Generator_ColumnPropNameInRow="FileNo" msprop:Generator_ColumnPropNameInTable="FileNoColumn" msprop:Generator_UserColumnName="FileNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PlotNo" msprop:Generator_ColumnVarNameInTable="columnPlotNo" msprop:Generator_ColumnPropNameInRow="PlotNo" msprop:Generator_ColumnPropNameInTable="PlotNoColumn" msprop:Generator_UserColumnName="PlotNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceivedDate" msprop:Generator_ColumnVarNameInTable="columnReceivedDate" msprop:Generator_ColumnPropNameInRow="ReceivedDate" msprop:Generator_ColumnPropNameInTable="ReceivedDateColumn" msprop:Generator_UserColumnName="ReceivedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Approved_DisapprovedDate" msprop:Generator_ColumnVarNameInTable="columnApproved_DisapprovedDate" msprop:Generator_ColumnPropNameInRow="Approved_DisapprovedDate" msprop:Generator_ColumnPropNameInTable="Approved_DisapprovedDateColumn" msprop:Generator_UserColumnName="Approved_DisapprovedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="Remarks" msprop:Generator_ColumnVarNameInTable="columnRemarks" msprop:Generator_ColumnPropNameInRow="Remarks" msprop:Generator_ColumnPropNameInTable="RemarksColumn" msprop:Generator_UserColumnName="Remarks" type="xs:string" minOccurs="0" />
+              <xs:element name="MembershipNo" msprop:Generator_ColumnVarNameInTable="columnMembershipNo" msprop:Generator_ColumnPropNameInRow="MembershipNo" msprop:Generator_ColumnPropNameInTable="MembershipNoColumn" msprop:Generator_UserColumnName="MembershipNo" type="xs:string" minOccurs="0" />
+              <xs:element name="MemberName" msprop:Generator_ColumnVarNameInTable="columnMemberName" msprop:Generator_ColumnPropNameInRow="MemberName" msprop:Generator_ColumnPropNameInTable="MemberNameColumn" msprop:Generator_UserColumnName="MemberName" type="xs:string" minOccurs="0" />
+              <xs:element name="CNIC" msprop:Generator_ColumnVarNameInTable="columnCNIC" msprop:Generator_ColumnPropNameInRow="CNIC" msprop:Generator_ColumnPropNameInTable="CNICColumn" msprop:Generator_UserColumnName="CNIC" type="xs:string" minOccurs="0" />
+              <xs:element name="PlotSize" msprop:Generator_ColumnVarNameInTable="columnPlotSize" msprop:Generator_ColumnPropNameInRow="PlotSize" msprop:Generator_ColumnPropNameInTable="PlotSizeColumn" msprop:Generator_UserColumnName="PlotSize" type="xs:string" minOccurs="0" />
+              <xs:element name="Category_Name" msprop:Generator_ColumnVarNameInTable="columnCategory_Name" msprop:Generator_ColumnPropNameInRow="Category_Name" msprop:Generator_ColumnPropNameInTable="Category_NameColumn" msprop:Generator_UserColumnName="Category_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="WaivedOffPer" msprop:Generator_ColumnVarNameInTable="columnWaivedOffPer" msprop:Generator_ColumnPropNameInRow="WaivedOffPer" msprop:Generator_ColumnPropNameInTable="WaivedOffPerColumn" msprop:Generator_UserColumnName="WaivedOffPer" type="xs:string" minOccurs="0" />
+              <xs:element name="PrintStatus" msprop:Generator_ColumnVarNameInTable="columnPrintStatus" msprop:Generator_ColumnPropNameInRow="PrintStatus" msprop:Generator_ColumnPropNameInTable="PrintStatusColumn" msprop:Generator_UserColumnName="PrintStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="PrintedDate" msprop:Generator_ColumnVarNameInTable="columnPrintedDate" msprop:Generator_ColumnPropNameInRow="PrintedDate" msprop:Generator_ColumnPropNameInTable="PrintedDateColumn" msprop:Generator_UserColumnName="PrintedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PresentAddress" msprop:Generator_ColumnVarNameInTable="columnPresentAddress" msprop:Generator_ColumnPropNameInRow="PresentAddress" msprop:Generator_ColumnPropNameInTable="PresentAddressColumn" msprop:Generator_UserColumnName="PresentAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="MobileNo" msprop:Generator_ColumnVarNameInTable="columnMobileNo" msprop:Generator_ColumnPropNameInRow="MobileNo" msprop:Generator_ColumnPropNameInTable="MobileNoColumn" msprop:Generator_UserColumnName="MobileNo" type="xs:string" minOccurs="0" />
+              <xs:element name="DueAmount" msprop:Generator_ColumnVarNameInTable="columnDueAmount" msprop:Generator_ColumnPropNameInRow="DueAmount" msprop:Generator_ColumnPropNameInTable="DueAmountColumn" msprop:Generator_UserColumnName="DueAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalReceived" msprop:Generator_ColumnVarNameInTable="columnTotalReceived" msprop:Generator_ColumnPropNameInRow="TotalReceived" msprop:Generator_ColumnPropNameInTable="TotalReceivedColumn" msprop:Generator_UserColumnName="TotalReceived" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DueRemaing" msprop:Generator_ColumnVarNameInTable="columnDueRemaing" msprop:Generator_ColumnPropNameInRow="DueRemaing" msprop:Generator_ColumnPropNameInTable="DueRemaingColumn" msprop:Generator_UserColumnName="DueRemaing" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalSurcharge" msprop:Generator_ColumnVarNameInTable="columnTotalSurcharge" msprop:Generator_ColumnPropNameInRow="TotalSurcharge" msprop:Generator_ColumnPropNameInTable="TotalSurchargeColumn" msprop:Generator_UserColumnName="TotalSurcharge" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalPaidSurcharge" msprop:Generator_ColumnVarNameInTable="columnTotalPaidSurcharge" msprop:Generator_ColumnPropNameInRow="TotalPaidSurcharge" msprop:Generator_ColumnPropNameInTable="TotalPaidSurchargeColumn" msprop:Generator_UserColumnName="TotalPaidSurcharge" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalWaiveoffSurcharge" msprop:Generator_ColumnVarNameInTable="columnTotalWaiveoffSurcharge" msprop:Generator_ColumnPropNameInRow="TotalWaiveoffSurcharge" msprop:Generator_ColumnPropNameInTable="TotalWaiveoffSurchargeColumn" msprop:Generator_UserColumnName="TotalWaiveoffSurcharge" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DueRemaingSurcharge" msprop:Generator_ColumnVarNameInTable="columnDueRemaingSurcharge" msprop:Generator_ColumnPropNameInRow="DueRemaingSurcharge" msprop:Generator_ColumnPropNameInTable="DueRemaingSurchargeColumn" msprop:Generator_UserColumnName="DueRemaingSurcharge" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DueGrandTotal" msprop:Generator_ColumnVarNameInTable="columnDueGrandTotal" msprop:Generator_ColumnPropNameInRow="DueGrandTotal" msprop:Generator_ColumnPropNameInTable="DueGrandTotalColumn" msprop:Generator_UserColumnName="DueGrandTotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="StatementDate" msprop:Generator_ColumnVarNameInTable="columnStatementDate" msprop:Generator_ColumnPropNameInRow="StatementDate" msprop:Generator_ColumnPropNameInTable="StatementDateColumn" msprop:Generator_UserColumnName="StatementDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ApplicationDate" msprop:Generator_ColumnVarNameInTable="columnApplicationDate" msprop:Generator_ColumnPropNameInRow="ApplicationDate" msprop:Generator_ColumnPropNameInTable="ApplicationDateColumn" msprop:Generator_UserColumnName="ApplicationDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="WaiveOffAmount" msprop:Generator_ColumnVarNameInTable="columnWaiveOffAmount" msprop:Generator_ColumnPropNameInRow="WaiveOffAmount" msprop:Generator_ColumnPropNameInTable="WaiveOffAmountColumn" msprop:Generator_UserColumnName="WaiveOffAmount" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

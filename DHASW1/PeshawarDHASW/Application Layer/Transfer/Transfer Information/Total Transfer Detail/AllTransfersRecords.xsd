@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AllTransfersRecords" targetNamespace="http://tempuri.org/AllTransfersRecords.xsd" xmlns:mstns="http://tempuri.org/AllTransfersRecords.xsd" xmlns="http://tempuri.org/AllTransfersRecords.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AllTransfersRecords" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AllTransfersRecords" msprop:Generator_UserDSName="AllTransfersRecords">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SummaryInfor" msprop:Generator_TableClassName="SummaryInforDataTable" msprop:Generator_TableVarName="tableSummaryInfor" msprop:Generator_TablePropName="SummaryInfor" msprop:Generator_RowDeletingName="SummaryInforRowDeleting" msprop:Generator_RowChangingName="SummaryInforRowChanging" msprop:Generator_RowEvHandlerName="SummaryInforRowChangeEventHandler" msprop:Generator_RowDeletedName="SummaryInforRowDeleted" msprop:Generator_UserTableName="SummaryInfor" msprop:Generator_RowChangedName="SummaryInforRowChanged" msprop:Generator_RowEvArgName="SummaryInforRowChangeEvent" msprop:Generator_RowClassName="SummaryInforRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Category_Name" msprop:Generator_ColumnVarNameInTable="columnCategory_Name" msprop:Generator_ColumnPropNameInRow="Category_Name" msprop:Generator_ColumnPropNameInTable="Category_NameColumn" msprop:Generator_UserColumnName="Category_Name" type="xs:string" minOccurs="0" />
+              <xs:element name="FileNo" msprop:Generator_ColumnVarNameInTable="columnFileNo" msprop:Generator_ColumnPropNameInRow="FileNo" msprop:Generator_ColumnPropNameInTable="FileNoColumn" msprop:Generator_UserColumnName="FileNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PlotNo" msprop:Generator_ColumnVarNameInTable="columnPlotNo" msprop:Generator_ColumnPropNameInRow="PlotNo" msprop:Generator_ColumnPropNameInTable="PlotNoColumn" msprop:Generator_UserColumnName="PlotNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PlotSize" msprop:Generator_ColumnVarNameInTable="columnPlotSize" msprop:Generator_ColumnPropNameInRow="PlotSize" msprop:Generator_ColumnPropNameInTable="PlotSizeColumn" msprop:Generator_UserColumnName="PlotSize" type="xs:string" minOccurs="0" />
+              <xs:element name="Total_Transfer" msprop:Generator_ColumnVarNameInTable="columnTotal_Transfer" msprop:Generator_ColumnPropNameInRow="Total_Transfer" msprop:Generator_ColumnPropNameInTable="Total_TransferColumn" msprop:Generator_UserColumnName="Total_Transfer" type="xs:int" minOccurs="0" />
+              <xs:element name="SNo" msprop:Generator_ColumnVarNameInTable="columnSNo" msprop:Generator_ColumnPropNameInRow="SNo" msprop:Generator_ColumnPropNameInTable="SNoColumn" msprop:Generator_UserColumnName="SNo" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FileInformation" msprop:Generator_TableClassName="FileInformationDataTable" msprop:Generator_TableVarName="tableFileInformation" msprop:Generator_TablePropName="FileInformation" msprop:Generator_RowDeletingName="FileInformationRowDeleting" msprop:Generator_RowChangingName="FileInformationRowChanging" msprop:Generator_RowEvHandlerName="FileInformationRowChangeEventHandler" msprop:Generator_RowDeletedName="FileInformationRowDeleted" msprop:Generator_UserTableName="FileInformation" msprop:Generator_RowChangedName="FileInformationRowChanged" msprop:Generator_RowEvArgName="FileInformationRowChangeEvent" msprop:Generator_RowClassName="FileInformationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FileNo" msprop:Generator_ColumnVarNameInTable="columnFileNo" msprop:Generator_ColumnPropNameInRow="FileNo" msprop:Generator_ColumnPropNameInTable="FileNoColumn" msprop:Generator_UserColumnName="FileNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PlotNo" msprop:Generator_ColumnVarNameInTable="columnPlotNo" msprop:Generator_ColumnPropNameInRow="PlotNo" msprop:Generator_ColumnPropNameInTable="PlotNoColumn" msprop:Generator_UserColumnName="PlotNo" type="xs:string" minOccurs="0" />
+              <xs:element name="MembershipNo" msprop:Generator_ColumnVarNameInTable="columnMembershipNo" msprop:Generator_ColumnPropNameInRow="MembershipNo" msprop:Generator_ColumnPropNameInTable="MembershipNoColumn" msprop:Generator_UserColumnName="MembershipNo" type="xs:string" minOccurs="0" />
+              <xs:element name="MemberName" msprop:Generator_ColumnVarNameInTable="columnMemberName" msprop:Generator_ColumnPropNameInRow="MemberName" msprop:Generator_ColumnPropNameInTable="MemberNameColumn" msprop:Generator_UserColumnName="MemberName" type="xs:string" minOccurs="0" />
+              <xs:element name="MobileNo" msprop:Generator_ColumnVarNameInTable="columnMobileNo" msprop:Generator_ColumnPropNameInRow="MobileNo" msprop:Generator_ColumnPropNameInTable="MobileNoColumn" msprop:Generator_UserColumnName="MobileNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email" type="xs:string" minOccurs="0" />
+              <xs:element name="Rank" msprop:Generator_ColumnVarNameInTable="columnRank" msprop:Generator_ColumnPropNameInRow="Rank" msprop:Generator_ColumnPropNameInTable="RankColumn" msprop:Generator_UserColumnName="Rank" type="xs:string" minOccurs="0" />
+              <xs:element name="PANo" msprop:Generator_ColumnVarNameInTable="columnPANo" msprop:Generator_ColumnPropNameInRow="PANo" msprop:Generator_ColumnPropNameInTable="PANoColumn" msprop:Generator_UserColumnName="PANo" type="xs:string" minOccurs="0" />
+              <xs:element name="CNIC" msprop:Generator_ColumnVarNameInTable="columnCNIC" msprop:Generator_ColumnPropNameInRow="CNIC" msprop:Generator_ColumnPropNameInTable="CNICColumn" msprop:Generator_UserColumnName="CNIC" type="xs:string" minOccurs="0" />
+              <xs:element name="OtherNo" msprop:Generator_ColumnVarNameInTable="columnOtherNo" msprop:Generator_ColumnPropNameInRow="OtherNo" msprop:Generator_ColumnPropNameInTable="OtherNoColumn" msprop:Generator_UserColumnName="OtherNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PresentAddress" msprop:Generator_ColumnVarNameInTable="columnPresentAddress" msprop:Generator_ColumnPropNameInRow="PresentAddress" msprop:Generator_ColumnPropNameInTable="PresentAddressColumn" msprop:Generator_UserColumnName="PresentAddress" type="xs:string" minOccurs="0" />
+              <xs:element name="DateofPurchase" msprop:Generator_ColumnVarNameInTable="columnDateofPurchase" msprop:Generator_ColumnPropNameInRow="DateofPurchase" msprop:Generator_ColumnPropNameInTable="DateofPurchaseColumn" msprop:Generator_UserColumnName="DateofPurchase" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="SNoDetail" msprop:Generator_ColumnVarNameInTable="columnSNoDetail" msprop:Generator_ColumnPropNameInRow="SNoDetail" msprop:Generator_ColumnPropNameInTable="SNoDetailColumn" msprop:Generator_UserColumnName="SNoDetail" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="SummaryInfor_FileInformation" msdata:parent="SummaryInfor" msdata:child="FileInformation" msdata:parentkey="FileNo" msdata:childkey="FileNo" msprop:Generator_UserChildTable="FileInformation" msprop:Generator_ChildPropName="GetFileInformationRows" msprop:Generator_UserRelationName="SummaryInfor_FileInformation" msprop:Generator_ParentPropName="SummaryInforRow" msprop:Generator_RelationVarName="relationSummaryInfor_FileInformation" msprop:Generator_UserParentTable="SummaryInfor" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

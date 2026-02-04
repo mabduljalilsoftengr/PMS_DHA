@@ -1,0 +1,5 @@
+F:\NewPMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Debug\PMS_Setting.dll
+F:\NewPMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\bin\Debug\PMS_Setting.pdb
+F:\NewPMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.dll
+F:\NewPMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.pdb
+F:\NewPMS\DHAPeshawarSW\PMSSetting\PMSSetting\PMS_Setting\obj\Debug\PMS_Setting.csprojResolveAssemblyReference.cache
