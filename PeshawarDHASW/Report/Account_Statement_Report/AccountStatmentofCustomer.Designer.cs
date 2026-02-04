@@ -741,6 +741,8 @@ namespace PeshawarDHASW.Report.Account_Statement_Report {
             
             private global::System.Data.DataColumn columnNote;
             
+            private global::System.Data.DataColumn columnADCNote;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public tbl_AcStatmentDataTable() {
@@ -880,6 +882,14 @@ namespace PeshawarDHASW.Report.Account_Statement_Report {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ADCNoteColumn {
+                get {
+                    return this.columnADCNote;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -915,7 +925,7 @@ namespace PeshawarDHASW.Report.Account_Statement_Report {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_AcStatmentRow Addtbl_AcStatmentRow(int PlanID, string Descp, string InstallmentMode, int DueAmount, System.DateTime DueDate, int ReceAmount, int Outstanding, decimal TotalPaidSurcharge, int TotalDueSurcharge, int TotalWaiveOffSurcharge, int PaidSurcharge, long Balance, string Note) {
+            public tbl_AcStatmentRow Addtbl_AcStatmentRow(int PlanID, string Descp, string InstallmentMode, int DueAmount, System.DateTime DueDate, int ReceAmount, int Outstanding, decimal TotalPaidSurcharge, int TotalDueSurcharge, int TotalWaiveOffSurcharge, int PaidSurcharge, long Balance, string Note, string ADCNote) {
                 tbl_AcStatmentRow rowtbl_AcStatmentRow = ((tbl_AcStatmentRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         PlanID,
@@ -930,7 +940,8 @@ namespace PeshawarDHASW.Report.Account_Statement_Report {
                         TotalWaiveOffSurcharge,
                         PaidSurcharge,
                         Balance,
-                        Note};
+                        Note,
+                        ADCNote};
                 rowtbl_AcStatmentRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbl_AcStatmentRow);
                 return rowtbl_AcStatmentRow;
@@ -966,6 +977,7 @@ namespace PeshawarDHASW.Report.Account_Statement_Report {
                 this.columnPaidSurcharge = base.Columns["PaidSurcharge"];
                 this.columnBalance = base.Columns["Balance"];
                 this.columnNote = base.Columns["Note"];
+                this.columnADCNote = base.Columns["ADCNote"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -997,6 +1009,8 @@ namespace PeshawarDHASW.Report.Account_Statement_Report {
                 base.Columns.Add(this.columnBalance);
                 this.columnNote = new global::System.Data.DataColumn("Note", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNote);
+                this.columnADCNote = new global::System.Data.DataColumn("ADCNote", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnADCNote);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1701,6 +1715,22 @@ namespace PeshawarDHASW.Report.Account_Statement_Report {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ADCNote {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbl_AcStatment.ADCNoteColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ADCNote\' in table \'tbl_AcStatment\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_AcStatment.ADCNoteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsPlanIDNull() {
                 return this.IsNull(this.tabletbl_AcStatment.PlanIDColumn);
             }
@@ -1853,6 +1883,18 @@ namespace PeshawarDHASW.Report.Account_Statement_Report {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetNoteNull() {
                 this[this.tabletbl_AcStatment.NoteColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsADCNoteNull() {
+                return this.IsNull(this.tabletbl_AcStatment.ADCNoteColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetADCNoteNull() {
+                this[this.tabletbl_AcStatment.ADCNoteColumn] = global::System.Convert.DBNull;
             }
         }
         

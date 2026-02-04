@@ -1333,7 +1333,7 @@
             // tabFinance
             // 
             this.tabFinance.AccessibleDescription = "tabFinance";
-            this.tabFinance.IsSelected = false;
+            this.tabFinance.IsSelected = true;
             this.tabFinance.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.gpInstallmentTemplate,
             this.gpInstallmentPlan,
@@ -2529,7 +2529,7 @@
             // 
             this.tabNDC.AccessibleDescription = "tabNDC";
             this.tabNDC.AccessibleName = "tabNDC";
-            this.tabNDC.IsSelected = true;
+            this.tabNDC.IsSelected = false;
             this.tabNDC.Items.AddRange(new Telerik.WinControls.RadItem[] {
             this.gbNDCInformation,
             this.gbNDCCheck_List,

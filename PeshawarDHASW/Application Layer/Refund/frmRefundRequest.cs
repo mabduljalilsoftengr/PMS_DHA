@@ -1791,5 +1791,56 @@ namespace PeshawarDHASW.Application_Layer.Refund
             decimal RefundAmount = TotalAmount - DHAServiceCharges;
             txtNDCChallanRefundAmount.Text = RefundAmount.ToString();
         }
+
+        //GetSecurityChallanforRefund
+        private void btnChallanSearch_SR_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlParameter[] prmt =
+                                          {
+                                new SqlParameter("@Task","GetSecurityChallanforRefund"),
+                                new SqlParameter("@ChallanNo",txtChallanNoRefund.Text)
+                                };
+                DataSet dst = Helper.SQLHelper.ExecuteDataset(
+                                            clsMostUseVars.Connectionstring,
+                                            CommandType.StoredProcedure,
+                                            "App.usp_tbl_Refund",
+                                            prmt
+                                            );
+                if (dst.Tables.Count > 0)
+                {
+                    if (dst.Tables[0].Rows.Count > 0)
+                    {
+                        txtFileNo_SR.Text = dst.Tables[0].Rows[0]["FileNo"].ToString();
+                        txtOwnerName_SR.Text = dst.Tables[0].Rows[0]["OwnerName"].ToString();
+                        txtReceDate_SR.Text = dst.Tables[0].Rows[0]["ClearDate"].ToString();
+                        txtAmount_SR.Text = dst.Tables[0].Rows[0]["Amount"].ToString();
+                        txtChallanNo_SR.Text = dst.Tables[0].Rows[0]["ChalanNo"].ToString();
+                        txtBank_SR.Text = dst.Tables[0].Rows[0]["BankName"].ToString();
+                        txtrefundAmount_SR.Text = dst.Tables[0].Rows[0]["Amount"].ToString();
+                        dtpRefund_SR.Value = DateTime.Now;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid Challan No. / File is Locked.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnRefresh_SR_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRequest_SR_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

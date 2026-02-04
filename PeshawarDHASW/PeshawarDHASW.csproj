@@ -2299,6 +2299,12 @@
     <Compile Include="Application Layer\Refund\frmRefundProcess.Designer.cs">
       <DependentUpon>frmRefundProcess.cs</DependentUpon>
     </Compile>
+    <Compile Include="Application Layer\Refund\frmRefundRequestCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application Layer\Refund\frmRefundRequestCopy.Designer.cs">
+      <DependentUpon>frmRefundRequestCopy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Application Layer\Refund\frmRefundRequest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -4818,6 +4824,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Application Layer\Refund\frmRefundProcess.resx">
       <DependentUpon>frmRefundProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application Layer\Refund\frmRefundRequestCopy.resx">
+      <DependentUpon>frmRefundRequestCopy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Application Layer\Refund\frmRefundRequest.resx">
       <DependentUpon>frmRefundRequest.cs</DependentUpon>

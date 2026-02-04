@@ -753,14 +753,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PeshawarDHASW.exe" size="63331328">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PeshawarDHASW.exe" size="63401984">
       <assemblyIdentity name="PeshawarDHASW" version="1.4.5.70" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/pkREaZmRosnHXjN7L8fPjaEm5ZwiAejCwQmkrnRuGw=</dsig:DigestValue>
+        <dsig:DigestValue>Etb9qx/7yq3Yb2Qd3f3inUsgtjXPnZSXA0Qfbz7ZMU8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -772,7 +772,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>71xgbNlixIrnesTTswpMwXlmU2M7uIPuKQS303duHIg=</dsig:DigestValue>
+        <dsig:DigestValue>/47iptUU6uPlBkQYcScIdop/PNGVekmGAMdBUNgdyVk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

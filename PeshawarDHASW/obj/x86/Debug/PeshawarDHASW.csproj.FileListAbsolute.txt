@@ -658,6 +658,7 @@ F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Applica
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.Practice.frmImageUpdating.resources
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.Refund.frmRefundModify.resources
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.Refund.frmRefundProcess.resources
+F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.Refund.frmRefundRequestCopy.resources
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.Refund.frmRefundRequest.resources
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.Refund.PaymentModeSetting.resources
 F:\NewPMS\DHAPeshawarSW\DHASW1\PeshawarDHASW\obj\x86\Debug\PeshawarDHASW.Application_Layer.Role_Form.frmUserAccessClone.resources

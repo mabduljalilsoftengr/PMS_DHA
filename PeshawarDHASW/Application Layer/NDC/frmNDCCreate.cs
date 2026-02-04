@@ -5837,23 +5837,23 @@ namespace PeshawarDHASW.Application_Layer.NDC
             try
             {
 
-                if (NDCRenewChallanStatus == "ApplyForRenewalNDC")
+                if (NDCRenewChallanStatus == "ApplyForRenewalNDC" || NDCRenewChallanStatus == "RefundRequest" || NDCRenewChallanStatus == "RefundComplete" || NDCRenewChallanStatus == "RefundApproved") //RefundRequest RefundComplete RefundApproved
                 {
                     #region Renew Code
                     if (MessageBox.Show("Are you sure to delete old FBR Tax detail.", "Confirm ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         SqlParameter[] parameter =
                         {
-                    new SqlParameter("@Task", "CheckFBRDetailForDuplicate"),
-                    new SqlParameter("@FileNo",txtFile_No_.Text)
-                    };
+                            new SqlParameter("@Task", "CheckFBRDetailForDuplicateForCPRDeletion"),
+                            new SqlParameter("@FileNo",txtFile_No_.Text)
+                        };
                         DataSet ds = cls_dl_NDC.NdcRetrival(parameter);
                         int fbrid = int.Parse(ds.Tables[0].Rows[0]["FBRID"].ToString());
                         SqlParameter[] prm =
                         {
-                    new SqlParameter("@Task","DeleteFBRDetail"),
-                    new SqlParameter("@FBRID",fbrid)
-                    };
+                            new SqlParameter("@Task","DeleteFBRDetail"),
+                            new SqlParameter("@FBRID",fbrid)
+                        };
                         int rslt = cls_dl_NDC.NdcNonQuery(prm);
                         if (rslt > 0)
                         {

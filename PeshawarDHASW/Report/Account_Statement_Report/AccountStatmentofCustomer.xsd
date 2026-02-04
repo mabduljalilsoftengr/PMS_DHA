@@ -12,7 +12,7 @@
   <xs:element name="AccountStatmentofCustomer" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AccountStatmentofCustomer" msprop:Generator_UserDSName="AccountStatmentofCustomer">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tbl_FileInformation" msprop:Generator_TableClassName="tbl_FileInformationDataTable" msprop:Generator_TableVarName="tabletbl_FileInformation" msprop:Generator_RowChangedName="tbl_FileInformationRowChanged" msprop:Generator_TablePropName="tbl_FileInformation" msprop:Generator_RowDeletingName="tbl_FileInformationRowDeleting" msprop:Generator_RowChangingName="tbl_FileInformationRowChanging" msprop:Generator_RowEvHandlerName="tbl_FileInformationRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_FileInformationRowDeleted" msprop:Generator_RowClassName="tbl_FileInformationRow" msprop:Generator_UserTableName="tbl_FileInformation" msprop:Generator_RowEvArgName="tbl_FileInformationRowChangeEvent">
+        <xs:element name="tbl_FileInformation" msprop:Generator_TableClassName="tbl_FileInformationDataTable" msprop:Generator_TableVarName="tabletbl_FileInformation" msprop:Generator_TablePropName="tbl_FileInformation" msprop:Generator_RowDeletingName="tbl_FileInformationRowDeleting" msprop:Generator_RowChangingName="tbl_FileInformationRowChanging" msprop:Generator_RowEvHandlerName="tbl_FileInformationRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_FileInformationRowDeleted" msprop:Generator_UserTableName="tbl_FileInformation" msprop:Generator_RowChangedName="tbl_FileInformationRowChanged" msprop:Generator_RowEvArgName="tbl_FileInformationRowChangeEvent" msprop:Generator_RowClassName="tbl_FileInformationRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="FileNo" msprop:Generator_ColumnVarNameInTable="columnFileNo" msprop:Generator_ColumnPropNameInRow="FileNo" msprop:Generator_ColumnPropNameInTable="FileNoColumn" msprop:Generator_UserColumnName="FileNo" type="xs:string" minOccurs="0" />
@@ -30,7 +30,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_AcStatment" msprop:Generator_TableClassName="tbl_AcStatmentDataTable" msprop:Generator_TableVarName="tabletbl_AcStatment" msprop:Generator_RowChangedName="tbl_AcStatmentRowChanged" msprop:Generator_TablePropName="tbl_AcStatment" msprop:Generator_RowDeletingName="tbl_AcStatmentRowDeleting" msprop:Generator_RowChangingName="tbl_AcStatmentRowChanging" msprop:Generator_RowEvHandlerName="tbl_AcStatmentRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_AcStatmentRowDeleted" msprop:Generator_RowClassName="tbl_AcStatmentRow" msprop:Generator_UserTableName="tbl_AcStatment" msprop:Generator_RowEvArgName="tbl_AcStatmentRowChangeEvent">
+        <xs:element name="tbl_AcStatment" msprop:Generator_TableClassName="tbl_AcStatmentDataTable" msprop:Generator_TableVarName="tabletbl_AcStatment" msprop:Generator_TablePropName="tbl_AcStatment" msprop:Generator_RowDeletingName="tbl_AcStatmentRowDeleting" msprop:Generator_RowChangingName="tbl_AcStatmentRowChanging" msprop:Generator_RowEvHandlerName="tbl_AcStatmentRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_AcStatmentRowDeleted" msprop:Generator_UserTableName="tbl_AcStatment" msprop:Generator_RowChangedName="tbl_AcStatmentRowChanged" msprop:Generator_RowEvArgName="tbl_AcStatmentRowChangeEvent" msprop:Generator_RowClassName="tbl_AcStatmentRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PlanID" msprop:Generator_ColumnVarNameInTable="columnPlanID" msprop:Generator_ColumnPropNameInRow="PlanID" msprop:Generator_ColumnPropNameInTable="PlanIDColumn" msprop:Generator_UserColumnName="PlanID" type="xs:int" minOccurs="0" />
@@ -46,6 +46,7 @@
               <xs:element name="PaidSurcharge" msprop:Generator_ColumnVarNameInTable="columnPaidSurcharge" msprop:Generator_ColumnPropNameInRow="PaidSurcharge" msprop:Generator_ColumnPropNameInTable="PaidSurchargeColumn" msprop:Generator_UserColumnName="PaidSurcharge" type="xs:int" minOccurs="0" />
               <xs:element name="Balance" msprop:Generator_ColumnVarNameInTable="columnBalance" msprop:Generator_ColumnPropNameInRow="Balance" msprop:Generator_ColumnPropNameInTable="BalanceColumn" msprop:Generator_UserColumnName="Balance" type="xs:long" minOccurs="0" />
               <xs:element name="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnPropNameInTable="NoteColumn" msprop:Generator_UserColumnName="Note" type="xs:string" minOccurs="0" />
+              <xs:element name="ADCNote" msprop:Generator_ColumnVarNameInTable="columnADCNote" msprop:Generator_ColumnPropNameInRow="ADCNote" msprop:Generator_ColumnPropNameInTable="ADCNoteColumn" msprop:Generator_UserColumnName="ADCNote" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
